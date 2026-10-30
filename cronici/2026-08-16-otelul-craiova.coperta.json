@@ -1,0 +1,18 @@
+{
+  "titlu": "În zece oameni, cu inima cât pentru unsprezece",
+  "competitie": "SuperLiga",
+  "data": "16 august 2026",
+  "gazde": {
+    "nume": "SC Oțelul Galați",
+    "sofa_id": 3291
+  },
+  "oaspeti": {
+    "nume": "Universitatea Craiova",
+    "sofa_id": 116223
+  },
+  "scor": [
+    1,
+    1
+  ],
+  "marcatori": "Etim 57' · Lungu 86' · Crețu eliminat 29'"
+}

@@ -1,0 +1,18 @@
+{
+  "titlu": "Trei goluri, trei penalty-uri și trei puncte fără emoții",
+  "competitie": "SuperLiga",
+  "data": "23 august 2026",
+  "gazde": {
+    "nume": "Universitatea Craiova",
+    "sofa_id": 116223
+  },
+  "oaspeti": {
+    "nume": "FC Voluntari",
+    "sofa_id": 44255
+  },
+  "scor": [
+    3,
+    1
+  ],
+  "marcatori": "Nsimba 45+3' (pen.) · Romanchuk 57' · Etim 79' · Guțea 90+3' (pen.)"
+}
