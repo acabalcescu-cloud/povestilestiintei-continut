@@ -18,10 +18,17 @@ Rulează zilnic la 23:43 (ora României). Scopul: dacă Universitatea Craiova a 
        "categorie": "SuperLiga | Cupa României | Supercupa României | Liga Campionilor | Europa League | Conference League",
        "etichete": ["Universitatea Craiova", "<adversar>", "<sezon, ex. 2026/2027>"],
        "imagine": "<id>.jpg",
-       "meci": { "data": "AAAA-LL-ZZ", "scor": [goluri_gazde, goluri_oaspeti] }
+       "meci": {
+         "data": "AAAA-LL-ZZ", "scor": [goluri_gazde, goluri_oaspeti],
+         "marcatori": {
+           "gazde":   [{ "nume": "Nsimba", "minut": "45+3' (pen.)" }],
+           "oaspeti": [{ "nume": "Guțea", "minut": "90+3' (pen.)" }]
+         }
+       }
      }
      ```
      `scor` e în ordinea gazde–oaspeți, la fel ca pe site. Fără departajare în `scor`.
+     `marcatori` apar pe pagina meciului, sub sigla fiecărei echipe: numele de familie și minutul, cu „(pen.)” sau „(autogol)”. Autogolul stă la echipa care a beneficiat de el. Mai multe goluri ale aceluiași jucător merg pe un rând: `"24' (pen.), 44'"`. Numărul de goluri trebuie să dea exact scorul.
    - `cronici/<id>.coperta.json` – datele copertei (vezi `unelte/coperta.js`); `sofa_id` din `unelte/cluburi.tsv`.
    - `cronici/<id>.jpg` – `node unelte/coperta.js cronici/<id>.coperta.json cronici/<id>.jpg`. Uită-te la imagine înainte de commit.
 6. **Rezumatul video.** Pentru fiecare meci cu cronică (cel nou și cele din ultimele 3 zile) care nu are încă `cronici/<id>-video.json`:
