@@ -1,1 +1,5 @@
-{ "cronici": [] }
+{
+  "cronici": [
+    "cronici/2026-10-29-voluntari-craiova.json"
+  ]
+}
