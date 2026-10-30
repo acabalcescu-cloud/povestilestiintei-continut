@@ -28,3 +28,14 @@ Lungime: 350–550 de cuvinte. Diacritice corecte (ș, ț cu virgulă).
 
 ## Format HTML (`continut`)
 Doar `<p>`, `<strong>`, `<em>`, `<h3>`, `<ul>/<li>`, `<a>`. Fără stiluri inline, fără imagini în text.
+
+## Știri
+
+Aceeași voce de suporter ca în cronici, dar despre ce se întâmplă între meciuri: transferuri, accidentări, jucători, staff, academie, Europa.
+
+- **Scrise de la zero.** Faptele (nume, cifre, date, citate scurte și atribuite) se iau din surse; textul, ordinea ideilor și titlul sunt ale noastre. Nu se reformulează frază cu frază un articol-sursă și nu i se păstrează structura. Când mai multe surse tratează același subiect, le adunăm într-un singur articol.
+- **Lungime: 450–700 de cuvinte.** Pe lângă știrea propriu-zisă, articolul aduce context din ce știm deja: drumul jucătorului la Craiova, golurile și meciurile lui din sezon (din cronicile noastre), ce înseamnă vestea pentru echipă și ce urmează în calendar.
+- **Structură:** titlu cu emoție, fără clickbait · 1–2 fraze de deschidere cu vestea · 2–4 secțiuni cu `<h3>` (ce s-a întâmplat, cine e omul/contextul, ce înseamnă pentru Știința) · încheiere care privește înainte și „Hai Știința!”.
+- **Zvonuri:** se scriu doar dacă vin din cel puțin două surse serioase și se prezintă ca atare („potrivit presei”, „ar fi”), fără sume sau detalii neconfirmate.
+- **Fără** atacuri la persoane, fără dispute personale sau juridice detaliate, fără referiri la disputa privind identitatea clubului.
+- La final, `<p><em>Surse:</em> …</p>` cu linkuri la articolele folosite.

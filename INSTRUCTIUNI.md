@@ -4,7 +4,7 @@ Rulează zilnic la 23:43 (ora României). Scopul: dacă Universitatea Craiova a 
 
 ## Pași
 1. **A jucat Craiova?** Caută pe web (ora României) meciurile oficiale ale Universității Craiova de azi și de ieri (Sofascore, LPF, GSP). Amicalele nu contează.
-2. **Există deja?** Pentru fiecare meci terminat, dacă `cronici/<AAAA-LL-ZZ>-*.json` există pentru data lui → sari peste el. Dacă meciul de azi s-a terminat prea târziu și sursele sunt încă sărace, lasă-l pe mâine-seară (va fi „ieri”). Nicio cronică de scris → treci direct la pasul 6 (rezumatele video).
+2. **Există deja?** Pentru fiecare meci terminat, dacă `cronici/<AAAA-LL-ZZ>-*.json` există pentru data lui → sari peste el. Dacă meciul de azi s-a terminat prea târziu și sursele sunt încă sărace, lasă-l pe mâine-seară (va fi „ieri”). Nicio cronică de scris → treci direct la pasul 6 (rezumatele video), apoi la pasul 7 (știrile).
 3. **Strânge faptele** din cel puțin două surse: scor final și la pauză, competiție și etapă, marcatori cu minute (autogol/penalty), echipa de start a Craiovei, momente-cheie, arbitru, clasament și următorul meci. La loviturile de departajare: scorul de la final de prelungiri + „(x-y d.l.l.)”.
 4. **Scrie cronica** după `STIL.md`.
 5. **Fișierele**, cu `<id>` = `AAAA-LL-ZZ-gazde-oaspeti` (fără diacritice, cu cratime), ex. `2026-10-29-voluntari-craiova`:
@@ -50,6 +50,11 @@ Rulează zilnic la 23:43 (ora României). Scopul: dacă Universitatea Craiova a 
      }
      ```
      (dacă `maxresdefault.jpg` nu există, folosește `hqdefault.jpg`).
-7. **`index.json`** – adaugă fiecare fișier nou (`cronici/<id>.json`, `cronici/<id>-video.json`) la începutul listei `cronici` (păstrează maximum 80). Dacă n-ai scris nimic nou (nici cronică, nici video) → oprește-te fără commit.
-8. **Commit și push** pe `main`, mesaj: `Cronica: <gazde> – <oaspeti> <scor>` (sau `Rezumat video: …` dacă e doar video).
-9. **Raport** scurt: scorul, titlul, sursele. Dacă faptele n-au putut fi confirmate din două surse, spune-o și nu face commit.
+7. **Știrile zilei.** Caută știrile despre Universitatea Craiova apărute în ultimele 48 de ore (GSP, ProSport, Sport.ro, Digi Sport, Fanatik, Flashscore/Soccerway, Gazeta de Sud, Jurnalul Olteniei, site-ul clubului ucv1948.ro, LPF, UEFA): transferuri, accidentări, declarații, jucători, staff, academie, suporteri, programul următoarelor meciuri.
+   - **Grupează pe subiecte.** Mai multe articole despre același lucru → un singur articol al nostru, care le adună.
+   - **Scrie un articol pentru fiecare subiect** care are fapte confirmate în cel puțin două surse, după secțiunea „Știri” din `STIL.md`: între 1 și 4 articole pe noapte, câte subiecte reale există. Zvonurile nesigure, meciurile deja acoperite de cronică și subiectele fără două surse nu se scriu.
+   - **Nu repeta.** Citește titlurile și rezumatele știrilor noastre din ultimele 10 zile (`cronici/*-stire-*.json`). Dacă subiectul a fost deja tratat, scrii doar dacă există o noutate reală și o spui clar în titlu.
+   - **Fișierele:** `cronici/<AAAA-LL-ZZ>-stire-<subiect-fara-diacritice>.json` cu `id`, `titlu`, `rezumat`, `continut` (HTML, cu „Surse” la final), `"categorie": "Știri"`, `etichete`, `"imagine": "<id>.jpg"`, `"data_publicare": "AAAA-LL-ZZ hh:mm"` (ora la care scrii), `"anunt": false`. Coperta: `cronici/<id>.coperta.json` = `{ "titlu", "rubrica", "data" }` (rubrica: Știri din club, Transferuri, Jucătorii noștri, Academie, Conference League, SuperLiga, Cupa României…), apoi `node unelte/coperta-stire.js cronici/<id>.coperta.json cronici/<id>.jpg`. Uită-te la copertă înainte de commit.
+8. **`index.json`** – adaugă fiecare fișier nou (`cronici/<id>.json`, `cronici/<id>-video.json`, știrile) la începutul listei `cronici` (păstrează maximum 120). Dacă n-ai scris nimic nou (nici cronică, nici video, nici știre) → oprește-te fără commit.
+9. **Commit și push** pe `main`, mesaj: `Cronica: <gazde> – <oaspeti> <scor>` (sau `Rezumat video: …` / `Stiri: <subiecte>` dacă e doar video sau doar știri).
+10. **Raport** scurt: scorul, titlul, știrile scrise, sursele. Dacă faptele n-au putut fi confirmate din două surse, spune-o și nu face commit.
