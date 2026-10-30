@@ -4,7 +4,7 @@ Rulează zilnic la 23:43 (ora României). Scopul: dacă Universitatea Craiova a 
 
 ## Pași
 1. **A jucat Craiova?** Caută pe web (ora României) meciurile oficiale ale Universității Craiova de azi și de ieri (Sofascore, LPF, GSP). Amicalele nu contează.
-2. **Există deja?** Pentru fiecare meci terminat, dacă `cronici/<AAAA-LL-ZZ>-*.json` există pentru data lui → sari peste el. Dacă meciul de azi s-a terminat prea târziu și sursele sunt încă sărace, lasă-l pe mâine-seară (va fi „ieri”). Niciun meci de scris → oprește-te fără commit.
+2. **Există deja?** Pentru fiecare meci terminat, dacă `cronici/<AAAA-LL-ZZ>-*.json` există pentru data lui → sari peste el. Dacă meciul de azi s-a terminat prea târziu și sursele sunt încă sărace, lasă-l pe mâine-seară (va fi „ieri”). Nicio cronică de scris → treci direct la pasul 6 (rezumatele video).
 3. **Strânge faptele** din cel puțin două surse: scor final și la pauză, competiție și etapă, marcatori cu minute (autogol/penalty), echipa de start a Craiovei, momente-cheie, arbitru, clasament și următorul meci. La loviturile de departajare: scorul de la final de prelungiri + „(x-y d.l.l.)”.
 4. **Scrie cronica** după `STIL.md`.
 5. **Fișierele**, cu `<id>` = `AAAA-LL-ZZ-gazde-oaspeti` (fără diacritice, cu cratime), ex. `2026-10-29-voluntari-craiova`:
@@ -41,6 +41,6 @@ Rulează zilnic la 23:43 (ora României). Scopul: dacă Universitatea Craiova a 
      }
      ```
      (dacă `maxresdefault.jpg` nu există, folosește `hqdefault.jpg`).
-7. **`index.json`** – adaugă `"cronici/<id>.json"` la începutul listei `cronici` (păstrează maximum 60).
-8. **Commit și push** pe `main`, mesaj: `Cronica: <gazde> – <oaspeti> <scor>`.
+7. **`index.json`** – adaugă fiecare fișier nou (`cronici/<id>.json`, `cronici/<id>-video.json`) la începutul listei `cronici` (păstrează maximum 80). Dacă n-ai scris nimic nou (nici cronică, nici video) → oprește-te fără commit.
+8. **Commit și push** pe `main`, mesaj: `Cronica: <gazde> – <oaspeti> <scor>` (sau `Rezumat video: …` dacă e doar video).
 9. **Raport** scurt: scorul, titlul, sursele. Dacă faptele n-au putut fi confirmate din două surse, spune-o și nu face commit.
