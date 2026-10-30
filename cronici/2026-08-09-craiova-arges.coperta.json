@@ -1,0 +1,18 @@
+{
+  "titlu": "Un gol devreme și o seară fără noroc pe Oblemenco",
+  "competitie": "SuperLiga",
+  "data": "9 august 2026",
+  "gazde": {
+    "nume": "Universitatea Craiova",
+    "sofa_id": 116223
+  },
+  "oaspeti": {
+    "nume": "FC Argeș Pitești",
+    "sofa_id": 116221
+  },
+  "scor": [
+    0,
+    1
+  ],
+  "marcatori": "Pîrvu 7'"
+}
