@@ -1,10 +1,10 @@
 # Cronica automată după meci – instrucțiuni pentru sesiunea programată
 
-Rulează zilnic seara. Scopul: dacă Universitatea Craiova a jucat azi un meci oficial, scrie cronica, coperta și scorul în acest depozit. Site-ul povestilestiintei.ro le preia singur (cronica ca ciornă, scorul direct în meci).
+Rulează zilnic la 23:43 (ora României). Scopul: dacă Universitatea Craiova a jucat azi sau ieri un meci oficial fără cronică, scrie cronica, coperta și scorul în acest depozit. Site-ul povestilestiintei.ro le preia singur (cronica ca ciornă, scorul direct în meci).
 
 ## Pași
-1. **A jucat Craiova azi?** Caută pe web (ora României) meciul de azi al Universității Craiova (Sofascore, LPF, GSP). Fără meci terminat azi → oprește-te, nu scrie nimic.
-2. **Există deja?** Dacă `cronici/<AAAA-LL-ZZ>-*.json` există pentru data de azi → oprește-te.
+1. **A jucat Craiova?** Caută pe web (ora României) meciurile oficiale ale Universității Craiova de azi și de ieri (Sofascore, LPF, GSP). Amicalele nu contează.
+2. **Există deja?** Pentru fiecare meci terminat, dacă `cronici/<AAAA-LL-ZZ>-*.json` există pentru data lui → sari peste el. Dacă meciul de azi s-a terminat prea târziu și sursele sunt încă sărace, lasă-l pe mâine-seară (va fi „ieri”). Niciun meci de scris → oprește-te fără commit.
 3. **Strânge faptele** din cel puțin două surse: scor final și la pauză, competiție și etapă, marcatori cu minute (autogol/penalty), echipa de start a Craiovei, momente-cheie, arbitru, clasament și următorul meci. La loviturile de departajare: scorul de la final de prelungiri + „(x-y d.l.l.)”.
 4. **Scrie cronica** după `STIL.md`.
 5. **Fișierele**, cu `<id>` = `AAAA-LL-ZZ-gazde-oaspeti` (fără diacritice, cu cratime), ex. `2026-10-29-voluntari-craiova`:
