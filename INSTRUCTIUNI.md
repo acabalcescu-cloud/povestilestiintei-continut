@@ -28,6 +28,7 @@ Rulează zilnic la 23:43 (ora României). Scopul: dacă Universitatea Craiova a 
      }
      ```
      `scor` e în ordinea gazde–oaspeți, la fel ca pe site. Fără departajare în `scor`.
+     Doar la meciurile de **SuperLiga**, adaugă în `meci` și `"statistici"`, luate de la LPF: pe `https://lpf.ro/cluburi/universitatea-craiova/9/rezultate` găsește butonul „Statistici” al meciului (`https://lpf.ro/statistici/<nr>`) și copiază toate rândurile, ca `[["Posesia mingii", "54%", "46%"], ["Șuturi", "17", "8"], …]`, gazdele primele (cum le dă LPF). Dacă pagina nu există încă, lasă câmpul deoparte.
      `marcatori` apar pe pagina meciului, sub sigla fiecărei echipe: numele de familie și minutul, cu „(pen.)” sau „(autogol)”. Autogolul stă la echipa care a beneficiat de el. Mai multe goluri ale aceluiași jucător merg pe un rând: `"24' (pen.), 44'"`. Numărul de goluri trebuie să dea exact scorul.
    - `cronici/<id>.coperta.json` – datele copertei (vezi `unelte/coperta.js`); `sofa_id` din `unelte/cluburi.tsv`.
    - `cronici/<id>.jpg` – `node unelte/coperta.js cronici/<id>.coperta.json cronici/<id>.jpg`. Uită-te la imagine înainte de commit.
