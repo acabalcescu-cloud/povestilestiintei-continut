@@ -1,0 +1,18 @@
+{
+  "titlu": "Elisor, acolo unde trebuie: trei puncte smulse la Miercurea Ciuc",
+  "competitie": "SuperLiga",
+  "data": "11 octombrie 2026",
+  "gazde": {
+    "nume": "FK Csíkszereda",
+    "sofa_id": 283972
+  },
+  "oaspeti": {
+    "nume": "Universitatea Craiova",
+    "sofa_id": 116223
+  },
+  "scor": [
+    0,
+    1
+  ],
+  "marcatori": "Elisor 51'"
+}

@@ -1,0 +1,18 @@
+{
+  "titlu": "Manita la Sfântu Gheorghe: campionii fac spectacol",
+  "competitie": "SuperLiga",
+  "data": "26 octombrie 2026",
+  "gazde": {
+    "nume": "Sepsi OSK",
+    "sofa_id": 189789
+  },
+  "oaspeti": {
+    "nume": "Universitatea Craiova",
+    "sofa_id": 116223
+  },
+  "scor": [
+    0,
+    5
+  ],
+  "marcatori": "Romanchuk 2' · Al Hamlawi 34' (pen.), 49' · Elisor 72', 80'"
+}
