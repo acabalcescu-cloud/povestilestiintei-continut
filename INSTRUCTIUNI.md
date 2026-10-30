@@ -24,6 +24,6 @@ Rulează zilnic la 23:43 (ora României). Scopul: dacă Universitatea Craiova a 
      `scor` e în ordinea gazde–oaspeți, la fel ca pe site. Fără departajare în `scor`.
    - `cronici/<id>.coperta.json` – datele copertei (vezi `unelte/coperta.js`); `sofa_id` din `unelte/cluburi.tsv`.
    - `cronici/<id>.jpg` – `node unelte/coperta.js cronici/<id>.coperta.json cronici/<id>.jpg`. Uită-te la imagine înainte de commit.
-6. **`index.json`** – adaugă `"cronici/<id>.json"` la începutul listei `cronici` (păstrează maximum 30).
+6. **`index.json`** – adaugă `"cronici/<id>.json"` la începutul listei `cronici` (păstrează maximum 60).
 7. **Commit și push** pe `main`, mesaj: `Cronica: <gazde> – <oaspeti> <scor>`.
 8. **Raport** scurt: scorul, titlul, sursele. Dacă faptele n-au putut fi confirmate din două surse, spune-o și nu face commit.
