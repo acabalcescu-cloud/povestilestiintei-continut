@@ -24,6 +24,23 @@ Rulează zilnic la 23:43 (ora României). Scopul: dacă Universitatea Craiova a 
      `scor` e în ordinea gazde–oaspeți, la fel ca pe site. Fără departajare în `scor`.
    - `cronici/<id>.coperta.json` – datele copertei (vezi `unelte/coperta.js`); `sofa_id` din `unelte/cluburi.tsv`.
    - `cronici/<id>.jpg` – `node unelte/coperta.js cronici/<id>.coperta.json cronici/<id>.jpg`. Uită-te la imagine înainte de commit.
-6. **`index.json`** – adaugă `"cronici/<id>.json"` la începutul listei `cronici` (păstrează maximum 60).
-7. **Commit și push** pe `main`, mesaj: `Cronica: <gazde> – <oaspeti> <scor>`.
-8. **Raport** scurt: scorul, titlul, sursele. Dacă faptele n-au putut fi confirmate din două surse, spune-o și nu face commit.
+6. **Rezumatul video.** Pentru fiecare meci cu cronică (cel nou și cele din ultimele 3 zile) care nu are încă `cronici/<id>-video.json`:
+   - caută pe YouTube rezumatul oficial, de preferință de la Orange Sport Romania, apoi Prima Sport, Digi Sport, Superliga România, SPORT.RO sau Gazeta Sporturilor;
+   - verifică-l prin oEmbed (`https://www.youtube.com/oembed?url=https://www.youtube.com/watch?v=<ID>&format=json`): titlul trebuie să conțină ambele echipe și scorul meciului, iar canalul să fie unul dintre cele de mai sus. Atenție la meciuri mai vechi între aceleași echipe, cu același scor;
+   - dacă nu găsești un rezumat sigur, nu pune nimic: încerci din nou mâine-seară;
+   - dacă îl găsești, scrie `cronici/<id>-video.json`:
+     ```json
+     {
+       "id": "<id>-video", "tip": "video",
+       "titlu": "Rezumat video: <Gazde> – <Oaspeți> <scor>",
+       "rezumat": "Golurile și fazele importante din <Gazde> – <Oaspeți>, <competiție>. Rezumat <canal>.",
+       "video_url": "https://www.youtube.com/watch?v=<ID>",
+       "imagine_url": "https://img.youtube.com/vi/<ID>/maxresdefault.jpg",
+       "categorie": "Rezumate video",
+       "etichete": ["Universitatea Craiova", "<adversar>", "<sezon>"]
+     }
+     ```
+     (dacă `maxresdefault.jpg` nu există, folosește `hqdefault.jpg`).
+7. **`index.json`** – adaugă `"cronici/<id>.json"` la începutul listei `cronici` (păstrează maximum 60).
+8. **Commit și push** pe `main`, mesaj: `Cronica: <gazde> – <oaspeti> <scor>`.
+9. **Raport** scurt: scorul, titlul, sursele. Dacă faptele n-au putut fi confirmate din două surse, spune-o și nu face commit.
