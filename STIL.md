@@ -39,3 +39,10 @@ Aceeași voce de suporter ca în cronici, dar despre ce se întâmplă între me
 - **Zvonuri:** se scriu doar dacă vin din cel puțin două surse serioase și se prezintă ca atare („potrivit presei”, „ar fi”), fără sume sau detalii neconfirmate.
 - **Fără** atacuri la persoane, fără dispute personale sau juridice detaliate, fără referiri la disputa privind identitatea clubului.
 - La final, `<p><em>Surse:</em> …</p>` cu linkuri la articolele folosite.
+
+## Reguli comune (cronici și știri)
+
+- **Titlurile de secțiune (`<h3>`)** sunt urmate întotdeauna de cel puțin un paragraf de text. Nu pune un titlu direct deasupra unei liste: introduci lista cu o frază sau renunți la titlu.
+- **Cuvintele potrivite:** jucătorii noi sunt „veniri” sau „sosiri” (nu „venituri”); un atac cu mai mulți marcatori are „guri de foc” (nu „capete”). Recitește titlurile cu voce tare înainte de commit.
+- **Legături interne.** Când revii pe un subiect deja tratat pe site, pune o legătură spre articolul nostru: `<a href="ps:<id>">text</a>`, unde `<id>` e numele fișierului din `cronici/` fără `.json` (ex.: `ps:2026-07-08-vitebsk-craiova`). Pentru pagina unui meci: `<a href="ps:meci:AAAA-LL-ZZ">text</a>`. Site-ul transformă singur aceste adrese în linkuri reale și le ignoră pe cele spre articole încă nepublicate. Verifică întâi că fișierul există.
+- **Numele jucătorilor și ale staff-ului** nu se pun în legături de mână: site-ul leagă automat prima apariție a fiecărui nume de pagina persoanei.
