@@ -8,7 +8,9 @@ Așa, Claude rulează doar în orele în care chiar există ceva de scris, nu de
 
 `mac/meci.py` rulează la fiecare 5 minute, tot fără AI. Ia ora de start din lista meciurilor de pe site (`/wp-json/ps/v1/meciuri`) și, dacă Știința joacă azi, pornește Claude la 2 ore după start, apoi la 150, 180, 210... minute, din 30 în 30, cel mult până la 23:55 în ziua meciului. Se oprește mai devreme, imediat ce în depozit există și cronica, și rezumatul video.
 
-Exemplu: start 17:30 → verificări la 19:30, 20:00, 20:30 ... 23:30. Un meci care începe la 22:00 nu are verificări în aceeași zi; cronica lui o face rutina de noapte din cloud (23:43) în seara următoare.
+Exemplu: start 17:30 → verificări la 19:30, 20:00, 20:30 ... 23:30.
+
+Meciurile care încep târziu (după 21:55, când prima verificare ar cădea după 23:55) nu au limita de 23:55: verificările încep la start + 2 ore, chiar după miezul nopții, și continuă din 30 în 30 de minute până apar cronica și video-ul, dar cel mult 24 de ore de la start. Exemplu: start 22:00 → 00:00, 00:30, 01:00 ... până la cronică și video.
 
 `python3 mac/meci.py --program` arată orele verificărilor de azi.
 

@@ -7,6 +7,10 @@ apoi din 30 în 30 de minute (150, 180, 210... minute după start), cel mult pâ
 la 23:55 în ziua meciului. Se oprește mai devreme dacă în depozit există deja
 și cronica, și rezumatul video ale meciului.
 
+Meciurile care încep târziu (prima verificare ar cădea după 23:55) nu au limita
+de 23:55: verificările continuă din 30 în 30 de minute și după miezul nopții,
+până apar cronica și video-ul, dar cel mult 24 de ore de la start.
+
 Ora de start vine din lista meciurilor de pe site: /wp-json/ps/v1/meciuri.
 
 Rulare manuală:  python3 mac/meci.py           (o verificare, ca launchd)
@@ -30,6 +34,7 @@ JURNAL = os.path.join(STARE, 'jurnal.log')
 URL = 'https://povestilestiintei.ro/wp-json/ps/v1/meciuri'
 PRIMA, PAS = 120, 30           # minute după start: prima verificare, apoi pasul
 LIMITA = dt.time(23, 55)       # nicio verificare după această oră, în ziua meciului
+MAX_TARZIU = dt.timedelta(hours=24)  # meciurile târzii: verificări cel mult 24 de ore de la start
 UA = 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/124 Safari/537.36'
 
 
@@ -69,20 +74,27 @@ def meciuri():
         return incarca(MECIURI, [])
 
 
-def meciul_de_azi(azi):
+def meciuri_recente(acum):
+    """Meciurile începute în ultimele 25 de ore (cel de azi și, eventual, unul târziu de ieri)."""
+    out = []
     for m in meciuri():
         try:
             start = dt.datetime.strptime(m['data'], '%Y/%m/%d %H:%M')
         except (KeyError, ValueError):
             continue
-        if start.date() == azi:
-            return m, start
-    return None, None
+        if acum - dt.timedelta(hours=25) <= start <= acum + dt.timedelta(hours=24):
+            out.append((m, start))
+    return out
+
+
+def tarziu(start):
+    return start + dt.timedelta(minutes=PRIMA) > dt.datetime.combine(start.date(), LIMITA)
 
 
 def verificari(start):
-    """Orele verificărilor: start + 120, 150, 180... minute, cel mult 23:55 în aceeași zi."""
-    capat = dt.datetime.combine(start.date(), LIMITA)
+    """Orele verificărilor: start + 120, 150, 180... minute.
+    Meci normal: cel mult 23:55 în aceeași zi. Meci târziu: până la 24 de ore după start."""
+    capat = start + MAX_TARZIU if tarziu(start) else dt.datetime.combine(start.date(), LIMITA)
     ore, t = [], start + dt.timedelta(minutes=PRIMA)
     while t <= capat:
         ore.append(t)
@@ -102,19 +114,7 @@ def notifica(text):
     subprocess.run(['osascript', '-e', f'display notification "{text}" with title "Poveștile Științei – meci"'], capture_output=True)
 
 
-def main():
-    acum = dt.datetime.now()
-    m, start = meciul_de_azi(acum.date())
-    if '--program' in sys.argv:
-        if not m:
-            print('Azi nu joacă Știința (după lista de pe site).')
-        else:
-            ore = verificari(start)
-            print(f"{html.unescape(m['gazde'])} – {html.unescape(m['oaspeti'])}, start {start:%H:%M}")
-            print('Verificări:', ', '.join(f'{t:%H:%M}' for t in ore) or 'niciuna (meciul se termină prea târziu; rămâne rutina de noapte)')
-        return
-    if not m:
-        return
+def ruleaza(m, start, acum):
     trecute = [t for t in verificari(start) if t <= acum]
     if not trecute:
         return
@@ -122,7 +122,6 @@ def main():
     facute = incarca(FACUTE, [])
     if cheie in facute:
         return
-
     os.makedirs(STARE, exist_ok=True)
     blocare = open(os.path.join(STARE, '.blocare'), 'w')
     try:
@@ -131,7 +130,7 @@ def main():
         return  # rulează verificarea de știri; încercăm din nou peste 5 minute
     subprocess.run(['git', '-C', DEPOZIT, 'pull', '-q', '--rebase', 'origin', 'main'], capture_output=True)
     facute.append(cheie)
-    salveaza(FACUTE, facute[-200:])
+    salveaza(FACUTE, facute[-300:])
     if complet(start.date()):
         jurnal(f'{cheie}: cronica și video există deja, nimic de făcut.')
         return
@@ -152,6 +151,25 @@ def main():
         f.write(raport)
     if not prima.lower().startswith('nimic nou'):
         notifica(prima)
+
+
+def main():
+    acum = dt.datetime.now()
+    recente = meciuri_recente(acum)
+    if '--program' in sys.argv:
+        if not recente:
+            print('Nu e niciun meci azi sau în ultimele ore (după lista de pe site).')
+        for m, start in recente:
+            ore = verificari(start)
+            print(f"{html.unescape(m['gazde'])} – {html.unescape(m['oaspeti'])}, start {start:%d.%m %H:%M}"
+                  + (' (meci târziu: verificările continuă după miezul nopții, până la cronică și video)' if tarziu(start) else ''))
+            arata = [f'{t:%d.%m %H:%M}' for t in ore]
+            if len(arata) > 12:
+                arata = arata[:10] + ['...', arata[-1]]
+            print('Verificări:', ', '.join(arata))
+        return
+    for m, start in recente:
+        ruleaza(m, start, acum)
 
 
 if __name__ == '__main__':

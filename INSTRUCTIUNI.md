@@ -1,6 +1,6 @@
 # Cronica automată după meci – instrucțiuni pentru sesiunea programată
 
-Rulează zilnic la 23:43 (ora României). În zilele cu meci, cronica și rezumatul video se verifică și pe Mac Studio (`mac/meci.py`): la 2 ore după start, apoi din 30 în 30 de minute, până la 23:55. Scopul: dacă Universitatea Craiova a jucat azi sau ieri un meci oficial fără cronică, scrie cronica, coperta și scorul în acest depozit. Site-ul povestilestiintei.ro le preia singur (cronica ca ciornă, scorul direct în meci).
+Rulează zilnic la 23:43 (ora României). În zilele cu meci, cronica și rezumatul video se verifică și pe Mac Studio (`mac/meci.py`): la 2 ore după start, apoi din 30 în 30 de minute, până la 23:55; la meciurile târzii (start după 21:55), verificările continuă și după miezul nopții, până la cronică și video, cel mult 24 de ore de la start. Scopul: dacă Universitatea Craiova a jucat azi sau ieri un meci oficial fără cronică, scrie cronica, coperta și scorul în acest depozit. Site-ul povestilestiintei.ro le preia singur (cronica ca ciornă, scorul direct în meci).
 
 ## Pași
 1. **A jucat Craiova?** Caută pe web (ora României) meciurile oficiale ale Universității Craiova de azi și de ieri (Sofascore, LPF, GSP). Amicalele nu contează.
