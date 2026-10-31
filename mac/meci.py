@@ -7,9 +7,9 @@ apoi din 30 în 30 de minute (150, 180, 210... minute după start), cel mult pâ
 la 23:55 în ziua meciului. Se oprește mai devreme dacă în depozit există deja
 și cronica, și rezumatul video ale meciului.
 
-Meciurile care încep târziu (prima verificare ar cădea după 23:55) nu au limita
-de 23:55: verificările continuă din 30 în 30 de minute și după miezul nopții,
-până apar cronica și video-ul, dar cel mult 24 de ore de la start.
+Meciurile care încep după ora 20:00 nu au limita de 23:55: verificările continuă
+din 30 în 30 de minute și după miezul nopții, până apar cronica și video-ul,
+dar cel mult 12 ore de la start.
 
 Ora de start vine din lista meciurilor de pe site: /wp-json/ps/v1/meciuri.
 
@@ -34,7 +34,8 @@ JURNAL = os.path.join(STARE, 'jurnal.log')
 URL = 'https://povestilestiintei.ro/wp-json/ps/v1/meciuri'
 PRIMA, PAS = 120, 30           # minute după start: prima verificare, apoi pasul
 LIMITA = dt.time(23, 55)       # nicio verificare după această oră, în ziua meciului
-MAX_TARZIU = dt.timedelta(hours=24)  # meciurile târzii: verificări cel mult 24 de ore de la start
+ORA_TARZIU = dt.time(20, 0)    # meciurile care încep după această oră sunt „târzii”
+MAX_TARZIU = dt.timedelta(hours=12)  # meciurile târzii: verificări cel mult 12 ore de la start
 UA = 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/124 Safari/537.36'
 
 
@@ -88,12 +89,12 @@ def meciuri_recente(acum):
 
 
 def tarziu(start):
-    return start + dt.timedelta(minutes=PRIMA) > dt.datetime.combine(start.date(), LIMITA)
+    return start.time() > ORA_TARZIU
 
 
 def verificari(start):
     """Orele verificărilor: start + 120, 150, 180... minute.
-    Meci normal: cel mult 23:55 în aceeași zi. Meci târziu: până la 24 de ore după start."""
+    Meci până la 20:00: cel mult 23:55 în aceeași zi. Meci după 20:00: cel mult 12 ore după start."""
     capat = start + MAX_TARZIU if tarziu(start) else dt.datetime.combine(start.date(), LIMITA)
     ore, t = [], start + dt.timedelta(minutes=PRIMA)
     while t <= capat:
