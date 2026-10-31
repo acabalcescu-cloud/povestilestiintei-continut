@@ -24,8 +24,8 @@ const html = `<!doctype html><html><head><meta charset="utf-8"><style>
 * { margin: 0; box-sizing: border-box; }
 body { width: 1200px; height: 630px; overflow: hidden; font-family: Inter, sans-serif; color: #fff;
 	background: radial-gradient(ellipse 70% 80% at 85% 30%, rgba(255,255,255,.18), transparent 60%), linear-gradient(120deg, #0058B0 0%, #003F80 60%, #071A33 100%); }
-.foto { position: absolute; right: -20px; bottom: 0; height: 600px; filter: drop-shadow(0 10px 30px rgba(0,0,0,.35)); }
-.text { position: absolute; left: 70px; top: 70px; width: 660px; height: 490px; display: flex; flex-direction: column; }
+.foto { position: absolute; right: -10px; bottom: 0; height: 590px; filter: drop-shadow(0 10px 30px rgba(0,0,0,.35)); }
+.text { position: absolute; left: 70px; top: 70px; width: 600px; height: 490px; display: flex; flex-direction: column; }
 .rubrica { display: flex; align-items: center; gap: 16px; }
 .rubrica img { width: 64px; height: 64px; object-fit: contain; }
 .rubrica span { font-family: Sofia; font-weight: 800; font-size: 30px; letter-spacing: 1px; text-transform: uppercase; color: #9CCBFF; }
@@ -47,6 +47,15 @@ h1 { font-family: Sofia; font-weight: 800; font-size: ${titleSize}px; line-heigh
 	const page = await browser.newPage({ viewport: { width: 1200, height: 630 } });
 	await page.setContent(html, { waitUntil: 'load' });
 	await page.evaluate(() => document.fonts.ready);
+	// Titlul începe de la mărimea calculată și scade până încape în cel mult 5 rânduri, deasupra autorului.
+	await page.evaluate(() => {
+		const h1 = document.querySelector('h1');
+		const autor = document.querySelector('.autor');
+		for (let px = parseInt(getComputedStyle(h1).fontSize, 10); px >= 36; px -= 2) {
+			h1.style.fontSize = px + 'px';
+			if (Math.round(h1.getBoundingClientRect().height / px) <= 5 && h1.getBoundingClientRect().bottom <= autor.getBoundingClientRect().top - 24) break;
+		}
+	});
 	await page.screenshot({ path: outFile, type: 'jpeg', quality: 88 });
 	await browser.close();
 	console.log('Coperta: ' + outFile);
