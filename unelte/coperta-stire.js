@@ -16,7 +16,7 @@ const [an, luna, zi] = d.data.slice(0, 10).split('-').map(Number);
 const dir = __dirname;
 const uri = (f, t) => `data:${t};base64,${fs.readFileSync(path.join(dir, f)).toString('base64')}`;
 const esc = (s) => String(s ?? '').replace(/[&<>"]/g, (c) => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;' }[c]));
-const titleSize = d.titlu.length > 80 ? 64 : d.titlu.length > 50 ? 74 : 86;
+// Titlul stă în coloana din stânga (cel mult 5 rânduri); dreapta rămâne liberă pentru fotografiile jucătorilor.
 
 const html = `<!doctype html><html><head><meta charset="utf-8"><style>
 @font-face { font-family: Sofia; font-weight: 800; src: url(${uri('fonturi/sofia-sans-extra-condensed-latin-800-normal.woff2', 'font/woff2')}); }
@@ -25,11 +25,11 @@ const html = `<!doctype html><html><head><meta charset="utf-8"><style>
 body { width: 1200px; height: 630px; overflow: hidden; font-family: Inter, sans-serif; color: #fff;
 	background: radial-gradient(ellipse 70% 80% at 85% 30%, rgba(255,255,255,.18), transparent 60%), linear-gradient(120deg, #0058B0 0%, #003F80 60%, #071A33 100%); }
 .stema { position: absolute; right: 60px; top: 50%; height: 470px; transform: translateY(-50%) rotate(-6deg); opacity: .16; }
-.text { position: absolute; left: 70px; top: 70px; width: 900px; height: 490px; display: flex; flex-direction: column; }
+.text { position: absolute; left: 70px; top: 70px; width: 640px; height: 490px; display: flex; flex-direction: column; }
 .rubrica { display: flex; align-items: center; gap: 16px; }
 .rubrica img { width: 64px; height: 64px; object-fit: contain; }
 .rubrica span { font-family: Sofia; font-weight: 800; font-size: 30px; letter-spacing: 1px; text-transform: uppercase; color: #9CCBFF; }
-h1 { font-family: Sofia; font-weight: 800; font-size: ${titleSize}px; line-height: 1; margin-top: 34px; text-shadow: 0 3px 14px rgba(0,0,0,.3); }
+h1 { font-family: Sofia; font-weight: 800; font-size: 80px; line-height: 1; margin-top: 30px; text-shadow: 0 3px 14px rgba(0,0,0,.3); overflow-wrap: break-word; }
 .autor { margin-top: auto; font-size: 22px; } .autor b { font-weight: 700; }
 .site { font-family: Sofia; font-weight: 800; font-size: 22px; letter-spacing: 1px; opacity: .85; margin-top: 6px; }
 </style></head><body>
@@ -47,6 +47,16 @@ h1 { font-family: Sofia; font-weight: 800; font-size: ${titleSize}px; line-heigh
 	const page = await browser.newPage({ viewport: { width: 1200, height: 630 } });
 	await page.setContent(html, { waitUntil: 'load' });
 	await page.evaluate(() => document.fonts.ready);
+	// Cea mai mare mărime la care titlul încape în cel mult 5 rânduri și nu atinge autorul.
+	await page.evaluate(() => {
+		const h1 = document.querySelector('h1');
+		const autor = document.querySelector('.autor');
+		for (let px = 80; px >= 36; px -= 2) {
+			h1.style.fontSize = px + 'px';
+			const randuri = Math.round(h1.getBoundingClientRect().height / px);
+			if (randuri <= 5 && h1.getBoundingClientRect().bottom <= autor.getBoundingClientRect().top - 24) break;
+		}
+	});
 	await page.screenshot({ path: outFile, type: 'jpeg', quality: 88 });
 	await browser.close();
 	console.log('Coperta: ' + outFile);
