@@ -4,6 +4,14 @@ O verificare automată rulează pe Mac în fiecare oră, la minutul 47. Nu folos
 
 Așa, Claude rulează doar în orele în care chiar există ceva de scris, nu de 24 de ori pe zi.
 
+## Ziua meciului: cronica și rezumatul video
+
+`mac/meci.py` rulează la fiecare 5 minute, tot fără AI. Ia ora de start din lista meciurilor de pe site (`/wp-json/ps/v1/meciuri`) și, dacă Știința joacă azi, pornește Claude la 2 ore după start, apoi la 150, 180, 210... minute, din 30 în 30, cel mult până la 23:55 în ziua meciului. Se oprește mai devreme, imediat ce în depozit există și cronica, și rezumatul video.
+
+Exemplu: start 17:30 → verificări la 19:30, 20:00, 20:30 ... 23:30. Un meci care începe la 22:00 nu are verificări în aceeași zi; cronica lui o face rutina de noapte din cloud (23:43) în seara următoare.
+
+`python3 mac/meci.py --program` arată orele verificărilor de azi.
+
 ## Ce trebuie pe Mac (o singură dată)
 
 1. **Programele.** În Terminal:
@@ -33,4 +41,4 @@ Când se publică o știre, apare o notificare pe Mac cu titlul ei.
 - Mac-ul trebuie să fie pornit. Dacă doarme, verificarea se face la trezire.
 - Nu e nevoie de parola WordPress pe Mac: publicarea trece prin GitHub.
 - Oprire: `bash mac/instaleaza.sh --sterge`.
-- Cronicile și video-urile rămân la rutina de noapte din cloud.
+- Rutina de noapte din cloud (23:43) rămâne ca plasă de siguranță pentru cronici și video.
