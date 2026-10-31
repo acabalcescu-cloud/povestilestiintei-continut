@@ -8,5 +8,6 @@ def citeste(url):
     par = [re.sub(r'\s+', ' ', html.unescape(re.sub(r'<[^>]+>', ' ', p))).strip() for p in re.findall(r'<p[^>]*>(.*?)</p>', s, re.S)]
     par = [p for p in par if len(p) > 60 and not re.search(r'cookie|Setări|newsletter|Abonează|©', p, re.I)]
     return {'url': url, 'titlu': html.unescape(titlu.group(1)).strip() if titlu else '', 'data': data.group(1) if data else '', 'text': par[:30]}
-for u in sys.argv[1:]:
+if __name__ == '__main__':
+  for u in sys.argv[1:]:
     r = citeste(u); print('=====', r['data'], '|', r['titlu'][:120]); print('\n'.join(p[:400] for p in r['text']))
