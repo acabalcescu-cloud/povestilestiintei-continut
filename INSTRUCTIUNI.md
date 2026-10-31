@@ -63,7 +63,7 @@ Rulează zilnic la 23:43 (ora României). Scopul: dacă Universitatea Craiova a 
 
 ## Rutina orară de știri
 
-O sesiune pornește în fiecare oră doar pentru știri (pasul 7), fără cronici și video (acelea rămân la rutina de noapte):
+Rutina rulează pe Mac Studio (vezi `mac/README.md`): `mac/verifica.py` verifică fără AI, în fiecare oră, dacă au apărut articole noi și pornește Claude Code numai atunci, cu lista în `.stare-mac/candidati.json`. O sesiune pornește doar pentru știri (pasul 7), fără cronici și video (acelea rămân la rutina de noapte):
 
 1. Google News cu `when:1d` pentru `Universitatea+Craiova`, `Coelho+Craiova`, `Stiinta+Craiova`, plus fluxurile RSS. Păstrează doar articolele din ultimele 3 ore care nu sunt în `presa/vazute.json`.
 2. Dacă nu există nimic nou despre Craiova → adaugă URL-urile verificate în `presa/vazute.json` doar dacă ai decis ceva despre ele, altfel oprește-te fără commit.
