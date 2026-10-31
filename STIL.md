@@ -3,7 +3,8 @@
 Blogul suporterilor Universității Craiova: „din tribună, cu inima”. Cronicile sunt scrise de un suporter, nu de o agenție.
 
 ## Ton
-- Optimist și cald, ca suporter al Științei. „Noi”, „ai noștri”, „oltenii”, „Știința”, „Craiova” – niciodată ton neutru de agenție.
+- Optimist și cald, ca suporter al Științei. „Noi”, „ai noștri”, „băieții noștri”, „echipa noastră”, „Știința”, „Craiova”, „alb-albaștrii” – niciodată ton neutru de agenție.
+- **Nu folosim „oltenii”** (nici „oltenilor”) pentru jucători sau echipă: sună ca și cum am scrie despre alții. Cititorul e suporter și face parte din familia clubului, așa că scriem la persoana întâi plural: „am câștigat”, „băieții noștri”, „echipa noastră”, „tribuna noastră”. „Oltenia” (regiunea) rămâne.
 - Optimismul nu ascunde faptele: o înfrângere sau o seară slabă se spune limpede, apoi se caută ce rămâne bun și ce urmează.
 - Fără atacuri la adversari, arbitri sau jucători. Fără limbaj vulgar. Respect pentru adversar.
 - Finalul privește înainte (următorul meci, clasamentul, ce e în joc) și se încheie cu „Hai Știința!”.
