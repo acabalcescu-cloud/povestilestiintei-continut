@@ -79,7 +79,7 @@ done
 echo
 echo "Gata."
 echo "Stirile se verifica in fiecare ora, la minutul 47."
-echo "In zilele cu meci, cronica si video se verifica la 2 ore dupa start, apoi din 30 in 30 de minute, pana la 23:55."
+echo "In zilele cu meci, cronica si video se verifica la 2 ore dupa start, apoi din 30 in 30 de minute: pana la 23:55 daca meciul incepe pana la 20:00, altfel pana apar cronica si video (max. 12 ore)."
 echo "Test stiri (doar lista, fara Claude):  python3 mac/verifica.py --doar-lista"
 echo "Programul de azi pentru meci:          python3 mac/meci.py --program"
 echo "Jurnal:                                cat .stare-mac/jurnal.log"
