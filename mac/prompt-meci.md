@@ -8,3 +8,5 @@ S-a jucat meciul: {MECI}. Treaba ta acum e doar cronica și rezumatul video ale 
 4. Vocea suporterului: niciodată „oltenii”; spune „băieții noștri”, „echipa noastră”, „Știința”. Text de la zero, fără fraze copiate din surse.
 5. Dacă ai scris ceva: actualizează `index.json`, apoi commit și push pe main. Site-ul preia singur. Nu încerca să accesezi povestilestiintei.ro direct. Nu scrie parole în fișiere.
 6. Raport scurt în română, fără diacritice: prima linie = ce ai publicat (de ex. „Cronica: Universitatea Craiova – FC Botosani 2-0” sau „Rezumat video: …”), sau „Nimic nou” dacă n-ai publicat nimic acum; apoi motivul pe scurt.
+
+**Note de la George:** dacă există fișierul `note-meci/{DATA}.md`, citește-l întâi și folosește informațiile din el în cronică (asistență, atmosferă, detalii din tribună). Sunt informații de la fața locului, nu trebuie verificate din a doua sursă.
