@@ -1,0 +1,266 @@
+{
+  "competitie": "SuperLiga, etapa a 14-a",
+  "gazde": {
+    "nume": "Universitatea Craiova",
+    "sofa_id": 116223
+  },
+  "oaspeti": {
+    "nume": "FC Botoșani",
+    "sofa_id": 24798
+  },
+  "scor": [
+    2,
+    1
+  ],
+  "marcatori_gazde": "⚽ Matei 21' (pasă Mora) · Al Hamlawi 27' (pasă Baiaram)",
+  "marcatori_oaspeti": "Bodișteanu 51' (pasă Papa) ⚽",
+  "info": "1 noiembrie 2026 · Stadionul „Ion Oblemenco”, Craiova · 10.388 de spectatori · arbitru: Gabriel Mihuleac",
+  "noi": "Universitatea Craiova",
+  "ei": "FC Botoșani",
+  "sistem": "3-4-3",
+  "sursa_note": "Sofascore",
+  "primul11": [
+    {
+      "linie": 1,
+      "nr": 21,
+      "nume": "L. Popescu",
+      "nota": 5.8
+    },
+    {
+      "linie": 2,
+      "nr": 3,
+      "nume": "Romanchuk",
+      "nota": 6.8
+    },
+    {
+      "linie": 2,
+      "nr": 24,
+      "nume": "Stevanović",
+      "nota": 7.5
+    },
+    {
+      "linie": 2,
+      "nr": 6,
+      "nume": "Screciu",
+      "nota": 6.9
+    },
+    {
+      "linie": 3,
+      "nr": 17,
+      "nume": "Mora",
+      "nota": 7.3,
+      "pase": 1
+    },
+    {
+      "linie": 3,
+      "nr": 20,
+      "nume": "Cicâldău",
+      "nota": 7.1,
+      "schimbat": 70
+    },
+    {
+      "linie": 3,
+      "nr": 8,
+      "nume": "Băluță",
+      "nota": 6.8,
+      "galben": 1
+    },
+    {
+      "linie": 3,
+      "nr": 11,
+      "nume": "Bancu",
+      "nota": 7.2,
+      "capitan": true,
+      "galben": 1
+    },
+    {
+      "linie": 4,
+      "nr": 30,
+      "nume": "Matei",
+      "nota": 7.4,
+      "goluri": 1,
+      "schimbat": 69
+    },
+    {
+      "linie": 4,
+      "nr": 9,
+      "nume": "Al Hamlawi",
+      "nota": 7.4,
+      "goluri": 1,
+      "schimbat": 46
+    },
+    {
+      "linie": 4,
+      "nr": 10,
+      "nume": "Baiaram",
+      "nota": 7.2,
+      "pase": 1,
+      "schimbat": 79
+    }
+  ],
+  "zone_pase": [
+    23,
+    48,
+    29
+  ],
+  "inele": [
+    [
+      "Posesie",
+      54,
+      46,
+      ""
+    ],
+    [
+      "Dueluri câștigate",
+      51,
+      49,
+      ""
+    ],
+    [
+      "Dueluri aeriene",
+      77,
+      23,
+      "17 din 22 câștigate"
+    ],
+    [
+      "Șuturi",
+      60,
+      40,
+      "9 – 6"
+    ]
+  ],
+  "bare": [
+    [
+      "Ocazii mari",
+      2,
+      1
+    ],
+    [
+      "Șuturi",
+      9,
+      6
+    ],
+    [
+      "Șuturi pe poartă",
+      2,
+      2
+    ],
+    [
+      "Șuturi din careu",
+      5,
+      3
+    ],
+    [
+      "Atingeri în careul advers",
+      19,
+      17
+    ],
+    [
+      "Intrări în ultima treime",
+      69,
+      57
+    ],
+    [
+      "Pase",
+      533,
+      454
+    ],
+    [
+      "Pase reușite",
+      437,
+      344
+    ],
+    [
+      "Intercepții",
+      10,
+      6
+    ],
+    [
+      "Deposedări",
+      21,
+      18
+    ],
+    [
+      "Cornere",
+      2,
+      5
+    ],
+    [
+      "Faulturi",
+      17,
+      6
+    ],
+    [
+      "Ofsaiduri",
+      2,
+      3
+    ],
+    [
+      "Parade portar",
+      1,
+      0
+    ]
+  ],
+  "precizii": [
+    [
+      "Pase în ultima treime",
+      [
+        85,
+        133
+      ],
+      [
+        52,
+        101
+      ]
+    ],
+    [
+      "Mingi lungi",
+      [
+        36,
+        63
+      ],
+      [
+        25,
+        67
+      ]
+    ],
+    [
+      "Dribling-uri reușite",
+      [
+        10,
+        20
+      ],
+      [
+        12,
+        22
+      ]
+    ]
+  ],
+  "schimbari": [
+    {
+      "minut": 46,
+      "intra": "Nsimba",
+      "iese": "Al Hamlawi",
+      "nota": 6.7
+    },
+    {
+      "minut": 69,
+      "intra": "Mihnea Rădulescu",
+      "iese": "Matei",
+      "nota": 6.9
+    },
+    {
+      "minut": 70,
+      "intra": "Lameira",
+      "iese": "Cicâldău",
+      "nota": 6.6
+    },
+    {
+      "minut": 79,
+      "intra": "Tavares",
+      "iese": "Baiaram",
+      "nota": 6.4
+    }
+  ],
+  "sursa": "Sofascore (statistici și note), LiveScore (goluri și pase decisive)"
+}
