@@ -78,3 +78,19 @@ Opiniile lui George despre meciuri, de partea jucătorilor și a clubului. Subti
 - **Coperta:** `cronici/<id>.coperta.json` = `{ "titlu", "data" }`, apoi `node unelte/coperta-george.js cronici/<id>.coperta.json cronici/<id>.jpg` (fotografia: `unelte/george.png`).
 - Se adaugă în capul listei din `index.json`, apoi importul `/ps/v1/continut` (ciornă) și publicarea.
 - Pe site: categoria `penalty-cu-george`, pagina `/penalty-cu-george/`, caruselul `[ps_george]` (exclus din `[ps_stiri]`, fără bulinele jucătorilor peste copertă). Textele lui George nu se rescriu: se publică așa cum le trimite, cu diacritice corectate.
+
+## Prima pagină – setările lui George (1.11.2026), de respectat la orice modificare
+
+Prima pagină se editează manual de George în Elementor. Înainte de orice schimbare: `GET /ps/v1/prima-pagina`, se pornește de la structura de pe site (niciodată de la un șablon vechi), se modifică doar ce s-a cerut, apoi `POST`. Copia de referință: `/home/user/povestile/prima-pagina-actuala.json`.
+
+Titlurile de secțiune (widgetul `lte-header`) au toate aceleași setări:
+- **Stil:** Subheader Above (`style: header-subheader`), **Adițional:** Uppercase
+- **Etichetă:** Heading 2, **Sub tag:** Heading 6, **Size:** Mediu (`size: md`)
+- **Header color:** Negru, **Subheader color:** Culoarea principală, **Align:** centrat (la rubrici)
+
+Subtitlurile rubricilor:
+- „Poveștile lui Florin” → subtitlu **Florin Stancu**
+- „Penalty cu George” → subtitlu **Fără ezitare, de partea Științei**
+- „Ultimele știri” → **Blogul nostru**; „Clasament SuperLiga” → **Sezonul {{2026–2027}}**
+
+O secțiune nouă de rubrică primește exact aceste setări, cu numele autorului sau motto-ul rubricii ca subtitlu.
