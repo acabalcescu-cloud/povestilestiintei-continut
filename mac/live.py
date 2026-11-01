@@ -1,21 +1,23 @@
 #!/usr/bin/env python3
-"""Meciul în direct, pe Mac: echipele de start, golurile Științei și finalul, din Sofascore.
+"""Meciul în direct, pe Mac: echipele de start, golurile Științei și finalul, din API-Football.
 
-Rulează la fiecare 2 minute (launchd), fără inteligență artificială. Lucrează doar în ziua
-meciului, de la 90 de minute înainte de start până la final (cel mult 3 ore și jumătate după start).
+Rulează la fiecare 2 minute (launchd), fără inteligență artificială, dar întreabă API-Football cel mult
+o dată la 3 minute (varianta gratuită are 100 de cereri pe zi). Lucrează doar în ziua meciului,
+de la 60 de minute înainte de start până la final.
 
-  - Echipele de start: când Sofascore le marchează „confirmate”, publică știrea cu formațiile.
+  - Echipele de start: când apar în API-Football, publică știrea cu formațiile
+    (dacă nu există deja una pentru ziua respectivă).
   - Fiecare gol al Științei: o știre scurtă cu marcatorul, minutul, pasa decisivă, scorul și
     video-ul jucătorului din fișa lui ([ps_jucator_video]). Un gol se publică abia când apare la
-    două verificări la rând (2–4 minute după gol), ca să nu publicăm goluri anulate la VAR.
+    două verificări la rând (3–6 minute după gol), ca să nu publicăm goluri anulate la VAR.
   - Finalul: pornește imediat cronica (mac/meci.py --acum).
 
-Lucrează într-o copie separată a depozitului (.stare-mac/live-depozit), ca să nu încurce Claude,
-care poate scrie în același timp în depozitul principal.
+Cheia API stă doar pe Mac, în .stare-mac/api-football.env:  API_FOOTBALL_KEY=...
+Lucrează într-o copie separată a depozitului (.stare-mac/live-depozit), ca să nu încurce Claude.
 
 Rulare manuală:  python3 mac/live.py              (o verificare, ca launchd)
-                 python3 mac/live.py --test       (arată ce vede acum în Sofascore, fără să publice nimic)
-                 python3 mac/live.py --test 16403928   (același lucru, pentru un anumit meci Sofascore)
+                 python3 mac/live.py --test       (meciul de azi: ce vede acum în API-Football, fără să publice)
+                 python3 mac/live.py --test 1234567   (același lucru, pentru un meci anume, după id-ul API-Football)
 """
 import datetime as dt
 import html
@@ -33,10 +35,12 @@ CLONA = os.path.join(STARE, 'live-depozit')
 LIVE = os.path.join(STARE, 'live.json')
 JURNAL = os.path.join(STARE, 'jurnal.log')
 URL_MECIURI = 'https://povestilestiintei.ro/wp-json/ps/v1/meciuri'
-API = 'https://api.sofascore.com/api/v1'
-SLUG = 'universitatea-craiova'            # echipa noastră pe Sofascore (nu „fc-u-craiova-1948”)
+API = 'https://v3.football.api-sports.io'
+CHEIE = os.path.join(STARE, 'api-football.env')
+SLUG = 'universitatea-craiova'            # marcajul intern al echipei noastre în structurile de mai jos
+PAUZA = 180                               # secunde între două cereri către API-Football
 UA = 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/124 Safari/537.36'
-INAINTE, DUPA = 90, 210                   # fereastra de lucru, în minute față de start
+INAINTE, DUPA = 60, 210                   # fereastra de lucru, în minute față de start
 POST = {'G': 'Portar', 'D': 'Fundaș', 'M': 'Mijlocaș', 'F': 'Atacant'}
 
 
@@ -62,13 +66,32 @@ def salveaza(cale, obiect):
         json.dump(obiect, f, ensure_ascii=False, indent=1)
 
 
-def get(url):
-    r = subprocess.run(['curl', '-s', '-L', '--max-time', '25', '-A', UA, '-H', 'Accept: application/json',
-                        '-H', 'Referer: https://www.sofascore.com/', url], capture_output=True, text=True)
+def cheie_api():
     try:
-        return json.loads(r.stdout)
+        with open(CHEIE, encoding='utf-8') as f:
+            for rand in f:
+                if rand.strip().startswith('API_FOOTBALL_KEY='):
+                    return rand.split('=', 1)[1].strip()
+    except OSError:
+        pass
+    return os.environ.get('API_FOOTBALL_KEY', '')
+
+
+def api(cale):
+    """O cerere către API-Football; întoarce câmpul „response” (listă) sau None."""
+    k = cheie_api()
+    if not k:
+        jurnal('Lipsește cheia API-Football (.stare-mac/api-football.env).')
+        return None
+    r = subprocess.run(['curl', '-s', '--max-time', '25', '-H', f'x-apisports-key: {k}', API + cale], capture_output=True, text=True)
+    try:
+        d = json.loads(r.stdout)
     except ValueError:
-        return {}
+        return None
+    if d.get('errors'):
+        jurnal(f"API-Football: {d['errors']}")
+        return None
+    return d.get('response')
 
 
 def slug(s):
@@ -100,13 +123,77 @@ def meci_azi(acum):
     return None, None
 
 
-def eveniment(start):
-    """Meciul din Sofascore: în programul zilei, echipa cu slug-ul nostru."""
-    d = get(f'{API}/sport/football/scheduled-events/{start:%Y-%m-%d}')
-    for e in d.get('events', []):
-        if SLUG in (e.get('homeTeam', {}).get('slug'), e.get('awayTeam', {}).get('slug')):
-            return e
+def echipa_noastra():
+    """Id-ul Universității Craiova în API-Football (nu FC U Craiova 1948), păstrat local după prima căutare."""
+    st = incarca(LIVE, {})
+    if st.get('_echipa'):
+        return st['_echipa']
+    for t in api('/teams?search=Craiova&country=Romania') or []:
+        nume = t.get('team', {}).get('name', '')
+        if 'Universitatea Craiova' in nume or nume in ('U Craiova', 'Univ. Craiova', 'CS Universitatea Craiova'):
+            if '1948' not in nume:
+                st['_echipa'] = t['team']['id']
+                salveaza(LIVE, st)
+                return st['_echipa']
     return None
+
+
+def meci_api(start=None, fid=None):
+    """Meciul complet (stare, scor, goluri, echipe) dintr-o singură cerere."""
+    if not fid:
+        st = incarca(LIVE, {})
+        fid = st.get('_meciuri', {}).get(f'{start:%Y-%m-%d}')
+        if not fid:
+            noi = echipa_noastra()
+            lst = api(f'/fixtures?team={noi}&date={start:%Y-%m-%d}&timezone=Europe/Bucharest') if noi else None
+            if not lst:
+                return None
+            fid = lst[0]['fixture']['id']
+            st.setdefault('_meciuri', {})[f'{start:%Y-%m-%d}'] = fid
+            salveaza(LIVE, st)
+    r = api(f'/fixtures?id={fid}&timezone=Europe/Bucharest')
+    return r[0] if r else None
+
+
+def adapteaza(f):
+    """Datele API-Football în structura folosită de texte: ev, echipe, goluri (cu scorul după fiecare gol)."""
+    noi = incarca(LIVE, {}).get('_echipa')
+    h, a = f['teams']['home'], f['teams']['away']
+    def echipa(t):
+        return {'id': t['id'], 'name': t['name'], 'slug': SLUG if t['id'] == noi else slug(t['name'])}
+    ev = {'id': f['fixture']['id'], 'homeTeam': echipa(h), 'awayTeam': echipa(a), 'status': f['fixture']['status']['short']}
+    lineups = {}
+    jucatori = {}
+    for l in f.get('lineups') or []:
+        latura = 'home' if l['team']['id'] == h['id'] else 'away'
+        pl = [{'player': {'name': x['player']['name']}, 'position': x['player'].get('pos') or '', 'substitute': False} for x in l.get('startXI') or []]
+        pl += [{'player': {'name': x['player']['name']}, 'position': x['player'].get('pos') or '', 'substitute': True} for x in l.get('substitutes') or []]
+        lineups[latura] = {'formation': l.get('formation') or '', 'players': pl}
+        for x in pl:
+            jucatori[x['player']['name']] = latura
+    if len(lineups) == 2:
+        lineups['confirmed'] = True
+    goluri, gh, ga = [], 0, 0
+    evs = [e for e in f.get('events') or [] if e.get('type') == 'Goal' and e.get('detail') != 'Missed Penalty']
+    evs.sort(key=lambda e: ((e['time'].get('elapsed') or 0), (e['time'].get('extra') or 0)))
+    for e in evs:
+        echipa_ev = 'home' if e['team']['id'] == h['id'] else 'away'
+        autogol = e.get('detail') == 'Own Goal'
+        beneficiar = echipa_ev
+        if autogol and jucatori.get(e['player'].get('name')) == echipa_ev:
+            # jucătorul care a marcat în propria poartă e din echipa indicată: golul e al celeilalte
+            beneficiar = 'away' if echipa_ev == 'home' else 'home'
+        if beneficiar == 'home':
+            gh += 1
+        else:
+            ga += 1
+        goluri.append({'incidentType': 'goal', 'time': e['time'].get('elapsed'), 'addedTime': e['time'].get('extra'),
+                       'homeScore': gh, 'awayScore': ga, 'isHome': beneficiar == 'home',
+                       'incidentClass': 'ownGoal' if autogol else ('penalty' if e.get('detail') == 'Penalty' else 'regular'),
+                       'player': {'name': (e.get('player') or {}).get('name') or ''},
+                       'assist1': {'name': (e.get('assist') or {}).get('name') or ''},
+                       'id': f"{e['time'].get('elapsed')}-{(e.get('player') or {}).get('id')}"})
+    return ev, lineups, goluri
 
 
 # ---------- depozitul separat și publicarea ----------
@@ -146,8 +233,40 @@ def publica(articol, rubrica, mesaj):
 
 # ---------- textele ----------
 
+_LOT = None
+
+
+def lot():
+    """Numele complete ale jucătorilor noștri, de pe site (/ps/v1/jucatori)."""
+    global _LOT
+    if _LOT is None:
+        r = subprocess.run(['curl', '-s', '--max-time', '20', '-A', UA, 'https://povestilestiintei.ro/wp-json/ps/v1/jucatori'], capture_output=True, text=True)
+        try:
+            _LOT = [html.unescape(j['nume']) for j in json.loads(r.stdout)]
+        except (ValueError, KeyError, TypeError):
+            _LOT = []
+    return _LOT
+
+
+def complet(nume):
+    """„A. Al Hamlawi” → „Assad Al Hamlawi”, „N. Stevanović” → „Nikola Stevanovic”, dacă se potrivește unic în lot."""
+    n = slug(nume).replace('-', ' ')
+    if not n:
+        return nume
+    for j in lot():
+        if slug(j).replace('-', ' ') == n:
+            return j
+    parti = n.split(' ')
+    fam = ' '.join(parti[1:]) if len(parti) > 1 and len(parti[0]) <= 2 else n
+    gasiti = [j for j in lot() if slug(j).replace('-', ' ').endswith(' ' + fam)]
+    if len(gasiti) == 1 and (len(parti[0]) > 2 or slug(gasiti[0])[0] == parti[0][0]):
+        return gasiti[0]
+    return nume
+
+
 def nume_jucator(p):
-    return html.unescape((p.get('player') or {}).get('name', '')).strip()
+    n = html.unescape((p.get('player') or {}).get('name', '')).strip()
+    return complet(n) if p.get('_noi') else n
 
 
 def formatie(echipa):
@@ -166,6 +285,8 @@ def articol_echipe(ev, lineups, start, acum):
     noi_acasa = ev['homeTeam']['slug'] == SLUG
     gazde, oaspeti = html.unescape(ev['homeTeam']['name']), html.unescape(ev['awayTeam']['name'])
     noi = lineups['home' if noi_acasa else 'away']
+    for x in noi.get('players', []):
+        x['_noi'] = True
     ei = lineups['away' if noi_acasa else 'home']
     adv = oaspeti if noi_acasa else gazde
     t_noi, r_noi = formatie(noi)
@@ -184,7 +305,7 @@ def articol_echipe(ev, lineups, start, acum):
     if r_ei:
         B.append(f'<p><em>Rezerve:</em> {r_ei}.</p>')
     B.append('<p>Revenim cu golurile și cu cronica meciului. Hai Știința!</p>')
-    B.append(f'<p><em>Surse:</em> <a href="https://www.sofascore.com/event/{ev["id"]}">Sofascore</a> (formații confirmate)</p>')
+    B.append('<p><em>Sursa:</em> datele oficiale ale meciului (API-Football).</p>')
     return {
         'id': f'{zi}-stire-echipele-de-start-{slug(adv)}',
         'titlu': f'Echipele de start: Universitatea Craiova – {adv}',
@@ -211,6 +332,8 @@ def articol_gol(ev, inc, start, acum):
     penalty = inc.get('incidentClass') == 'penalty'
     marcator = html.unescape((inc.get('player') or {}).get('name', '') or inc.get('playerName', '')).strip()
     pasa = html.unescape((inc.get('assist1') or {}).get('name', '')).strip()
+    if not autogol:
+        marcator, pasa = complet(marcator), (complet(pasa) if pasa else pasa)
     m = minut(inc)
     zi = f'{start:%Y-%m-%d}'
     if autogol:
@@ -224,7 +347,7 @@ def articol_gol(ev, inc, start, acum):
              + f'. Scorul: {gazde} – {oaspeti} {scor}.</p>']
         B.append(f'[ps_jucator_video nume="{marcator}"]')
     B.append(f'<p>Meciul continuă. Revenim cu cronica după fluierul final. Hai Știința!</p>')
-    B.append(f'<p><em>Sursa:</em> <a href="https://www.sofascore.com/event/{ev["id"]}">Sofascore</a></p>')
+    B.append('<p><em>Sursa:</em> datele oficiale ale meciului (API-Football).</p>')
     ide = f'{zi}-stire-gol-{slug(marcator or "autogol")}-{slug(m)}'
     return {
         'id': ide, 'titlu': titlu,
@@ -236,7 +359,7 @@ def articol_gol(ev, inc, start, acum):
 
 
 def goluri_noastre(ev, incidente):
-    """Golurile Științei din lista Sofascore, inclusiv autogolurile adversarilor.
+    """Golurile Științei, inclusiv autogolurile adversarilor.
     Echipa care a marcat se deduce din scorul care crește de la un gol la altul."""
     noi_acasa = ev['homeTeam']['slug'] == SLUG
     goluri = [i for i in incidente if i.get('incidentType') == 'goal' and i.get('homeScore') is not None]
@@ -258,46 +381,48 @@ def cheie_gol(inc):
 
 def verifica(test_id=None):
     acum = dt.datetime.now()
+    stare = incarca(LIVE, {})
     if test_id:
-        ev = get(f'{API}/event/{test_id}').get('event')
-        start = dt.datetime.fromtimestamp(ev['startTimestamp']) if ev else acum
+        f = meci_api(fid=test_id)
+        start = dt.datetime.fromtimestamp(f['fixture']['timestamp']) if f else acum
     else:
         m, start = meci_azi(acum)
         if not m:
             return
-        ev = eveniment(start)
-    if not ev:
-        jurnal('Nu găsesc meciul în Sofascore (sau Sofascore nu răspunde).')
+        if time.time() - stare.get('_ultima', 0) < PAUZA - 10:
+            return  # cel mult o cerere la 3 minute (limita variantei gratuite)
+        stare['_ultima'] = time.time()
+        salveaza(LIVE, stare)
+        f = meci_api(start=start)
+    if not f:
+        jurnal('Nu găsesc meciul în API-Football (sau lipsește cheia).')
         return
+    ev, lu, goluri = adapteaza(f)
     stare = incarca(LIVE, {})
     s = stare.setdefault(str(ev['id']), {'echipe': False, 'goluri': [], 'vazute': [], 'final': False})
+    if test_id:
+        print('Meci:', ev['homeTeam']['name'], '–', ev['awayTeam']['name'], '| stare:', ev['status'], '| echipa noastră găsită:', SLUG in (ev['homeTeam']['slug'], ev['awayTeam']['slug']))
+        print('Echipe de start disponibile:', bool(lu.get('confirmed')))
 
     # 1. echipele de start
-    lu = get(f"{API}/event/{ev['id']}/lineups")
-    if test_id:
-        print('Meci:', ev['homeTeam']['name'], '–', ev['awayTeam']['name'], '| stare:', ev.get('status', {}).get('type'))
-        print('Formații confirmate:', lu.get('confirmed'))
     if lu.get('confirmed') and not s['echipe']:
         a = articol_echipe(ev, lu, start, acum)
-        # Dacă știrea cu echipele există deja pentru ziua asta (scrisă de mână sau de rutina de știri), n-o dublăm.
-        clona()
-        if not test_id and [f for f in os.listdir(os.path.join(CLONA, 'cronici')) if f.startswith(f'{start:%Y-%m-%d}-stire-echipele-de-start') and f.endswith('.json') and not f.endswith('.coperta.json')]:
-            s['echipe'] = True
-            jurnal('Știrea cu echipele de start există deja; n-o mai public.')
         if test_id:
             print('\nȘtirea cu echipele:\n', a['titlu'], '\n', re.sub('<[^>]+>', '', a['continut']))
-        elif s['echipe']:
-            pass
-        elif publica(a, 'SuperLiga', f"Live: echipele de start {ev['homeTeam']['name']} - {ev['awayTeam']['name']}"):
-            s['echipe'] = True
-            jurnal(f"Publicat: {a['titlu']}")
-            notifica(a['titlu'])
+        else:
+            clona()
+            deja = [x for x in os.listdir(os.path.join(CLONA, 'cronici')) if x.startswith(f'{start:%Y-%m-%d}-stire-echipele-de-start') and x.endswith('.json') and not x.endswith('.coperta.json')]
+            if deja:
+                s['echipe'] = True
+                jurnal('Știrea cu echipele de start există deja; n-o mai public.')
+            elif publica(a, 'SuperLiga', f"Live: echipele de start {ev['homeTeam']['name']} - {ev['awayTeam']['name']}"):
+                s['echipe'] = True
+                jurnal(f"Publicat: {a['titlu']}")
+                notifica(a['titlu'])
 
     # 2. golurile Științei (publicate doar dacă apar la două verificări la rând)
-    inc = get(f"{API}/event/{ev['id']}/incidents").get('incidents', [])
-    goluri = goluri_noastre(ev, inc)
-    acum_vazute = [cheie_gol(g) for g in goluri]
-    for g in sorted(goluri, key=lambda x: (x.get('time') or 0, x.get('addedTime') or 0)):
+    ale_noastre = goluri_noastre(ev, goluri)
+    for g in ale_noastre:
         k = cheie_gol(g)
         a = articol_gol(ev, g, start, acum)
         if test_id:
@@ -309,14 +434,12 @@ def verifica(test_id=None):
             s['goluri'].append(k)
             jurnal(f"Publicat: {a['titlu']}")
             notifica(a['titlu'])
-    s['vazute'] = acum_vazute
+    s['vazute'] = [cheie_gol(g) for g in ale_noastre]
 
     # 3. finalul: cronica imediat
-    stat = (get(f"{API}/event/{ev['id']}").get('event') or ev).get('status', {}).get('type')
     if test_id:
-        print('\nStare meci:', stat)
         return
-    if stat == 'finished' and not s['final']:
+    if ev['status'] in ('FT', 'AET', 'PEN') and not s['final']:
         s['final'] = True
         salveaza(LIVE, stare)
         jurnal('Final de meci: pornesc cronica.')
@@ -331,10 +454,13 @@ if __name__ == '__main__':
             verifica(test_id=rest[0])
         else:
             m, start = meci_azi(dt.datetime.now())
-            ev = eveniment(start) if m else None
-            if not ev:
-                print('Niciun meci al Științei în fereastra de acum (sau Sofascore nu răspunde de pe acest calculator).')
+            if not m:
+                print('Niciun meci al Științei în fereastra de acum (cu o oră înainte de start, până la final).')
             else:
-                verifica(test_id=ev['id'])
+                f = meci_api(start=start)
+                if not f:
+                    print('Nu găsesc meciul în API-Football (sau lipsește cheia).')
+                else:
+                    verifica(test_id=f['fixture']['id'])
     else:
         verifica()

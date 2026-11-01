@@ -16,15 +16,23 @@ Meciurile care încep după 20:00 nu au limita de 23:55: verificările încep la
 
 ## Meciul în direct: echipele de start, golurile, finalul
 
-`mac/live.py` rulează la fiecare 2 minute, fără AI, doar în ziua meciului (de la 90 de minute înainte de start până la final). Citește datele meciului din Sofascore, de pe Mac (Sofascore blochează serverele din cloud, dar de obicei răspunde conexiunilor de acasă).
+`mac/live.py` rulează la fiecare 2 minute, fără AI, doar în ziua meciului (de la o oră înainte de start până la final). Datele vin din **API-Football** (api-sports.io), cel mult o cerere la 3 minute, ca să încapă în cele 100 de cereri pe zi ale variantei gratuite.
 
-- **Echipele de start:** când Sofascore le marchează confirmate, publică știrea cu formațiile (dacă nu există deja una pentru ziua respectivă).
-- **Fiecare gol al Științei:** o știre scurtă cu marcatorul, minutul, pasa decisivă și scorul, plus video-ul jucătorului din fișa lui (`[ps_jucator_video nume="..."]`). Golul se publică doar dacă apare la două verificări la rând (2–4 minute după gol), ca să nu publicăm goluri anulate la VAR.
-- **Finalul:** pornește imediat cronica (`python3 mac/meci.py --acum`), fără să mai aștepte 2 ore.
+- **Echipele de start:** când apar în API-Football, publică știrea cu formațiile (dacă nu există deja una pentru ziua respectivă). Numele jucătorilor noștri apar complet, ca în lot.
+- **Fiecare gol al Științei:** o știre scurtă cu marcatorul, minutul, pasa decisivă și scorul, plus video-ul jucătorului din fișa lui (`[ps_jucator_video nume="..."]`). Golul se publică doar dacă apare la două verificări la rând (3–6 minute după gol), ca să nu publicăm goluri anulate la VAR. Penalty-urile ratate nu contează; autogolurile adversarilor da, fără video.
+- **Finalul:** pornește imediat cronica (`python3 mac/meci.py --acum`).
 
 Lucrează într-o copie separată a depozitului (`.stare-mac/live-depozit`), ca să nu încurce celelalte rutine.
 
-Test, oricând: `python3 mac/live.py --test 16403928` (id-ul meciului din adresa Sofascore, după `#id:`) arată ce vede în Sofascore, fără să publice nimic. Dacă răspunde „Sofascore nu răspunde”, Sofascore blochează și conexiunea de pe Mac.
+**Cheia API (o singură dată):** cont pe https://dashboard.api-football.com, apoi, în folderul depozitului:
+
+```
+echo "API_FOOTBALL_KEY=CHEIA_TA" > .stare-mac/api-football.env
+```
+
+Cheia stă doar pe Mac (folderul `.stare-mac/` nu ajunge pe GitHub).
+
+**Test:** `python3 mac/live.py --test` (în ziua meciului, de la o oră înainte de start) arată meciul, echipele și golurile găsite, fără să publice nimic.
 
 ## Ce trebuie pe Mac (o singură dată)
 
@@ -43,7 +51,7 @@ Test, oricând: `python3 mac/live.py --test 16403928` (id-ul meciului din adresa
 
 ## Verificare
 
-- `python3 mac/live.py --test <id Sofascore>` arată echipele, golurile și starea unui meci, fără să publice.
+- `python3 mac/live.py --test` arată, în ziua meciului, echipele, golurile și starea, fără să publice.
 - `python3 mac/verifica.py --doar-lista` arată ce articole noi ar fi găsit acum, fără să pornească Claude.
 - `python3 mac/verifica.py` face o rundă completă imediat.
 - `cat .stare-mac/jurnal.log` arată ce s-a întâmplat la fiecare oră.
