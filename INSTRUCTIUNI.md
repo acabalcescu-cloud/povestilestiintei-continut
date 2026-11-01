@@ -94,3 +94,7 @@ Subtitlurile rubricilor:
 - „Ultimele știri” → **Blogul nostru**; „Clasament SuperLiga” → **Sezonul {{2026–2027}}**
 
 O secțiune nouă de rubrică primește exact aceste setări, cu numele autorului sau motto-ul rubricii ca subtitlu.
+
+## Arhiva video (1.11.2026)
+
+Pagina `/arhiva-video/` (shortcode `[ps_arhiva_video]`, fișierul temei `arhiva-video.html`). Date: `arhiva/video/date_video.py` (epocă, id YouTube, titlu, dată, descriere scrise de noi); generare cu `pagina_video.py` (canalul vine din oEmbed, `verificat.json`). Reguli: fiecare video verificat prin `https://www.youtube.com/oembed` (200 = se poate încorpora; 401 = încorporare blocată, se înlocuiește); fără canalele „FC Universitatea Craiova…/1948”; titluri și descrieri proprii (nu preluăm „oltenii” din titlurile YouTube); playerul se încarcă doar la click (youtube-nocookie). După modificare: se copiază HTML-ul în temă și se publică o versiune nouă a temei.
