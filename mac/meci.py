@@ -15,6 +15,7 @@ Ora de start vine din lista meciurilor de pe site: /wp-json/ps/v1/meciuri.
 
 Rulare manuală:  python3 mac/meci.py           (o verificare, ca launchd)
                  python3 mac/meci.py --program (arată orele verificărilor de azi)
+                 python3 mac/meci.py --acum    (cronica imediat; o pornește mac/live.py la final)
 """
 import datetime as dt
 import fcntl
@@ -115,11 +116,13 @@ def notifica(text):
     subprocess.run(['osascript', '-e', f'display notification "{text}" with title "Poveștile Științei – meci"'], capture_output=True)
 
 
-def ruleaza(m, start, acum):
+def ruleaza(m, start, acum, imediat=False):
     trecute = [t for t in verificari(start) if t <= acum]
+    if imediat:  # pornit de mac/live.py la fluierul final
+        trecute = [acum]
     if not trecute:
         return
-    cheie = f'{trecute[-1]:%Y-%m-%d %H:%M}'
+    cheie = (f'final {start:%Y-%m-%d %H:%M}' if imediat else f'{trecute[-1]:%Y-%m-%d %H:%M}')
     facute = incarca(FACUTE, [])
     if cheie in facute:
         return
@@ -169,8 +172,11 @@ def main():
                 arata = arata[:10] + ['...', arata[-1]]
             print('Verificări:', ', '.join(arata))
         return
+    imediat = '--acum' in sys.argv
     for m, start in recente:
-        ruleaza(m, start, acum)
+        if imediat and not (start <= acum <= start + dt.timedelta(hours=4)):
+            continue
+        ruleaza(m, start, acum, imediat)
 
 
 if __name__ == '__main__':

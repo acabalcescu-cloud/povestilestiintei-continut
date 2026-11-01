@@ -14,6 +14,18 @@ Meciurile care încep după 20:00 nu au limita de 23:55: verificările încep la
 
 `python3 mac/meci.py --program` arată orele verificărilor de azi.
 
+## Meciul în direct: echipele de start, golurile, finalul
+
+`mac/live.py` rulează la fiecare 2 minute, fără AI, doar în ziua meciului (de la 90 de minute înainte de start până la final). Citește datele meciului din Sofascore, de pe Mac (Sofascore blochează serverele din cloud, dar de obicei răspunde conexiunilor de acasă).
+
+- **Echipele de start:** când Sofascore le marchează confirmate, publică știrea cu formațiile (dacă nu există deja una pentru ziua respectivă).
+- **Fiecare gol al Științei:** o știre scurtă cu marcatorul, minutul, pasa decisivă și scorul, plus video-ul jucătorului din fișa lui (`[ps_jucator_video nume="..."]`). Golul se publică doar dacă apare la două verificări la rând (2–4 minute după gol), ca să nu publicăm goluri anulate la VAR.
+- **Finalul:** pornește imediat cronica (`python3 mac/meci.py --acum`), fără să mai aștepte 2 ore.
+
+Lucrează într-o copie separată a depozitului (`.stare-mac/live-depozit`), ca să nu încurce celelalte rutine.
+
+Test, oricând: `python3 mac/live.py --test 16403928` (id-ul meciului din adresa Sofascore, după `#id:`) arată ce vede în Sofascore, fără să publice nimic. Dacă răspunde „Sofascore nu răspunde”, Sofascore blochează și conexiunea de pe Mac.
+
 ## Ce trebuie pe Mac (o singură dată)
 
 1. **Programele.** În Terminal:
@@ -31,6 +43,7 @@ Meciurile care încep după 20:00 nu au limita de 23:55: verificările încep la
 
 ## Verificare
 
+- `python3 mac/live.py --test <id Sofascore>` arată echipele, golurile și starea unui meci, fără să publice.
 - `python3 mac/verifica.py --doar-lista` arată ce articole noi ar fi găsit acum, fără să pornească Claude.
 - `python3 mac/verifica.py` face o rundă completă imediat.
 - `cat .stare-mac/jurnal.log` arată ce s-a întâmplat la fiecare oră.

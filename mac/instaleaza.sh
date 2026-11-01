@@ -2,7 +2,8 @@
 # Instalează pe Mac (launchd):
 #   - verificarea știrilor: în fiecare oră, la minutul 47 (mac/verifica.py);
 #   - verificarea din ziua meciului: la fiecare 5 minute (mac/meci.py), care pornește Claude
-#     la 2 ore după start, apoi din 30 în 30 de minute, până la 23:55.
+#     la 2 ore după start, apoi din 30 în 30 de minute, până la 23:55;
+#   - meciul în direct: la fiecare 2 minute (mac/live.py): echipele de start, golurile, finalul.
 # Rulare, din folderul depozitului:  bash mac/instaleaza.sh
 # Dezinstalare:                       bash mac/instaleaza.sh --sterge
 set -e
@@ -10,9 +11,10 @@ DEPOZIT="$(cd "$(dirname "$0")/.." && pwd)"
 AGENTI="$HOME/Library/LaunchAgents"
 PLIST_STIRI="$AGENTI/ro.povestilestiintei.stiri.plist"
 PLIST_MECI="$AGENTI/ro.povestilestiintei.meci.plist"
+PLIST_LIVE="$AGENTI/ro.povestilestiintei.live.plist"
 
 if [ "$1" = "--sterge" ]; then
-  for p in "$PLIST_STIRI" "$PLIST_MECI"; do
+  for p in "$PLIST_STIRI" "$PLIST_MECI" "$PLIST_LIVE"; do
     launchctl bootout "gui/$(id -u)" "$p" 2>/dev/null || true
     rm -f "$p"
   done
@@ -71,7 +73,10 @@ scrie_plist "$PLIST_STIRI" ro.povestilestiintei.stiri verifica.py \
 scrie_plist "$PLIST_MECI" ro.povestilestiintei.meci meci.py \
   '<key>StartInterval</key><integer>300</integer>' launchd-meci.log
 
-for p in "$PLIST_STIRI" "$PLIST_MECI"; do
+scrie_plist "$PLIST_LIVE" ro.povestilestiintei.live live.py \
+  '<key>StartInterval</key><integer>120</integer>' launchd-live.log
+
+for p in "$PLIST_STIRI" "$PLIST_MECI" "$PLIST_LIVE"; do
   launchctl bootout "gui/$(id -u)" "$p" 2>/dev/null || true
   launchctl bootstrap "gui/$(id -u)" "$p"
 done
