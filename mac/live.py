@@ -331,7 +331,7 @@ def articol_gol(ev, inc, start, acum):
         B.append(f'[ps_jucator_video nume="{marcator}"]')
     B.append(f'<p>Meciul continuă. Revenim cu cronica după fluierul final. Hai Știința!</p>')
     B.append('<p><em>Sursa:</em> datele oficiale ale meciului (LiveScore).</p>')
-    ide = f'{zi}-stire-gol-{slug(marcator or "autogol")}-{slug(m)}'
+    ide = f'{zi}-stire-gol-{slug(marcator or "autogol")}-{slug(m)}'  # marcator e deja numele din lot
     return {
         'id': ide, 'titlu': titlu,
         'rezumat': f'{marcator or "Autogol"}, minutul {m}: {gazde} – {oaspeti} {scor}.',
@@ -412,6 +412,15 @@ def verifica(test_id=None):
             print('\nGol:', a['titlu'])
             continue
         if k in s['goluri'] or k not in s['vazute']:
+            continue
+        # Golul publicat deja de mână (alt id, același marcator)? Numărăm știrile de gol ale jucătorului din ziua asta.
+        clona()
+        marc = slug(complet((g.get('player') or {}).get('name', '')) or 'autogol')
+        al_catelea = sum(1 for x in ale_noastre[:ale_noastre.index(g) + 1] if slug(complet((x.get('player') or {}).get('name', '')) or 'autogol') == marc)
+        existente = [f for f in os.listdir(os.path.join(CLONA, 'cronici')) if f.startswith(f'{start:%Y-%m-%d}-stire-gol-{marc}') and f.endswith('.json') and not f.endswith('.coperta.json')]
+        if len(existente) >= al_catelea:
+            s['goluri'].append(k)
+            jurnal(f"Golul există deja pe site: {a['titlu']}")
             continue
         if publica(a, 'SuperLiga', f"Live: {a['titlu']}"):
             s['goluri'].append(k)
