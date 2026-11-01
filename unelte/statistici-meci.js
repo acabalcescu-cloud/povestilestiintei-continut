@@ -55,7 +55,9 @@ Object.keys(linii).sort().forEach((l, i) => {
 	const lst = linii[l];
 	const x = 7 + (i * 86) / (nLinii - 1);
 	lst.forEach((j, k) => {
-		const y = ((k + 1) * 100) / (lst.length + 1);
+		// Lista fiecărei linii merge de pe flancul drept spre cel stâng (ca la Sofascore). Echipa atacă spre dreapta,
+		// deci flancul drept e jos, iar cel stâng sus.
+		const y = ((lst.length - k) * 100) / (lst.length + 1);
 		const ic = [];
 		for (let g = 0; g < (j.goluri || 0); g++) ic.push('<span class="ic">⚽</span>');
 		if (j.pase) ic.push('<span class="ic">👟</span>');
