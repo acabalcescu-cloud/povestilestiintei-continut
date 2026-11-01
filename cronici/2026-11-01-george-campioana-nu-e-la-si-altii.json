@@ -13,5 +13,6 @@
   ],
   "imagine": "2026-11-01-george-campioana-nu-e-la-si-altii.jpg",
   "data_publicare": "2026-11-01 12:30",
-  "anunt": false
+  "anunt": false,
+  "status": "draft"
 }

@@ -74,7 +74,7 @@ Rutina rulează pe Mac Studio (vezi `mac/README.md`): `mac/verifica.py` verific�
 ## Rubrica „Penalty cu George” (de la 1.11.2026)
 
 Opiniile lui George despre meciuri, de partea jucătorilor și a clubului. Subtitlu: „Fără ezitare, de partea Științei”.
-- **Fișierul:** `cronici/<AAAA-LL-ZZ>-george-<subiect-fara-diacritice>.json` cu `id`, `titlu`, `rezumat`, `continut` (HTML), `"categorie": "Penalty cu George"`, `etichete`, `"imagine": "<id>.jpg"`, `"data_publicare"`, `"anunt": false`. Autorul e contul WP implicit (UCV_George), deci fără câmpul `autor`.
+- **Fișierul:** `cronici/<AAAA-LL-ZZ>-george-<subiect-fara-diacritice>.json` cu `id`, `titlu`, `rezumat`, `continut` (HTML), `"categorie": "Penalty cu George"`, `etichete`, `"imagine": "<id>.jpg"`, `"data_publicare"`, `"anunt": false`; `"status": "draft"` dacă George vrea să-l vadă întâi (altfel importul îl publică direct). Autorul e contul WP implicit (UCV_George), deci fără câmpul `autor`.
 - **Coperta:** `cronici/<id>.coperta.json` = `{ "titlu", "data" }`, apoi `node unelte/coperta-george.js cronici/<id>.coperta.json cronici/<id>.jpg` (fotografia: `unelte/george.png`).
 - Se adaugă în capul listei din `index.json`, apoi importul `/ps/v1/continut` (ciornă) și publicarea.
 - Pe site: categoria `penalty-cu-george`, pagina `/penalty-cu-george/`, caruselul `[ps_george]` (exclus din `[ps_stiri]`, fără bulinele jucătorilor peste copertă). Textele lui George nu se rescriu: se publică așa cum le trimite, cu diacritice corectate.
