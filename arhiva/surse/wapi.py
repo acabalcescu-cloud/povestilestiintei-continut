@@ -1,5 +1,5 @@
 import json,urllib.parse,subprocess,time
-UA='PovestileStiinteiArhiva/1.0 (contact: g.fedorovici@gmail.com)'
+UA='PovestileStiinteiArhiva/1.0 (https://povestilestiintei.ro)'
 def api(host,params):
     q=urllib.parse.urlencode({**params,'format':'json'})
     for i in range(5):

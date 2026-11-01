@@ -1,0 +1,3538 @@
+[
+ {
+  "nr": 1,
+  "titlu": "Pionierii Științei",
+  "ani": "1948–1964",
+  "subtitlu": "De la o echipă de studenți la poarta primei divizii",
+  "intro": [
+   "Totul a început în 1948, la scurt timp după apariția primei instituții de învățământ superior din Craiova, Institutul de Mașini și Aparate Electrice. Un grup de profesori și studenți a înființat atunci un club sportiv universitar, cu secții de atletism, volei, handbal, tenis de masă, șah și fotbal. Echipa de fotbal a fost înscrisă în campionatul județean sub numele UNSR Craiova.",
+   "Primul meci oficial s-a jucat pe 5 septembrie 1948, la Filiași, și s-a încheiat cu o înfrângere, 3-6. Tricoul alb-albastru a fost îmbrăcat atunci pentru prima dată de Dumitrescu, Rădulescu, Mihăilă I, Carli, Ozon, Mihăilă II, Sabin, Ilie, Bădescu, Tudor și Serghi, sub comanda antrenorului N. Polojinski.",
+   "Numele echipei s-a schimbat de mai multe ori: CSU Craiova în 1950, Știința Craiova în 1953 și Universitatea Craiova în 1966. Pentru tribună, însă, a rămas pentru totdeauna Știința. În 1951, echipa a câștigat cu 6-0 primul ei meci oficial în Cupa României, cu Constructorul Craiova.",
+   "Drumul spre prima ligă a fost lung. În 1954, la turneul de baraj de la Arad, Știința lui Nicolae Oțeleanu a promovat în Divizia B, dar a retrogradat după un singur sezon. În 1958, cu Ionescu Crum pe bancă, a revenit în eșalonul secund după o luptă strânsă cu Unirea Râmnicu Vâlcea. Au urmat șase sezoane în Divizia B, până la marea promovare din 1964."
+  ],
+  "momente": [
+   "5 septembrie 1948 – primul meci oficial, la Filiași",
+   "1951 – prima victorie în Cupa României, 6-0 cu Constructorul Craiova",
+   "1954 – promovarea în Divizia B, la turneul de la Arad",
+   "1958 – revenirea în Divizia B",
+   "14 iulie 1964 – 3-0 cu Metalul Târgoviște în ultima etapă și promovarea în Divizia A"
+  ],
+  "loturi": [
+   {
+    "titlu": "Prima formație (5 septembrie 1948, Filiași)",
+    "nume": [
+     "Dumitrescu",
+     "Rădulescu",
+     "Mihăilă I",
+     "Carli",
+     "Ozon",
+     "Mihăilă II",
+     "Sabin",
+     "Ilie",
+     "Bădescu",
+     "Tudor",
+     "Serghi"
+    ],
+    "antrenor": "N. Polojinski"
+   },
+   {
+    "titlu": "Lotul promovării în Divizia A (1963–1964)",
+    "nume": [
+     "Ion Papuc",
+     "Dumitrescu",
+     "Vasilescu",
+     "Geleriu",
+     "Lungan",
+     "Constantin Deliu",
+     "Bărbulescu",
+     "Tetea",
+     "Ganga",
+     "Anton",
+     "Lovin",
+     "Onea",
+     "Vișan",
+     "Stanciu",
+     "C. Stănescu",
+     "A. Stănescu"
+    ],
+    "antrenor": "Nicolae Oțeleanu"
+   }
+  ],
+  "surse": [
+   "Istoricul clubului (ucv1948.ro)",
+   "Wikipedia în limba română",
+   "Pagina „Nicolae Oțeleanu” (ucv1948.ro)"
+  ],
+  "legende": [
+   {
+    "epoca": 1,
+    "nume": "N. Polojinski",
+    "post": "Antrenor",
+    "ani": "1948",
+    "text": "Primul antrenor din istoria clubului. A condus echipa studenților în primul meci oficial, pe 5 septembrie 1948, la Filiași. Știința a pierdut cu 6-3, dar în acea zi tricoul alb-albastru a intrat pentru prima dată pe un teren de fotbal.",
+    "cifre": "",
+    "porecla": "",
+    "rol": "antrenor"
+   },
+   {
+    "epoca": 1,
+    "nume": "Nicolae Oțeleanu",
+    "post": "Antrenor",
+    "ani": "1954, 1963–1964",
+    "text": "Antrenorul celor două promovări care au construit drumul clubului. În 1954, la turneul de baraj de la Arad, a dus Știința din Divizia C în B. Un deceniu mai târziu a revenit pe bancă și a obținut, în sezonul 1963–1964, promovarea în prima divizie, unde echipa avea să rămână 41 de ani la rând. Înainte de a fi antrenor, fusese unul dintre fotbaliștii valoroși ai anilor interbelici, la Sparta, Sportul Studențesc și Sporting Chișinău.",
+    "cifre": "",
+    "porecla": "",
+    "rol": "antrenor"
+   },
+   {
+    "epoca": 1,
+    "nume": "Ionescu Crum",
+    "post": "Antrenor",
+    "ani": "1958",
+    "text": "Antrenorul care a readus Știința în Divizia B, pe 6 iulie 1958. Promovarea s-a decis la mustață, după o luptă cu Unirea Râmnicu Vâlcea, încheiată la egalitate de puncte și tranșată de rezultatele directe.",
+    "cifre": "",
+    "porecla": "",
+    "rol": "antrenor"
+   },
+   {
+    "epoca": 1,
+    "nume": "Constantin Deliu",
+    "post": "Jucător, apoi antrenor",
+    "ani": "1963–1964 (jucător)",
+    "text": "Component al lotului care a urcat Știința în Divizia A în 1964. Legătura lui cu clubul n-a încetat odată cu retragerea: în 1978, alături de Ilie Oană, a pregătit echipa care a câștigat a doua Cupă a României din istorie, 3-1 în finala cu Olimpia Satu Mare.",
+    "cifre": "",
+    "porecla": "",
+    "rol": "jucător"
+   },
+   {
+    "epoca": 1,
+    "nume": "Ion Papuc",
+    "post": "Portar",
+    "ani": "anii ’60",
+    "text": "Portarul lotului promovării din 1964, primul nume trecut în lista „actului istoric” care a dus Știința în prima divizie. Apare în galeria portarilor importanți ai clubului, alături de nume precum Silviu Lung și Gabriel Boldici.",
+    "cifre": "",
+    "porecla": "",
+    "rol": "jucător"
+   }
+  ],
+  "jucatori": [
+   {
+    "nume": "Petre Deselnicu",
+    "post": "Fundaș",
+    "ani": "1964–1976",
+    "m": null
+   }
+  ]
+ },
+ {
+  "nr": 2,
+  "titlu": "Generația primului titlu",
+  "ani": "1964–1974",
+  "subtitlu": "Oblemenco, Deselnicu și „campionul unei mari iubiri”",
+  "intro": [
+   "Primul sezon în Divizia A a fost unul de supraviețuire: Știința s-a salvat de la retrogradare abia în ultimele etape. Din sezonul următor, însă, echipa a început să se așeze, iar în 1966–1967 a terminat pe locul al treilea.",
+   "Anii '70 au început cu o echipă construită în jurul lui Ion Oblemenco, „Tunarul din Bănie”, alături de Petre Deselnicu, Teodor Țarălungă, Lucian Strâmbeanu și Dumitru Marcu. În 1972–1973, Universitatea a terminat la egalitate de puncte cu Dinamo, iar titlul a mers la București doar la golaveraj. Atunci s-a născut, de la poetul Adrian Păunescu, numele care a rămas legat de Știința: „campionul unei mari iubiri”.",
+   "Un an mai târziu, în 1973–1974, Universitatea a luat titlul cu un punct înaintea lui Dinamo. A fost prima echipă studențească din România și din Europa care a devenit campioană națională. Lotul a fost pregătit de Constantin Cernăianu și Constantin Oțet."
+  ],
+  "momente": [
+   "1964–1965 – primul sezon în Divizia A, locul 11",
+   "1966–1967 – locul 3, primul podium",
+   "1972–1973 – locul 2, la egalitate de puncte cu campioana",
+   "1973–1974 – primul titlu de campioană a României"
+  ],
+  "loturi": [
+   {
+    "titlu": "Campioana României 1973–1974",
+    "nume": [
+     "Oprea",
+     "Manta",
+     "Niculescu",
+     "Bădin",
+     "Deselnicu",
+     "Velea",
+     "Strâmbeanu",
+     "Ivan",
+     "Niță",
+     "Balaci",
+     "Berneanu",
+     "Țarălungă",
+     "Oblemenco",
+     "Bălan",
+     "Pană",
+     "Boc",
+     "Ștefănescu",
+     "Marcu",
+     "Stăncescu",
+     "Kiss",
+     "Chivu",
+     "Negrilă",
+     "Constantinescu"
+    ],
+    "antrenor": "Constantin Cernăianu și Constantin Oțet"
+   }
+  ],
+  "surse": [
+   "Istoricul clubului (ucv1948.ro)",
+   "Wikipedia în limba română",
+   "Wikipedia în limba engleză"
+  ],
+  "legende": [
+   {
+    "epoca": 2,
+    "nume": "Ion Oblemenco",
+    "post": "Atacant",
+    "ani": "1966–1977",
+    "text": "Omul al cărui nume îl poartă astăzi stadionul. Născut la Corabia, a fost de patru ori golgheterul campionatului, cu un șut atât de puternic încât tribuna l-a numit „Tunarul din Bănie”. A câștigat cu Știința titlul din 1974 și Cupa României din 1977, iar ca antrenor a fost pe banca titlurilor din 1980 și 1981. Paradoxul carierei lui: deși a fost unul dintre cei mai prolifici marcatori din istoria primei divizii, nu a primit niciodată o selecție în echipa națională. A murit în 1996.",
+    "cifre": "264 de meciuri și 167 de goluri în Divizia A pentru Știința",
+    "porecla": "Tunarul din Bănie",
+    "rol": "jucător"
+   },
+   {
+    "epoca": 2,
+    "nume": "Petre Deselnicu",
+    "post": "Fundaș",
+    "ani": "1964–1976",
+    "text": "Craiovean din Mofleni, format la CS Craiova, a fost unul dintre stâlpii echipei construite de Constantin Cernăianu. A jucat 12 ani pentru Știința, a fost campion al României în 1974 și campion mondial universitar. Prieten nedespărțit al lui Oblemenco, după retragere a rămas în fotbalul craiovean ca oficial. A murit în 2003.",
+    "cifre": "246 de meciuri și 12 goluri în Divizia A",
+    "porecla": "",
+    "rol": "jucător"
+   },
+   {
+    "epoca": 2,
+    "nume": "Theodor Țarălungă",
+    "post": "Extremă",
+    "ani": "din 1970",
+    "text": "Venit la Craiova în 1970, convins de prietenul lui, Ion Oblemenco, a devenit repede unul dintre idolii tribunei. Mulți dintre cei care l-au văzut jucând îl consideră una dintre cele mai bune extreme din fotbalul românesc. A fost campion în 1974 și a jucat pentru echipa națională.",
+    "cifre": "",
+    "porecla": "",
+    "rol": "jucător"
+   },
+   {
+    "epoca": 2,
+    "nume": "Dumitru Marcu",
+    "post": "Extremă stânga",
+    "ani": "1972–1980",
+    "text": "Supranumit „Motoreta” pentru viteza lui, a închis atacul de legendă Țarălungă – Oblemenco – Bălan – Marcu. Venit de la Steaua în 1972, a câștigat cu Știința titlurile din 1974 și 1980 și două Cupe ale României, fiind și internațional.",
+    "cifre": "",
+    "porecla": "Motoreta",
+    "rol": "jucător"
+   },
+   {
+    "epoca": 2,
+    "nume": "Ion Niță",
+    "post": "Atacant / mijlocaș ofensiv",
+    "ani": "anii ’70",
+    "text": "Născut în 1948, chiar în anul înființării clubului, a făcut parte din echipa care a adus în Bănie primul titlu de campioană, în sezonul 1973–1974. După Craiova a evoluat la Steagul Roșu Brașov.",
+    "cifre": "",
+    "porecla": "",
+    "rol": "jucător"
+   },
+   {
+    "epoca": 2,
+    "nume": "Dragu Bădin",
+    "post": "Fundaș",
+    "ani": "anii ’70",
+    "text": "Unul dintre fundașii echipei campioane din 1974, primul trofeu din istoria clubului. Numele lui apare în lotul „eroilor din teren” trecut de club în istoria oficială a primului titlu.",
+    "cifre": "",
+    "porecla": "",
+    "rol": "jucător"
+   },
+   {
+    "epoca": 2,
+    "nume": "Alexandru Boc",
+    "post": "Fundaș",
+    "ani": "1973–1976",
+    "text": "Fundaș venit cu experiența unui titlu câștigat la Petrolul, a fost campion și cu Știința în 1974. A fost și internațional.",
+    "cifre": "",
+    "porecla": "",
+    "rol": "jucător"
+   },
+   {
+    "epoca": 2,
+    "nume": "Paul Manta",
+    "post": "Portar",
+    "ani": "1972–1974",
+    "text": "Portar format în fotbalul bucureștean, la Sportul Studențesc și Progresul, a apărat poarta Științei în sezonul primului titlu, alături de Oprea.",
+    "cifre": "",
+    "porecla": "",
+    "rol": "jucător"
+   },
+   {
+    "epoca": 2,
+    "nume": "Constantin Cernăianu și Constantin Oțet",
+    "post": "Antrenori",
+    "ani": "1973–1974",
+    "text": "Cuplul de antrenori al primului titlu. Cernăianu a construit echipa în jurul lui Oblemenco și Deselnicu, iar Oțet, secund în acel sezon, avea să devină un deceniu mai târziu antrenorul semifinalei Cupei UEFA. Universitatea a devenit atunci prima echipă studențească din țară campioană națională.",
+    "cifre": "",
+    "porecla": "",
+    "rol": "antrenor"
+   }
+  ],
+  "jucatori": [
+   {
+    "nume": "Dragu Bădin",
+    "post": "Fundaș",
+    "ani": "1973–1974",
+    "m": null
+   },
+   {
+    "nume": "Ilie Balaci",
+    "post": "Mijlocaș coordonator",
+    "ani": "1973–1984",
+    "m": 285
+   },
+   {
+    "nume": "Alexandru Boc",
+    "post": "Fundaș",
+    "ani": "1973–1976",
+    "m": 76
+   },
+   {
+    "nume": "Marian Bondrea",
+    "post": "Mijlocaș",
+    "ani": "1972–1973",
+    "m": null
+   },
+   {
+    "nume": "Rodion Cămătaru",
+    "post": "Atacant",
+    "ani": "1974–1986",
+    "m": 288
+   },
+   {
+    "nume": "Sorin Cârțu",
+    "post": "Atacant",
+    "ani": "1973–1989",
+    "m": null
+   },
+   {
+    "nume": "Zoltan Crișan",
+    "post": "Atacant",
+    "ani": "1974–1984",
+    "m": null
+   },
+   {
+    "nume": "Petre Deselnicu",
+    "post": "Fundaș",
+    "ani": "1964–1976",
+    "m": null
+   },
+   {
+    "nume": "Silviu Lung",
+    "post": "Portar",
+    "ani": "1974–1988, 1993–1994",
+    "m": null
+   },
+   {
+    "nume": "Paul Manta",
+    "post": "",
+    "ani": "1972–1974",
+    "m": null
+   },
+   {
+    "nume": "Dumitru Marcu",
+    "post": "",
+    "ani": "1972–1980",
+    "m": null
+   },
+   {
+    "nume": "Nicolae Negrilă",
+    "post": "",
+    "ani": "1973–1988",
+    "m": null
+   },
+   {
+    "nume": "Ion Niță",
+    "post": "Atacant",
+    "ani": "1973–1974",
+    "m": null
+   },
+   {
+    "nume": "Ion Oblemenco",
+    "post": "Atacant",
+    "ani": "1966–1977",
+    "m": 264
+   },
+   {
+    "nume": "Victor Pițurcă",
+    "post": "Atacant",
+    "ani": "1974–1977",
+    "m": null
+   },
+   {
+    "nume": "Ștefan Sameș",
+    "post": "Fundaș central",
+    "ani": "1971–1989",
+    "m": null
+   },
+   {
+    "nume": "Costică Ștefănescu",
+    "post": "Fundaș central",
+    "ani": "1973–1986",
+    "m": 378
+   },
+   {
+    "nume": "Theodor Țarălungă",
+    "post": "Extremă",
+    "ani": "1970–1974",
+    "m": null
+   },
+   {
+    "nume": "Georgios Zindros",
+    "post": "",
+    "ani": "1974–1976",
+    "m": null
+   }
+  ]
+ },
+ {
+  "nr": 3,
+  "titlu": "Craiova Maxima",
+  "ani": "1975–1985",
+  "subtitlu": "Cea mai frumoasă pagină europeană a fotbalului românesc",
+  "intro": [
+   "După plecarea generației lui Oblemenco, Universitatea a reușit o schimbare de generații rară: tinerii crescuți lângă prima echipă de aur au devenit, în câțiva ani, cea mai bună echipă a țării. Prima Cupă a României a venit în 1977, cu 2-1 în finala cu Steaua, iar un an mai târziu Știința și-a păstrat trofeul, cu 3-1 cu Olimpia Satu Mare.",
+   "În 1979–1980 a venit al doilea titlu, sub comanda lui Valentin Stănescu și Ion Oblemenco, iar în Cupa UEFA au fost eliminate Wiener SC și Leeds United. În 1980–1981, Știința a făcut primul event din istorie, campionat și Cupă, după 6-0 în finala cu Politehnica Timișoara.",
+   "În Cupa Campionilor Europeni 1981–1982, Craiova a trecut de Olympiacos și de KB Copenhaga și a devenit prima echipă românească ajunsă în sferturi, unde a fost oprită de Bayern München. În 1982–1983, cu Constantin Oțet și Nicolae Ivan pe bancă, a eliminat Fiorentina, Bordeaux și Kaiserslautern și a ajuns în semifinalele Cupei UEFA. Cu Benfica a făcut 0-0 la Lisabona și 1-1 la Craiova și a ratat finala doar din cauza golului primit acasă.",
+   "Era vremea în care naționala României se construia pe scheletul Științei: la EURO 1984 au fost convocați șapte jucători de la Craiova. Generația a mai adus o Cupă a României în 1983, după 2-1 în finala cu Politehnica Timișoara."
+  ],
+  "momente": [
+   "1977 – prima Cupă a României, 2-1 cu Steaua",
+   "1978 – a doua Cupă, 3-1 cu Olimpia Satu Mare",
+   "1979–1980 – al doilea titlu de campioană",
+   "1980–1981 – primul event: campionat și Cupă (6-0 cu Politehnica Timișoara)",
+   "1981–1982 – sferturile Cupei Campionilor Europeni, o premieră pentru fotbalul românesc",
+   "1982–1983 – semifinala Cupei UEFA, cu Benfica (0-0, 1-1)",
+   "1983 – a patra Cupă a României, 2-1 cu Politehnica Timișoara",
+   "EURO 1984 – șapte jucători ai Științei în lotul României"
+  ],
+  "loturi": [
+   {
+    "titlu": "Finala Cupei României 1977 (2-1 cu Steaua)",
+    "nume": [
+     "Boldici",
+     "Berneanu",
+     "Tilihoi",
+     "Ștefănescu",
+     "Purima",
+     "Donose",
+     "Balaci",
+     "Beldeanu",
+     "Crișan",
+     "Negrilă",
+     "Cârțu",
+     "Marcu",
+     "Cămătaru"
+    ],
+    "antrenor": ""
+   },
+   {
+    "titlu": "Finala Cupei României 1978 (3-1 cu Olimpia Satu Mare)",
+    "nume": [
+     "Boldici",
+     "Lung",
+     "Ungureanu",
+     "Tilihoi",
+     "Ștefănescu",
+     "Purima",
+     "Donose",
+     "Balaci",
+     "Țicleanu",
+     "Beldeanu",
+     "Cârțu",
+     "Cămătaru",
+     "Marcu"
+    ],
+    "antrenor": "Ilie Oană și Constantin Deliu"
+   },
+   {
+    "titlu": "Campioana României 1979–1980",
+    "nume": [
+     "Boldici",
+     "Lung",
+     "Negrilă",
+     "Tilihoi",
+     "Ștefănescu",
+     "Ungureanu",
+     "Țicleanu",
+     "Balaci",
+     "Beldeanu",
+     "Crișan",
+     "Donose",
+     "Cămătaru",
+     "Geolgău",
+     "Cârțu",
+     "Irimescu",
+     "Purima"
+    ],
+    "antrenor": "Valentin Stănescu și Ion Oblemenco"
+   },
+   {
+    "titlu": "Jucătorii Științei la EURO 1984",
+    "nume": [
+     "Rodion Cămătaru",
+     "Mircea Irimescu",
+     "Silviu Lung",
+     "Nicolae Negrilă",
+     "Costică Ștefănescu",
+     "Aurel Țicleanu",
+     "Nicolae Ungureanu"
+    ],
+    "antrenor": ""
+   }
+  ],
+  "surse": [
+   "Istoricul și palmaresul clubului (ucv1948.ro)",
+   "Wikipedia în limba română",
+   "Wikipedia în limba engleză"
+  ],
+  "legende": [
+   {
+    "epoca": 3,
+    "nume": "Ilie Balaci",
+    "post": "Mijlocaș ofensiv",
+    "ani": "1973–1984",
+    "text": "Pentru mulți, cel mai mare fotbalist român. Născut la Bistreț, a debutat pentru Știința la 16 ani și a devenit creierul Craiovei Maxima, cu o tehnică și o viziune rar întâlnite. A câștigat trei titluri (1974, 1980, 1981) și patru Cupe ale României și a condus echipa în sferturile Cupei Campionilor și în semifinala Cupei UEFA din 1983. Două accidentări grave i-au scurtat cariera. A murit în 2018.",
+    "cifre": "285 de meciuri și 76 de goluri în Divizia A · 65 de selecții",
+    "porecla": "Minunea Blondă",
+    "rol": "jucător"
+   },
+   {
+    "epoca": 3,
+    "nume": "Rodion Cămătaru",
+    "post": "Atacant",
+    "ani": "1974–1986",
+    "text": "Venit de la Progresul Strehaia în 1974, a rămas 12 sezoane la Craiova și a câștigat tot ce se putea câștiga în țară: titlurile din 1980 și 1981 și Cupele din 1977, 1978, 1981 și 1983. A jucat la EURO 1984 și la Mondialul din 1990. Revista franceză Onze l-a trecut în 1983 printre primii zece atacanți ai Europei.",
+    "cifre": "288 de meciuri și 122 de goluri în Divizia A · 75 de selecții",
+    "porecla": "Cami",
+    "rol": "jucător"
+   },
+   {
+    "epoca": 3,
+    "nume": "Costică Ștefănescu",
+    "post": "Fundaș central, căpitan",
+    "ani": "1973–1986",
+    "text": "Venit de la Steaua în 1973, a câștigat titlul chiar din primul sezon. A fost căpitanul Științei mai bine de un deceniu, în anii de vârf ai Maximei, și căpitan al naționalei. Eleganța și calmul lui i-au adus porecla de „Ministrul Apărării”, iar în 1983 a fost nominalizat la Balonul de Aur. Este recordmanul clubului la meciuri jucate. A murit în 2013.",
+    "cifre": "378 de meciuri în Divizia A pentru Știința, record al clubului",
+    "porecla": "Ministrul Apărării",
+    "rol": "jucător"
+   },
+   {
+    "epoca": 3,
+    "nume": "Silviu Lung",
+    "post": "Portar",
+    "ani": "1974–1988, 1993–1994",
+    "text": "Adus de la Victoria Carei, a apărat poarta Științei 14 sezoane, cu două titluri și patru Cupe ale României. A fost portarul naționalei la EURO 1984 și a făcut parte din lotul de la Mondialul din 1990. În 1984 a fost desemnat fotbalistul român al anului. Fiul lui, Silviu Lung Jr., a apărat și el poarta Craiovei.",
+    "cifre": "",
+    "porecla": "",
+    "rol": "jucător"
+   },
+   {
+    "epoca": 3,
+    "nume": "Gabriel Boldici",
+    "post": "Portar",
+    "ani": "până în 1985, 1988–1993",
+    "text": "Crescut la Universitate de la copii la seniori, a debutat în echipa mare la 19 ani. Rivalitatea lui cu Silviu Lung pentru postul de titular a fost una dintre cele mai frumoase din fotbalul românesc. A apărat în finalele de Cupă din 1977 și 1978 și a fost campion atât cu Maxima (1980, 1981), cât și cu generația eventului din 1991.",
+    "cifre": "152 de meciuri în Divizia A pentru Știința (Wikipedia)",
+    "porecla": "",
+    "rol": "jucător"
+   },
+   {
+    "epoca": 3,
+    "nume": "Nicolae Negrilă",
+    "post": "Fundaș dreapta",
+    "ani": "1973–1988",
+    "text": "A debutat chiar în meciul care a adus primul titlu, 0-0 la Ploiești, în 1974. Pe 16 martie 1983 a marcat golul cu FC Kaiserslautern care a dus Știința, prima echipă românească, în semifinalele Cupei UEFA. A jucat la EURO 1984 și a câștigat trei titluri și patru Cupe; în 1991 a mai adăugat eventul ca antrenor secund.",
+    "cifre": "28 de selecții",
+    "porecla": "Negoro",
+    "rol": "jucător"
+   },
+   {
+    "epoca": 3,
+    "nume": "Nicolae Tilihoi",
+    "post": "Fundaș central",
+    "ani": "1976–1987",
+    "text": "Brăileanul descoperit la un trial în București și adus la Craiova a format, timp de peste un deceniu, cuplul de fundași centrali cu Costică Ștefănescu. A câștigat două titluri și patru Cupe ale României, iar tribuna l-a numit „fundașul de fier” al Craiovei.",
+    "cifre": "",
+    "porecla": "",
+    "rol": "jucător"
+   },
+   {
+    "epoca": 3,
+    "nume": "Nicolae Ungureanu",
+    "post": "Fundaș stânga",
+    "ani": "1977–1987",
+    "text": "Format la CSȘ Craiova, a jucat toate meciurile din cele două sezoane de titlu, 1979–1980 și 1980–1981. Celebrele lui incursiuni din banda stângă spre interior erau cunoscute de toți adversarii, dar puțini le puteau opri. A fost la EURO 1984 cu naționala.",
+    "cifre": "",
+    "porecla": "Roșu",
+    "rol": "jucător"
+   },
+   {
+    "epoca": 3,
+    "nume": "Aurel Țicleanu",
+    "post": "Mijlocaș dreapta",
+    "ani": "1976–1985",
+    "text": "A debutat la 17 ani și a devenit rapid un punct fix al Maximei, cu o capacitate de efort ieșită din comun. Practic nu a avut rival pe postul lui. A câștigat două titluri și patru Cupe ale României, a jucat în semifinala Cupei UEFA din 1983 și la EURO 1984.",
+    "cifre": "232 de meciuri și 10 goluri în Divizia A · 44 de selecții",
+    "porecla": "",
+    "rol": "jucător"
+   },
+   {
+    "epoca": 3,
+    "nume": "Aurică Beldeanu",
+    "post": "Mijlocaș central",
+    "ani": "1976–1985",
+    "text": "Venit de la CSM Reșița în 1976, a jucat nouă ani pentru Știința, cu două titluri și patru Cupe ale României. Numele lui e legat de una dintre cele mai mari victorii românești în Europa, eliminarea lui Leeds United, cu un șut care a intrat la vinclu și a rămas în memoria tribunei.",
+    "cifre": "",
+    "porecla": "",
+    "rol": "jucător"
+   },
+   {
+    "epoca": 3,
+    "nume": "Costică Donose",
+    "post": "Mijlocaș central",
+    "ani": "anii ’70–’80",
+    "text": "Supranumit „Pele al Craiovei”, a fost unul dintre motoarele Maximei: titlurile din 1980 și 1981 și Cupele din 1977, 1978, 1981 și 1983. La fel ca Oblemenco, nu a prins naționala mare, deși a jucat zeci de meciuri la juniori și la olimpică. În 2003 a devenit Cetățean de Onoare al Craiovei.",
+    "cifre": "",
+    "porecla": "Pele al Craiovei",
+    "rol": "jucător"
+   },
+   {
+    "epoca": 3,
+    "nume": "Zoltan Crișan",
+    "post": "Atacant",
+    "ani": "1974–1984",
+    "text": "Adus de la Minerul Baia Mare, a debutat în prima ligă la Craiova și a jucat zece sezoane în alb-albastru, cu două titluri și patru Cupe. Cel mai dureros moment al carierei lui a fost și unul dintre cele mai cunoscute: pe 20 aprilie 1983, cu Benfica, șutul lui a lovit bara în minutul 78, la un pas de finala Cupei UEFA. A murit în 2003, la 48 de ani.",
+    "cifre": "",
+    "porecla": "",
+    "rol": "jucător"
+   },
+   {
+    "epoca": 3,
+    "nume": "Ion Geolgău",
+    "post": "Mijlocaș",
+    "ani": "1976–1990",
+    "text": "Golul lui de la Bratislava a calificat România la EURO 1984, într-o grupă cu campioana mondială Italia, iar Centralul l-a cântat ani la rând: „Din Pielești la Bratislava…”. Tot el a marcat în prelungiri golul cu Bordeaux care a dus Știința mai departe în Europa. După retragere a rămas la club ca antrenor secund.",
+    "cifre": "",
+    "porecla": "",
+    "rol": "jucător"
+   },
+   {
+    "epoca": 3,
+    "nume": "Mircea Irimescu",
+    "post": "Mijlocaș / fundaș",
+    "ani": "1976–1990",
+    "text": "Craiovean, „jolly-jokerul” Maximei: putea juca mijlocaș central, fundaș central sau pe toată banda stângă, din apărare până în atac, cu un șut cu stângul de temut. A jucat 14 sezoane pentru Știința și a fost la EURO 1984.",
+    "cifre": "318 de meciuri și 62 de goluri în Divizia A",
+    "porecla": "",
+    "rol": "jucător"
+   },
+   {
+    "epoca": 3,
+    "nume": "Sorin Cârțu",
+    "post": "Atacant, apoi antrenor",
+    "ani": "1976–1987",
+    "text": "Produs al școlii craiovene, a debutat cu gol pe 22 august 1976, într-un 5-1 cu Progresul. A câștigat ca jucător titluri și Cupe ale României cu Știința, iar în 1991, ca antrenor, a adus eventul. Astăzi este președinte de onoare al clubului.",
+    "cifre": "",
+    "porecla": "Sorinaccio",
+    "rol": "jucător"
+   },
+   {
+    "epoca": 3,
+    "nume": "Adrian Bumbescu",
+    "post": "Fundaș central",
+    "ani": "1978–1980",
+    "text": "Craiovean, și-a semnat primul contract cu Universitatea în 1978 și a câștigat aici primul din cele șapte titluri ale carierei. Este singurul fotbalist campion al României cu trei echipe diferite; cu Steaua a câștigat Cupa Campionilor Europeni în 1986.",
+    "cifre": "",
+    "porecla": "",
+    "rol": "jucător"
+   },
+   {
+    "epoca": 3,
+    "nume": "Constantin Oțet",
+    "post": "Antrenor",
+    "ani": "1981–1984",
+    "text": "Antrenorul celei mai mari performanțe europene din istoria clubului: semifinala Cupei UEFA din 1983, cu Benfica. Fusese în staff-ul Științei încă din 1968, secund la primul titlu, în 1974, și secundul lui Ion Oblemenco la titlul din 1981.",
+    "cifre": "",
+    "porecla": "",
+    "rol": "antrenor"
+   }
+  ],
+  "jucatori": [
+   {
+    "nume": "Marian Bâcu",
+    "post": "",
+    "ani": "1981–1989",
+    "m": null
+   },
+   {
+    "nume": "Pavel Badea",
+    "post": "Mijlocaș",
+    "ani": "1983–1992, 1996, 2002–2004",
+    "m": 258
+   },
+   {
+    "nume": "Ilie Balaci",
+    "post": "Mijlocaș coordonator",
+    "ani": "1973–1984",
+    "m": 285
+   },
+   {
+    "nume": "Aurică Beldeanu",
+    "post": "Mijlocaș",
+    "ani": "1976–1985",
+    "m": null
+   },
+   {
+    "nume": "Alexandru Boc",
+    "post": "Fundaș",
+    "ani": "1973–1976",
+    "m": 76
+   },
+   {
+    "nume": "Gabriel Boldici",
+    "post": "Portar",
+    "ani": "1977–1985, 1988–1993",
+    "m": null
+   },
+   {
+    "nume": "Adrian Bumbescu",
+    "post": "",
+    "ani": "1978–1980",
+    "m": 25
+   },
+   {
+    "nume": "Marian Calafeteanu",
+    "post": "Mijlocaș",
+    "ani": "1985–1988",
+    "m": null
+   },
+   {
+    "nume": "Rodion Cămătaru",
+    "post": "Atacant",
+    "ani": "1974–1986",
+    "m": 288
+   },
+   {
+    "nume": "Sorin Cârțu",
+    "post": "Atacant",
+    "ani": "1973–1989",
+    "m": null
+   },
+   {
+    "nume": "Zoltan Crișan",
+    "post": "Atacant",
+    "ani": "1974–1984",
+    "m": null
+   },
+   {
+    "nume": "Petre Deselnicu",
+    "post": "Fundaș",
+    "ani": "1964–1976",
+    "m": null
+   },
+   {
+    "nume": "Costică Donose",
+    "post": "Mijlocaș",
+    "ani": "1977–1983",
+    "m": null
+   },
+   {
+    "nume": "Ion Dumitru",
+    "post": "Mijlocaș",
+    "ani": "1982–1983",
+    "m": null
+   },
+   {
+    "nume": "Ion Geolgău",
+    "post": "Mijlocaș",
+    "ani": "1976–1989",
+    "m": 292
+   },
+   {
+    "nume": "Mircea Irimescu",
+    "post": "Mijlocaș",
+    "ani": "1976–1990",
+    "m": 318
+   },
+   {
+    "nume": "Silviu Lung",
+    "post": "Portar",
+    "ani": "1974–1988, 1993–1994",
+    "m": null
+   },
+   {
+    "nume": "Vasile Mănăilă",
+    "post": "Fundaș",
+    "ani": "1984–1991",
+    "m": null
+   },
+   {
+    "nume": "Dumitru Marcu",
+    "post": "",
+    "ani": "1972–1980",
+    "m": null
+   },
+   {
+    "nume": "Nicolae Negrilă",
+    "post": "",
+    "ani": "1973–1988",
+    "m": null
+   },
+   {
+    "nume": "Ion Oblemenco",
+    "post": "Atacant",
+    "ani": "1966–1977",
+    "m": 264
+   },
+   {
+    "nume": "Victor Pițurcă",
+    "post": "Atacant",
+    "ani": "1974–1977",
+    "m": null
+   },
+   {
+    "nume": "Adrian Popescu",
+    "post": "",
+    "ani": "1978–1992, 1995–1996",
+    "m": null
+   },
+   {
+    "nume": "Gheorghe Popescu",
+    "post": "Fundaș Central",
+    "ani": "1985–1990",
+    "m": null
+   },
+   {
+    "nume": "Ștefan Sameș",
+    "post": "Fundaș central",
+    "ani": "1971–1989",
+    "m": null
+   },
+   {
+    "nume": "Emil Săndoi",
+    "post": "Fundaș",
+    "ani": "1983–1999",
+    "m": null
+   },
+   {
+    "nume": "Costică Ștefănescu",
+    "post": "Fundaș central",
+    "ani": "1973–1986",
+    "m": 378
+   },
+   {
+    "nume": "Aurel Țicleanu",
+    "post": "Mijlocaș",
+    "ani": "1976–1985",
+    "m": 232
+   },
+   {
+    "nume": "Nicolae Tilihoi",
+    "post": "Fundaș",
+    "ani": "1976–1987",
+    "m": null
+   },
+   {
+    "nume": "Nicolae Ungureanu",
+    "post": "Fundaș stânga",
+    "ani": "1977–1987",
+    "m": null
+   },
+   {
+    "nume": "Georgios Zindros",
+    "post": "",
+    "ani": "1974–1976",
+    "m": null
+   }
+  ]
+ },
+ {
+  "nr": 4,
+  "titlu": "Generația de tranziție",
+  "ani": "1985–1990",
+  "subtitlu": "Mereu în primele cinci și prezență constantă în Europa",
+  "intro": [
+   "După anii Maximei, Știința nu a mai câștigat trofee, dar nu a ieșit nicio clipă din elita fotbalului românesc. Clasamentele vorbesc singure: locul 3 în 1985–1986, locul 5 în următoarele trei sezoane și din nou locul 3 în 1989–1990.",
+   "A fost și o perioadă cu multe seri europene. Craiova a eliminat echipe precum Real Betis, Olympiacos, AS Monaco și Galatasaray, chiar dacă nu a mai trecut de turul al treilea. În 1985 a mai jucat o finală de Cupă, pierdută cu 1-2 în fața Stelei.",
+   "Din această generație au crescut jucătorii care aveau să ducă Știința înapoi pe primul loc: Pavel Badea, Emil Săndoi, Adrian Popescu, Gică Popescu, Eugen Neagoe și Ștefan Stoica. La Mondialul din 1990, din Italia, trei dintre ei au fost în lotul României: Adrian Popescu, Gheorghe Popescu și Emil Săndoi."
+  ],
+  "momente": [
+   "1985 – finala Cupei României, pierdută cu Steaua (1-2)",
+   "1985–1986 – locul 3 în campionat",
+   "1986–1989 – trei sezoane consecutive pe locul 5",
+   "1989–1990 – locul 3",
+   "Mondialul din 1990 – Adrian Popescu, Gheorghe Popescu și Emil Săndoi în lotul României"
+  ],
+  "loturi": [],
+  "surse": [
+   "Palmaresul clubului (ucv1948.ro)",
+   "Wikipedia în limba română",
+   "Wikipedia în limba engleză"
+  ],
+  "legende": [
+   {
+    "epoca": 4,
+    "nume": "Gheorghe Popescu",
+    "post": "Fundaș central / mijlocaș",
+    "ani": "1984–1987, 1988–1990",
+    "text": "Născut la Calafat, a făcut primii pași în fotbalul mare la Craiova, a trecut scurt pe la Steaua și s-a întors la Știința înainte de Mondialul din 1990. A urmat o carieră uriașă: PSV, Tottenham, Barcelona, unde a fost căpitan și a câștigat Cupa Cupelor, și Galatasaray, cu care a câștigat Cupa UEFA în 2000.",
+    "cifre": "115 selecții",
+    "porecla": "Baciul",
+    "rol": "jucător"
+   },
+   {
+    "epoca": 4,
+    "nume": "Pavel Badea",
+    "post": "Mijlocaș",
+    "ani": "1983–1992, 1996, 2002–2004",
+    "text": "Unul dintre cele mai mari talente ale școlii craiovene. A debutat la seniori la 16 ani, iar la 20 era deja un om de bază. După Craiova a jucat în Elveția, Coreea de Sud și Japonia, apoi s-a întors acasă și a jucat până la 37 de ani. A fost și antrenor, și președinte al clubului.",
+    "cifre": "258 de meciuri și 52 de goluri în Divizia A",
+    "porecla": "Bădiță",
+    "rol": "jucător"
+   },
+   {
+    "epoca": 4,
+    "nume": "Emil Săndoi",
+    "post": "Fundaș",
+    "ani": "1983–1999",
+    "text": "Produs al școlii craiovene, a debutat în 1983, când în vestiar legea o făceau încă marii jucători ai Maximei, și a rămas legat de Știința până în 1999. A fost în lotul României la Mondialul din 1990 și a câștigat eventul din 1991.",
+    "cifre": "",
+    "porecla": "",
+    "rol": "jucător"
+   },
+   {
+    "epoca": 4,
+    "nume": "Adrian Popescu",
+    "post": "Fundaș dreapta, căpitan",
+    "ani": "1980–1992, 1995–1996",
+    "text": "Craiovean, a debutat la 20 de ani într-un lot dominat de Maxima și și-a câștigat, pas cu pas, locul de titular. A fost căpitanul echipei care a câștigat eventul din 1991 și a jucat la Mondialul din 1990.",
+    "cifre": "",
+    "porecla": "",
+    "rol": "jucător"
+   },
+   {
+    "epoca": 4,
+    "nume": "Eugen Neagoe",
+    "post": "Atacant",
+    "ani": "1986–1994, 1999–2000",
+    "text": "Atacant central masiv, dar cu o tehnică foarte bună, a debutat la 19 ani și a rămas la Știința până în 1994, cu două Cupe ale României câștigate. A jucat apoi în Ungaria, Cipru și Grecia și a revenit acasă spre finalul carierei. Ca antrenor, a pregătit Craiova și a fost secundul lui Victor Pițurcă la națională.",
+    "cifre": "",
+    "porecla": "Geană",
+    "rol": "jucător"
+   },
+   {
+    "epoca": 4,
+    "nume": "Ștefan Stoica",
+    "post": "Atacant",
+    "ani": "1986–1990, 1994",
+    "text": "Oltean, a debutat la Universitate în 1986 și a plecat în Grecia la finalul lui 1990, unde a jucat aproape un deceniu, la Larissa și Veria. A avut și selecții în echipa națională, iar după retragere a devenit antrenor.",
+    "cifre": "",
+    "porecla": "",
+    "rol": "jucător"
+   },
+   {
+    "epoca": 4,
+    "nume": "Vasile Mănăilă",
+    "post": "Fundaș",
+    "ani": "1984–1991",
+    "text": "Fundaș de bază al anilor de tranziție, a fost unul dintre jucătorii care au făcut legătura dintre Maxima și generația eventului. Numele lui apare în lotul campion și câștigător al Cupei din 1991.",
+    "cifre": "",
+    "porecla": "",
+    "rol": "jucător"
+   },
+   {
+    "epoca": 4,
+    "nume": "Dănuț Bică",
+    "post": "Mijlocaș",
+    "ani": "sfârșitul anilor ’80",
+    "text": "Mijlocaș al anilor de tranziție, a rămas la Craiova până la marea recoltă din 1991, când a câștigat eventul cu Știința. A mai jucat în prima ligă la Sportul Studențesc.",
+    "cifre": "",
+    "porecla": "",
+    "rol": "jucător"
+   }
+  ],
+  "jucatori": [
+   {
+    "nume": "Marian Bâcu",
+    "post": "",
+    "ani": "1981–1989",
+    "m": null
+   },
+   {
+    "nume": "Pavel Badea",
+    "post": "Mijlocaș",
+    "ani": "1983–1992, 1996, 2002–2004",
+    "m": 258
+   },
+   {
+    "nume": "Aurică Beldeanu",
+    "post": "Mijlocaș",
+    "ani": "1976–1985",
+    "m": null
+   },
+   {
+    "nume": "Dănuț Bică",
+    "post": "Mijlocaș",
+    "ani": "1989–1991",
+    "m": null
+   },
+   {
+    "nume": "Gabriel Boldici",
+    "post": "Portar",
+    "ani": "1977–1985, 1988–1993",
+    "m": null
+   },
+   {
+    "nume": "Marian Calafeteanu",
+    "post": "Mijlocaș",
+    "ani": "1985–1988",
+    "m": null
+   },
+   {
+    "nume": "Rodion Cămătaru",
+    "post": "Atacant",
+    "ani": "1974–1986",
+    "m": 288
+   },
+   {
+    "nume": "Sorin Cârțu",
+    "post": "Atacant",
+    "ani": "1973–1989",
+    "m": null
+   },
+   {
+    "nume": "Gheorghe Ceaușilă",
+    "post": "Atacant",
+    "ani": "1989–1991",
+    "m": null
+   },
+   {
+    "nume": "Silvian Cristescu",
+    "post": "Mijlocaș",
+    "ani": "1990–2000",
+    "m": null
+   },
+   {
+    "nume": "Ionel Gane",
+    "post": "Atacant",
+    "ani": "1988–1996, 2004–2006",
+    "m": null
+   },
+   {
+    "nume": "Ion Geolgău",
+    "post": "Mijlocaș",
+    "ani": "1976–1989",
+    "m": 292
+   },
+   {
+    "nume": "Daniel Gherasim",
+    "post": "Portar",
+    "ani": "1988–1989",
+    "m": null
+   },
+   {
+    "nume": "Mircea Irimescu",
+    "post": "Mijlocaș",
+    "ani": "1976–1990",
+    "m": 318
+   },
+   {
+    "nume": "Silviu Lung",
+    "post": "Portar",
+    "ani": "1974–1988, 1993–1994",
+    "m": null
+   },
+   {
+    "nume": "Vasile Mănăilă",
+    "post": "Fundaș",
+    "ani": "1984–1991",
+    "m": null
+   },
+   {
+    "nume": "Dumitru Mitriță",
+    "post": "",
+    "ani": "1990, 1993–1997",
+    "m": null
+   },
+   {
+    "nume": "Eugen Neagoe",
+    "post": "",
+    "ani": "1986–1994, 1999–2000",
+    "m": null
+   },
+   {
+    "nume": "Nicolae Negrilă",
+    "post": "",
+    "ani": "1973–1988",
+    "m": null
+   },
+   {
+    "nume": "Ion Olaru",
+    "post": "Mijlocaș",
+    "ani": "1988–1993",
+    "m": null
+   },
+   {
+    "nume": "Adrian Pigulea",
+    "post": "Atacant",
+    "ani": "1988–1995",
+    "m": null
+   },
+   {
+    "nume": "Adrian Popescu",
+    "post": "",
+    "ani": "1978–1992, 1995–1996",
+    "m": null
+   },
+   {
+    "nume": "Gheorghe Popescu",
+    "post": "Fundaș Central",
+    "ani": "1985–1990",
+    "m": null
+   },
+   {
+    "nume": "Florin Prunea",
+    "post": "Portar",
+    "ani": "1990–1991, 1999–2000",
+    "m": null
+   },
+   {
+    "nume": "Marian Rada",
+    "post": "Fundaș",
+    "ani": "1986–1987",
+    "m": 37
+   },
+   {
+    "nume": "Ștefan Sameș",
+    "post": "Fundaș central",
+    "ani": "1971–1989",
+    "m": null
+   },
+   {
+    "nume": "Emil Săndoi",
+    "post": "Fundaș",
+    "ani": "1983–1999",
+    "m": null
+   },
+   {
+    "nume": "Ovidiu Stângă",
+    "post": "Mijlocaș",
+    "ani": "1990–1995, 2002–2007",
+    "m": null
+   },
+   {
+    "nume": "Costică Ștefănescu",
+    "post": "Fundaș central",
+    "ani": "1973–1986",
+    "m": 378
+   },
+   {
+    "nume": "Ștefan Stoica",
+    "post": "Atacant",
+    "ani": "1987–1991, 1994",
+    "m": null
+   },
+   {
+    "nume": "Aurel Țicleanu",
+    "post": "Mijlocaș",
+    "ani": "1976–1985",
+    "m": 232
+   },
+   {
+    "nume": "Nicolae Tilihoi",
+    "post": "Fundaș",
+    "ani": "1976–1987",
+    "m": null
+   },
+   {
+    "nume": "Nicolae Ungureanu",
+    "post": "Fundaș stânga",
+    "ani": "1977–1987",
+    "m": null
+   },
+   {
+    "nume": "Anton Weissenbacher",
+    "post": "",
+    "ani": "1987–1988",
+    "m": 9
+   },
+   {
+    "nume": "Samir Zamfir",
+    "post": "Mijlocaș",
+    "ani": "1986–1987",
+    "m": null
+   }
+  ]
+ },
+ {
+  "nr": 5,
+  "titlu": "Generația eventului",
+  "ani": "1990–1991",
+  "subtitlu": "Al doilea event din istorie, cu Sorin Cârțu pe bancă",
+  "intro": [
+   "Sezonul 1990–1991 a fost unul aproape perfect. Știința a câștigat campionatul cu 22 de victorii, 6 egaluri și doar 6 înfrângeri în 34 de etape, cu 74 de goluri marcate și 26 primite, adică 50 de puncte.",
+   "Apoi a venit și Cupa României, după 2-1 în finala cu FC Bacău, pentru al doilea event din istoria clubului. Antrenorii au fost Sorin Cârțu, el însuși o legendă a Maximei, și Ștefan Cioacă.",
+   "Lotul a îmbinat experiența unor jucători din generația anterioară, precum Gabriel Boldici, Dumitru Mitriță sau Zoltan Crișan, cu tinerii care aveau să domine anii '90: Gheorghe Craioveanu, Silvian Cristescu, Ovidiu Stângă și Corneliu Papură. Ca să nu uităm pe nimeni, mai jos e lotul complet, așa cum îl păstrează istoria clubului."
+  ],
+  "momente": [
+   "1990–1991 – al patrulea titlu: 22 de victorii, 6 egaluri, 6 înfrângeri, 74-26 golaveraj",
+   "1991 – Cupa României, 2-1 cu FC Bacău, și al doilea event"
+  ],
+  "loturi": [
+   {
+    "titlu": "Lotul campion și câștigător al Cupei, 1990–1991",
+    "nume": [
+     "Florin Prunea",
+     "Vasile Mănăilă",
+     "Emil Săndoi",
+     "Adrian Popescu",
+     "Mogoșanu",
+     "Gigi Ciurea",
+     "Ion Olaru",
+     "Silvian Cristescu",
+     "Nicolae Zamfir",
+     "Pavel Badea",
+     "Adrian Pigulea",
+     "Dănuț Bică",
+     "Roland Agalliu",
+     "Gheorghe Craioveanu",
+     "Eugen Neagoe",
+     "Cojocaru",
+     "Ștefan Stoica",
+     "Prună",
+     "Gheorghe Ceaușilă",
+     "Claudiu Stoica",
+     "Gârleșteanu",
+     "Dudan",
+     "Gabriel Boldici",
+     "Zoltan Crișan",
+     "Dumitru Mitriță",
+     "Carabas",
+     "Ovidiu Stângă"
+    ],
+    "antrenor": "Sorin Cârțu și Ștefan Cioacă"
+   }
+  ],
+  "surse": [
+   "Istoricul și palmaresul clubului (ucv1948.ro)",
+   "Wikipedia în limba română",
+   "Wikipedia în limba engleză"
+  ],
+  "legende": [
+   {
+    "epoca": 5,
+    "nume": "Florin Prunea",
+    "post": "Portar",
+    "ani": "1990–1991, 1999–2000",
+    "text": "Venit de la Dinamo, a fost portarul sezonului perfect: în 1991 a câștigat cu Știința atât campionatul, cât și Cupa României. Mai târziu a jucat la două Campionate Mondiale (1994, 1998) și două Europene (1996, 2000).",
+    "cifre": "40 de selecții",
+    "porecla": "",
+    "rol": "jucător"
+   },
+   {
+    "epoca": 5,
+    "nume": "Silvian Cristescu",
+    "post": "Mijlocaș, căpitan",
+    "ani": "1990–1998, 1999–2000",
+    "text": "Campion cu Craiova la juniori (1988), tineret (1991) și seniori (1991), a devenit căpitanul echipei din 1994. „Il Capitano” a strâns peste 230 de meciuri pentru Craiova și a rămas apoi aproape de club, ca director sportiv.",
+    "cifre": "",
+    "porecla": "Il Capitano",
+    "rol": "jucător"
+   },
+   {
+    "epoca": 5,
+    "nume": "Gheorghe Craioveanu",
+    "post": "Atacant",
+    "ani": "1991–1995",
+    "text": "A venit la mijlocul sezonului 1990–1991, la timp pentru event, și a devenit unul dintre cei mai iubiți jucători ai tribunei. Golurile lui de la Craiova l-au dus în Spania, unde a jucat 11 ani la Real Sociedad, Villarreal și Getafe. A fost la Mondialul din 1998.",
+    "cifre": "25 de selecții",
+    "porecla": "",
+    "rol": "jucător"
+   },
+   {
+    "epoca": 5,
+    "nume": "Roland Agalliu",
+    "post": "Atacant / mijlocaș ofensiv",
+    "ani": "1990–1992",
+    "text": "Albanezul care a scris o pagină de istorie: a fost unul dintre primii străini din campionatul României după 1989 și a câștigat eventul cu Știința în sezonul 1990–1991.",
+    "cifre": "",
+    "porecla": "",
+    "rol": "jucător"
+   },
+   {
+    "epoca": 5,
+    "nume": "Dumitru Mitriță",
+    "post": "Fundaș",
+    "ani": "1990, 1994–1997",
+    "text": "Campion cu Craiova la juniori, tineret și seniori, a debutat la 18 ani în echipa mare. După ani de rodaj la alte echipe a revenit la Știința, iar între 1997 și 2000 a fost titular la Heerenveen, în Olanda.",
+    "cifre": "",
+    "porecla": "",
+    "rol": "jucător"
+   },
+   {
+    "epoca": 5,
+    "nume": "Adrian Pigulea",
+    "post": "Atacant",
+    "ani": "1988–1995",
+    "text": "Atacant al generației eventului, prezent în lotul care a câștigat campionatul și Cupa României în 1991.",
+    "cifre": "",
+    "porecla": "",
+    "rol": "jucător"
+   },
+   {
+    "epoca": 5,
+    "nume": "Ion Olaru",
+    "post": "Mijlocaș",
+    "ani": "1988–1993",
+    "text": "Mijlocaș cu experiență, a fost unul dintre oamenii de echilibru ai echipei care a făcut eventul în 1991.",
+    "cifre": "",
+    "porecla": "",
+    "rol": "jucător"
+   },
+   {
+    "epoca": 5,
+    "nume": "Gheorghe Ceaușilă",
+    "post": "Atacant",
+    "ani": "1989–1991",
+    "text": "A jucat pentru Steaua, Dinamo și Craiova, unde a fost în lotul campion și câștigător al Cupei din 1991. A jucat și pentru echipa națională.",
+    "cifre": "",
+    "porecla": "",
+    "rol": "jucător"
+   },
+   {
+    "epoca": 5,
+    "nume": "Sorin Cârțu și Ștefan Cioacă",
+    "post": "Antrenori",
+    "ani": "1990–1991",
+    "text": "Antrenorii ultimului event din secolul XX. Cârțu, fost atacant al Maximei, a câștigat cu Știința campionatul și Cupa României în același sezon, la nici patru ani după retragere.",
+    "cifre": "",
+    "porecla": "",
+    "rol": "antrenor"
+   }
+  ],
+  "jucatori": [
+   {
+    "nume": "Roland Agalliu",
+    "post": "",
+    "ani": "1991–1992",
+    "m": null
+   },
+   {
+    "nume": "Pavel Badea",
+    "post": "Mijlocaș",
+    "ani": "1983–1992, 1996, 2002–2004",
+    "m": 258
+   },
+   {
+    "nume": "Dănuț Bică",
+    "post": "Mijlocaș",
+    "ani": "1989–1991",
+    "m": null
+   },
+   {
+    "nume": "Gabriel Boldici",
+    "post": "Portar",
+    "ani": "1977–1985, 1988–1993",
+    "m": null
+   },
+   {
+    "nume": "Augustin Călin",
+    "post": "Mijlocaș ofensiv",
+    "ani": "1991–1996, 2000–2003",
+    "m": null
+   },
+   {
+    "nume": "Gheorghe Ceaușilă",
+    "post": "Atacant",
+    "ani": "1989–1991",
+    "m": null
+   },
+   {
+    "nume": "Gheorghe Craioveanu",
+    "post": "Atacant",
+    "ani": "1991–1995",
+    "m": null
+   },
+   {
+    "nume": "Silvian Cristescu",
+    "post": "Mijlocaș",
+    "ani": "1990–2000",
+    "m": null
+   },
+   {
+    "nume": "Ionel Gane",
+    "post": "Atacant",
+    "ani": "1988–1996, 2004–2006",
+    "m": null
+   },
+   {
+    "nume": "Mircea Irimescu",
+    "post": "Mijlocaș",
+    "ani": "1976–1990",
+    "m": 318
+   },
+   {
+    "nume": "Vasile Mănăilă",
+    "post": "Fundaș",
+    "ani": "1984–1991",
+    "m": null
+   },
+   {
+    "nume": "Dumitru Mitriță",
+    "post": "",
+    "ani": "1990, 1993–1997",
+    "m": null
+   },
+   {
+    "nume": "Eugen Neagoe",
+    "post": "",
+    "ani": "1986–1994, 1999–2000",
+    "m": null
+   },
+   {
+    "nume": "Ion Olaru",
+    "post": "Mijlocaș",
+    "ani": "1988–1993",
+    "m": null
+   },
+   {
+    "nume": "Corneliu Papură",
+    "post": "Fundaș central / Mijlocaș",
+    "ani": "1991–1996, 1999–2005",
+    "m": 226
+   },
+   {
+    "nume": "Adrian Pigulea",
+    "post": "Atacant",
+    "ani": "1988–1995",
+    "m": null
+   },
+   {
+    "nume": "Adrian Popescu",
+    "post": "",
+    "ani": "1978–1992, 1995–1996",
+    "m": null
+   },
+   {
+    "nume": "Gheorghe Popescu",
+    "post": "Fundaș Central",
+    "ani": "1985–1990",
+    "m": null
+   },
+   {
+    "nume": "Florin Prunea",
+    "post": "Portar",
+    "ani": "1990–1991, 1999–2000",
+    "m": null
+   },
+   {
+    "nume": "Emil Săndoi",
+    "post": "Fundaș",
+    "ani": "1983–1999",
+    "m": null
+   },
+   {
+    "nume": "Ovidiu Stângă",
+    "post": "Mijlocaș",
+    "ani": "1990–1995, 2002–2007",
+    "m": null
+   },
+   {
+    "nume": "Ștefan Stoica",
+    "post": "Atacant",
+    "ani": "1987–1991, 1994",
+    "m": null
+   }
+  ]
+ },
+ {
+  "nr": 6,
+  "titlu": "Generația anilor ’90",
+  "ani": "1992–2000",
+  "subtitlu": "Craioveanu, Badea, Stângă, Săndoi și o nouă Cupă",
+  "intro": [
+   "Anii '90 au început cu un nou trofeu: Cupa României din 1993, câștigată cu 2-0 în finala cu Dacia Unirea Brăila. Echipa a terminat pe podium în același sezon, iar în Cupa Cupelor 1993–1994 a ajuns să joace cu Paris Saint-Germain.",
+   "Au urmat două locuri secunde consecutive în campionat, în 1993–1994 și 1994–1995, și încă două finale de Cupă, în 1994 și 1998, pierdute de data aceasta. Știința a jucat și în Cupa UEFA 1994–1995.",
+   "Gheorghe Craioveanu a marcat 61 de goluri în doar patru ani, înainte să plece în Spania. Lângă el, Corneliu Papură și Ovidiu Stângă au mers cu naționala la Mondialul din 1994, iar Silvian Cristescu și Ionel Gane au devenit oameni de bază ai deceniului. La finalul anilor '90 au apărut și tineri care aveau să facă o carieră mare, precum Cristian Chivu."
+  ],
+  "momente": [
+   "1993 – Cupa României, 2-0 cu Dacia Unirea Brăila",
+   "1993–1994 – Cupa Cupelor, dublă cu Paris Saint-Germain",
+   "1993–1994 și 1994–1995 – două locuri 2 în campionat",
+   "1994 și 1998 – finale ale Cupei României",
+   "Mondialul din 1994 – Corneliu Papură și Ovidiu Stângă în lotul României"
+  ],
+  "loturi": [],
+  "surse": [
+   "Palmaresul clubului (ucv1948.ro)",
+   "Wikipedia în limba română",
+   "Wikipedia în limba engleză"
+  ],
+  "legende": [
+   {
+    "epoca": 6,
+    "nume": "Ovidiu Stângă",
+    "post": "Mijlocaș",
+    "ani": "1990–1995, 2002–2004, 2005–2007",
+    "text": "Produs sută la sută al școlii craiovene, a debutat la 20 de ani și în echipa națională, cu care a jucat la Mondialele din 1994 și 1998 și la EURO 1996. A jucat peste hotare la PSV Eindhoven și Salamanca și s-a întors de două ori acasă. Mai târziu a fost și antrenorul Științei.",
+    "cifre": "",
+    "porecla": "",
+    "rol": "jucător"
+   },
+   {
+    "epoca": 6,
+    "nume": "Corneliu Papură",
+    "post": "Fundaș central / mijlocaș defensiv",
+    "ani": "1991–1996, 1999–2001, 2002–2004, 2005",
+    "text": "Fundaș de mare rafinament, a debutat în 1991, după titlurile câștigate la juniori și tineret. Cariera lui s-a întors mereu la Craiova, în patru perioade diferite, între experiențe la Rennes, Beitar Ierusalim și în China. A jucat la Mondialul din 1994.",
+    "cifre": "226 de meciuri și 13 goluri în Divizia A · 12 selecții",
+    "porecla": "",
+    "rol": "jucător"
+   },
+   {
+    "epoca": 6,
+    "nume": "Gabriel Popescu",
+    "post": "Mijlocaș ofensiv",
+    "ani": "1994–1997, 2000–2001",
+    "text": "Craiovean, a trecut de la postul de fundaș dreapta la cel de mijlocaș de mare valoare. După Craiova a jucat în Spania, la Salamanca, Valencia și Numancia, și a fost la Mondialul din 1998.",
+    "cifre": "101 meciuri și 16 goluri în Divizia A · 14 selecții",
+    "porecla": "Gabi",
+    "rol": "jucător"
+   },
+   {
+    "epoca": 6,
+    "nume": "Ionel Gane",
+    "post": "Atacant",
+    "ani": "1988–1996, 2004, 2005–2006",
+    "text": "Și-a petrecut cea mai mare parte a carierei la Craiova și a jucat pentru echipa națională. După retragere a devenit antrenor, inclusiv secund la naționala României.",
+    "cifre": "",
+    "porecla": "Jerry",
+    "rol": "jucător"
+   },
+   {
+    "epoca": 6,
+    "nume": "Ionel Ganea",
+    "post": "Atacant",
+    "ani": "1996–1998",
+    "text": "Doi ani la Craiova, cu 22 de goluri în 56 de meciuri, înainte de a deveni golgheterul campionatului în sezonul 1998–1999 și internațional la EURO 2000.",
+    "cifre": "56 de meciuri și 22 de goluri în Divizia A",
+    "porecla": "",
+    "rol": "jucător"
+   },
+   {
+    "epoca": 6,
+    "nume": "Cristian Chivu",
+    "post": "Fundaș central",
+    "ani": "1998–1999",
+    "text": "A venit de la CSM Reșița în 1998 și a jucat un singur sezon la Craiova, suficient ca să fie remarcat de Ajax. A urmat o carieră de căpitan la Ajax, apoi Roma și Inter, cu care a câștigat Liga Campionilor.",
+    "cifre": "",
+    "porecla": "",
+    "rol": "jucător"
+   },
+   {
+    "epoca": 6,
+    "nume": "Claudiu Niculescu",
+    "post": "Atacant",
+    "ani": "1998–2001",
+    "text": "Atacant cu o execuție de temut la loviturile libere, „Lunetistul” a trecut prin Craiova înaintea anilor de glorie de la Dinamo. Este unul dintre cei mai prolifici marcatori din istoria primei ligi.",
+    "cifre": "",
+    "porecla": "Lunetistul",
+    "rol": "jucător"
+   },
+   {
+    "epoca": 6,
+    "nume": "Flavius Stoican",
+    "post": "Fundaș dreapta",
+    "ani": "1995–2002",
+    "text": "Fundaș dreapta cu șapte sezoane în alb-albastru, unul dintre jucătorii constanți ai anilor ’90, devenit ulterior antrenor.",
+    "cifre": "",
+    "porecla": "",
+    "rol": "jucător"
+   },
+   {
+    "epoca": 6,
+    "nume": "Marian Bondrea",
+    "post": "Antrenor",
+    "ani": "1993",
+    "text": "Fost mijlocaș al Științei la începutul anilor ’70, a câștigat ca antrenor Cupa României din 1993, după 2-0 în finala cu Dacia Unirea Brăila.",
+    "cifre": "",
+    "porecla": "",
+    "rol": "antrenor"
+   }
+  ],
+  "jucatori": [
+   {
+    "nume": "Roland Agalliu",
+    "post": "",
+    "ani": "1991–1992",
+    "m": null
+   },
+   {
+    "nume": "Angelo Alistar",
+    "post": "Fundaș",
+    "ani": "2000–2001",
+    "m": null
+   },
+   {
+    "nume": "Pavel Badea",
+    "post": "Mijlocaș",
+    "ani": "1983–1992, 1996, 2002–2004",
+    "m": 258
+   },
+   {
+    "nume": "Andrei Bădescu",
+    "post": "Portar",
+    "ani": "2000–2002",
+    "m": null
+   },
+   {
+    "nume": "Silviu Bălace",
+    "post": "Mijlocaș stânga",
+    "ani": "1996–2002, 2010–2011",
+    "m": null
+   },
+   {
+    "nume": "Cosmin Bărcăuan",
+    "post": "Atacant",
+    "ani": "1999–2002",
+    "m": null
+   },
+   {
+    "nume": "Gabriel Boldici",
+    "post": "Portar",
+    "ani": "1977–1985, 1988–1993",
+    "m": null
+   },
+   {
+    "nume": "Augustin Călin",
+    "post": "Mijlocaș ofensiv",
+    "ani": "1991–1996, 2000–2003",
+    "m": null
+   },
+   {
+    "nume": "Augustin Chiriță",
+    "post": "Mijlocaș",
+    "ani": "1996–1998",
+    "m": null
+   },
+   {
+    "nume": "Cristian Chivu",
+    "post": "Fundaș central",
+    "ani": "1998–1999",
+    "m": null
+   },
+   {
+    "nume": "Florin Cîrstea",
+    "post": "Atacant",
+    "ani": "1995–1997",
+    "m": null
+   },
+   {
+    "nume": "Gheorghe Craioveanu",
+    "post": "Atacant",
+    "ani": "1991–1995",
+    "m": null
+   },
+   {
+    "nume": "Silvian Cristescu",
+    "post": "Mijlocaș",
+    "ani": "1990–2000",
+    "m": null
+   },
+   {
+    "nume": "Ciprian Danciu",
+    "post": "Mijlocaș",
+    "ani": "2000–2002",
+    "m": 40
+   },
+   {
+    "nume": "Cornel Dobre",
+    "post": "Fundaș dreapta",
+    "ani": "2000–2002",
+    "m": 56
+   },
+   {
+    "nume": "Cornel Frăsineanu",
+    "post": "Fundaș stânga",
+    "ani": "1996–2002",
+    "m": null
+   },
+   {
+    "nume": "Ionel Gane",
+    "post": "Atacant",
+    "ani": "1988–1996, 2004–2006",
+    "m": null
+   },
+   {
+    "nume": "Ionel Ganea",
+    "post": "Atacant",
+    "ani": "1996–1998",
+    "m": 56
+   },
+   {
+    "nume": "Mugur Gușatu",
+    "post": "Atacant",
+    "ani": "1992",
+    "m": null
+   },
+   {
+    "nume": "Silviu Lung",
+    "post": "Portar",
+    "ani": "1974–1988, 1993–1994",
+    "m": null
+   },
+   {
+    "nume": "Ionuț Luțu",
+    "post": "Mijlocaș",
+    "ani": "1996–1999, 2002–2005, 2007–2008",
+    "m": null
+   },
+   {
+    "nume": "Dumitru Mitriță",
+    "post": "",
+    "ani": "1990, 1993–1997",
+    "m": null
+   },
+   {
+    "nume": "Marius Mitu",
+    "post": "Mijlocaș",
+    "ani": "2000–2001",
+    "m": null
+   },
+   {
+    "nume": "Dănuț Moisescu",
+    "post": "Mijlocaș",
+    "ani": "1992–1993",
+    "m": null
+   },
+   {
+    "nume": "Eugen Neagoe",
+    "post": "",
+    "ani": "1986–1994, 1999–2000",
+    "m": null
+   },
+   {
+    "nume": "Saša Nedeljković",
+    "post": "Fundaș",
+    "ani": "1997",
+    "m": null
+   },
+   {
+    "nume": "Claudiu Niculescu",
+    "post": "Atacant",
+    "ani": "1998–2001",
+    "m": null
+   },
+   {
+    "nume": "Radu Niculescu",
+    "post": "Atacant",
+    "ani": "1995",
+    "m": 9
+   },
+   {
+    "nume": "Cosmin Olăroiu",
+    "post": "Fundaș central",
+    "ani": "1995–1997",
+    "m": null
+   },
+   {
+    "nume": "Ion Olaru",
+    "post": "Mijlocaș",
+    "ani": "1988–1993",
+    "m": null
+   },
+   {
+    "nume": "Corneliu Papură",
+    "post": "Fundaș central / Mijlocaș",
+    "ani": "1991–1996, 1999–2005",
+    "m": 226
+   },
+   {
+    "nume": "Adrian Pigulea",
+    "post": "Atacant",
+    "ani": "1988–1995",
+    "m": null
+   },
+   {
+    "nume": "Adrian Pitu",
+    "post": "Mijlocaș ofensiv",
+    "ani": "2000",
+    "m": 11
+   },
+   {
+    "nume": "Mihăiță Pleșan",
+    "post": "Mijlocaș",
+    "ani": "2000–2005, 2013–2014",
+    "m": 95
+   },
+   {
+    "nume": "Adrian Popescu",
+    "post": "",
+    "ani": "1978–1992, 1995–1996",
+    "m": null
+   },
+   {
+    "nume": "Gabriel Popescu",
+    "post": "",
+    "ani": "1994–1997, 2000–2001",
+    "m": 101
+   },
+   {
+    "nume": "Florin Prunea",
+    "post": "Portar",
+    "ani": "1990–1991, 1999–2000",
+    "m": null
+   },
+   {
+    "nume": "Ionuț Rada",
+    "post": "Fundaș",
+    "ani": "2000–2004",
+    "m": null
+   },
+   {
+    "nume": "Emil Săndoi",
+    "post": "Fundaș",
+    "ani": "1983–1999",
+    "m": null
+   },
+   {
+    "nume": "Marius Sava",
+    "post": "Mijlocaș",
+    "ani": "1995–2003",
+    "m": null
+   },
+   {
+    "nume": "Ovidiu Stângă",
+    "post": "Mijlocaș",
+    "ani": "1990–1995, 2002–2007",
+    "m": null
+   },
+   {
+    "nume": "Ștefan Stoica",
+    "post": "Atacant",
+    "ani": "1987–1991, 1994",
+    "m": null
+   },
+   {
+    "nume": "Flavius Stoican",
+    "post": "Fundaș dreapta",
+    "ani": "1995–2002",
+    "m": null
+   },
+   {
+    "nume": "Adrian Toader",
+    "post": "Atacant",
+    "ani": "1998",
+    "m": null
+   },
+   {
+    "nume": "Daniel Tudor",
+    "post": "Portar",
+    "ani": "2000–2002",
+    "m": 19
+   },
+   {
+    "nume": "Adrian Ungur",
+    "post": "Atacant",
+    "ani": "1994–1998",
+    "m": null
+   },
+   {
+    "nume": "Robert Vancea",
+    "post": "Mijlocaș",
+    "ani": "1994–1995, 1997–2001",
+    "m": null
+   },
+   {
+    "nume": "Cristian Vasc",
+    "post": "Mijlocaș",
+    "ani": "1992–1994",
+    "m": null
+   },
+   {
+    "nume": "Gabriel Vochin",
+    "post": "Fundaș",
+    "ani": "1999–2000, 2002",
+    "m": null
+   }
+  ]
+ },
+ {
+  "nr": 7,
+  "titlu": "Generația 2000–2010",
+  "ani": "2000–2011",
+  "subtitlu": "Ani grei, dar și jucători pe care tribuna nu i-a uitat",
+  "intro": [
+   "Deceniul a început cu o nouă finală a Cupei României, în 2000, și cu prezențe în Cupa UEFA 2000–2001 și în Cupa Intertoto din 2001. În sezoanele următoare, Știința a terminat între locurile 4 și 8.",
+   "În 2005 a venit o lovitură grea: retrogradarea, după 41 de sezoane consecutive în prima ligă. Echipa a revenit însă după un singur an în Divizia B.",
+   "Sezonul 2008–2009 a adus o echipă care a încântat din nou, cu Nicolò Napoli pe bancă și cu jucători precum frații Florin și Mihai Costea, Andrei Prepeliță sau Julius Wobay. Craiova a învins atunci rivalele Dinamo și CFR Cluj și a fost aproape de calificarea în Europa League. Florin Costea a rămas în memoria suporterilor ca unul dintre cei mai importanți jucători ai deceniului, cu 47 de goluri în campionat."
+  ],
+  "momente": [
+   "2000 – finala Cupei României",
+   "2000–2001 – Cupa UEFA; 2001 – Cupa Intertoto",
+   "2005 – retrogradarea, după 41 de sezoane la rând în prima ligă",
+   "2006 – revenirea în Liga I după un singur sezon",
+   "2008–2009 – sezonul cu Nicolò Napoli, aproape de Europa League"
+  ],
+  "loturi": [],
+  "surse": [
+   "Wikipedia în limba română",
+   "Wikipedia în limba engleză"
+  ],
+  "legende": [
+   {
+    "epoca": 7,
+    "nume": "Mihăiță Pleșan",
+    "post": "Mijlocaș central",
+    "ani": "2000–2005, 2013–2014",
+    "text": "Mijlocaș central al echipei anilor 2000, a ajuns de la Craiova până la echipa națională. A fost unul dintre jucătorii de bază ai primei jumătăți a deceniului.",
+    "cifre": "95 de meciuri și 17 goluri în prima ligă",
+    "porecla": "",
+    "rol": "jucător"
+   },
+   {
+    "epoca": 7,
+    "nume": "Gabriel Velcovici",
+    "post": "Fundaș stânga",
+    "ani": "2003–2004, 2005–2008",
+    "text": "Fundaș stânga cu peste o sută de meciuri pentru Craiova în prima ligă, unul dintre jucătorii constanți ai unui deceniu dificil.",
+    "cifre": "112 meciuri și 8 goluri în prima ligă",
+    "porecla": "",
+    "rol": "jucător"
+   },
+   {
+    "epoca": 7,
+    "nume": "Robert Săceanu",
+    "post": "Mijlocaș dreapta",
+    "ani": "2005–2009",
+    "text": "Născut la Corabia, ca Ion Oblemenco, a fost mijlocașul dreapta al echipei care a revenit în Liga I în 2006 și a luptat pentru Europa în sezonul 2008–2009.",
+    "cifre": "77 de meciuri și 8 goluri în prima ligă",
+    "porecla": "",
+    "rol": "jucător"
+   },
+   {
+    "epoca": 7,
+    "nume": "Michael Baird",
+    "post": "Atacant",
+    "ani": "2006–2009",
+    "text": "Australianul venit din A-League a petrecut aproape patru ani la Craiova, unul dintre atacanții de bază ai echipei care a revenit în Liga I.",
+    "cifre": "67 de meciuri și 18 goluri în prima ligă",
+    "porecla": "",
+    "rol": "jucător"
+   },
+   {
+    "epoca": 7,
+    "nume": "Florin Costea",
+    "post": "Atacant",
+    "ani": "2006–2011",
+    "text": "Atacant al Craiovei timp de cinci sezoane, în anii de după revenirea în Liga I din 2006.",
+    "cifre": "",
+    "porecla": "",
+    "rol": "jucător"
+   },
+   {
+    "epoca": 7,
+    "nume": "Valerică Găman",
+    "post": "Fundaș central",
+    "ani": "2006–2011",
+    "text": "Fundaș central al echipei în a doua jumătate a deceniului, a ajuns apoi la echipa națională, pentru care a jucat 15 meciuri.",
+    "cifre": "",
+    "porecla": "",
+    "rol": "jucător"
+   },
+   {
+    "epoca": 7,
+    "nume": "Dorel Stoica",
+    "post": "Mijlocaș, căpitan",
+    "ani": "2005–2009, 2010–2011",
+    "text": "A venit la Craiova odată cu revenirea în Liga I și a fost căpitanul echipei în acei ani. A jucat și pentru echipa națională, debutând într-un 3-0 cu Luxemburg.",
+    "cifre": "",
+    "porecla": "",
+    "rol": "jucător"
+   },
+   {
+    "epoca": 7,
+    "nume": "Andrei Prepeliță",
+    "post": "Mijlocaș defensiv",
+    "ani": "2007–2011",
+    "text": "Mijlocaș defensiv al ultimilor ani din deceniu, jucător de luptă al echipei, devenit ulterior antrenor.",
+    "cifre": "",
+    "porecla": "",
+    "rol": "jucător"
+   },
+   {
+    "epoca": 7,
+    "nume": "Cosmin Moți",
+    "post": "Fundaș central",
+    "ani": "2003–2005",
+    "text": "Și-a început cariera la Craiova, de unde a plecat în 2005 la Dinamo. A urmat o carieră lungă la Ludogoreț, cu șapte titluri consecutive în Bulgaria.",
+    "cifre": "",
+    "porecla": "",
+    "rol": "jucător"
+   }
+  ],
+  "jucatori": [
+   {
+    "nume": "Angelo Alistar",
+    "post": "Fundaș",
+    "ani": "2000–2001",
+    "m": null
+   },
+   {
+    "nume": "Leandro Alves",
+    "post": "Atacant",
+    "ani": "2002–2003",
+    "m": null
+   },
+   {
+    "nume": "Henry Antchouet",
+    "post": "Atacant",
+    "ani": "2010",
+    "m": null
+   },
+   {
+    "nume": "Pavel Badea",
+    "post": "Mijlocaș",
+    "ani": "1983–1992, 1996, 2002–2004",
+    "m": 258
+   },
+   {
+    "nume": "Valentin Badea",
+    "post": "Atacant",
+    "ani": "2009",
+    "m": 13
+   },
+   {
+    "nume": "Andrei Bădescu",
+    "post": "Portar",
+    "ani": "2000–2002",
+    "m": null
+   },
+   {
+    "nume": "Valentin Bădoi",
+    "post": "Fundaș dreapta",
+    "ani": "2009–2010",
+    "m": 16
+   },
+   {
+    "nume": "Michael Baird",
+    "post": "Atacant / Mijlocaș",
+    "ani": "2006–2009",
+    "m": 67
+   },
+   {
+    "nume": "Silviu Bălace",
+    "post": "Mijlocaș stânga",
+    "ani": "1996–2002, 2010–2011",
+    "m": null
+   },
+   {
+    "nume": "Cosmin Bărcăuan",
+    "post": "Atacant",
+    "ani": "1999–2002",
+    "m": null
+   },
+   {
+    "nume": "Eugen Baștină",
+    "post": "Mijlocaș",
+    "ani": "2004–2005",
+    "m": 2
+   },
+   {
+    "nume": "Patrick Bengondo",
+    "post": "Atacant",
+    "ani": "2003–2004",
+    "m": null
+   },
+   {
+    "nume": "Mugur Bolohan",
+    "post": "Fundaș",
+    "ani": "2004",
+    "m": null
+   },
+   {
+    "nume": "Csaba Borbély",
+    "post": "Atacant",
+    "ani": "2003–2004",
+    "m": null
+   },
+   {
+    "nume": "Valeriu Bordeanu",
+    "post": "Fundaș stânga",
+    "ani": "2005",
+    "m": 7
+   },
+   {
+    "nume": "Mircea Bornescu",
+    "post": "Portar",
+    "ani": "2005–2009",
+    "m": null
+   },
+   {
+    "nume": "Cristian Bratu",
+    "post": "Mijlocaș",
+    "ani": "2002–2003",
+    "m": null
+   },
+   {
+    "nume": "Bogdan Buhuș",
+    "post": "Fundaș",
+    "ani": "2004–2005",
+    "m": null
+   },
+   {
+    "nume": "Alin Buleică",
+    "post": "Extremă",
+    "ani": "2008–2011",
+    "m": null
+   },
+   {
+    "nume": "Zeno Bundea",
+    "post": "Mijlocaș",
+    "ani": "2002–2005",
+    "m": null
+   },
+   {
+    "nume": "Ovidiu Burcă",
+    "post": "Fundaș central",
+    "ani": "2001–2002",
+    "m": null
+   },
+   {
+    "nume": "Augustin Călin",
+    "post": "Mijlocaș ofensiv",
+    "ani": "1991–1996, 2000–2003",
+    "m": null
+   },
+   {
+    "nume": "Daniel Clitnovici",
+    "post": "Mijlocaș",
+    "ani": "2002–2003, 2005–2006",
+    "m": null
+   },
+   {
+    "nume": "Andrea Cossu",
+    "post": "",
+    "ani": "2011",
+    "m": null
+   },
+   {
+    "nume": "Florin Costea",
+    "post": "Atacant",
+    "ani": "2006–2011",
+    "m": null
+   },
+   {
+    "nume": "Silvian Cristescu",
+    "post": "Mijlocaș",
+    "ani": "1990–2000",
+    "m": null
+   },
+   {
+    "nume": "Paul Curteanu",
+    "post": "",
+    "ani": "2004–2008",
+    "m": null
+   },
+   {
+    "nume": "Ciprian Danciu",
+    "post": "Mijlocaș",
+    "ani": "2000–2002",
+    "m": 40
+   },
+   {
+    "nume": "Mariko Daouda",
+    "post": "Fundaș central, Fundaș lateral",
+    "ani": "2002–2005",
+    "m": null
+   },
+   {
+    "nume": "Spase Dilevski",
+    "post": "Mijlocaș defensiv, mijlocaș stânga",
+    "ani": "2007–2011",
+    "m": null
+   },
+   {
+    "nume": "Cornel Dobre",
+    "post": "Fundaș dreapta",
+    "ani": "2000–2002",
+    "m": 56
+   },
+   {
+    "nume": "Lucian Dobre",
+    "post": "Fundaș",
+    "ani": "2004–2005",
+    "m": null
+   },
+   {
+    "nume": "Karl Dodd",
+    "post": "Fundaș",
+    "ani": "2006",
+    "m": null
+   },
+   {
+    "nume": "Dragoș Firțulescu",
+    "post": "Mijlocaș",
+    "ani": "2006–2011",
+    "m": null
+   },
+   {
+    "nume": "Cornel Frăsineanu",
+    "post": "Fundaș stânga",
+    "ani": "1996–2002",
+    "m": null
+   },
+   {
+    "nume": "Sorin Frunză",
+    "post": "Mijlocaș stânga",
+    "ani": "2004",
+    "m": null
+   },
+   {
+    "nume": "Valerică Găman",
+    "post": "Fundaș central",
+    "ani": "2006–2011, 2021–2023",
+    "m": null
+   },
+   {
+    "nume": "Ionel Gane",
+    "post": "Atacant",
+    "ani": "1988–1996, 2004–2006",
+    "m": null
+   },
+   {
+    "nume": "Constantin Gângioveanu",
+    "post": "Mijlocaș central",
+    "ani": "2005–2011",
+    "m": null
+   },
+   {
+    "nume": "Constantin Gărgălie",
+    "post": "",
+    "ani": "2006–2008",
+    "m": null
+   },
+   {
+    "nume": "Emil Gărgorov",
+    "post": "Mijlocaș",
+    "ani": "2010",
+    "m": 13
+   },
+   {
+    "nume": "Valerian Gârlă",
+    "post": "Mijlocaș",
+    "ani": "2005–2007",
+    "m": null
+   },
+   {
+    "nume": "Jane Gavalovski",
+    "post": "Atacant",
+    "ani": "2005",
+    "m": null
+   },
+   {
+    "nume": "Dan Gogoșoiu",
+    "post": "Atacant",
+    "ani": "2008",
+    "m": null
+   },
+   {
+    "nume": "Wendel Gomes",
+    "post": "Mijlocaș defensiv",
+    "ani": "2011",
+    "m": null
+   },
+   {
+    "nume": "Adnan Gušo",
+    "post": "Portar",
+    "ani": "2003–2005",
+    "m": null
+   },
+   {
+    "nume": "Dumitru Hotoboc",
+    "post": "Portar",
+    "ani": "2010–2012",
+    "m": null
+   },
+   {
+    "nume": "Victoraș Iacob",
+    "post": "Atacant",
+    "ani": "2001–2002",
+    "m": 15
+   },
+   {
+    "nume": "Valentin Iliev",
+    "post": "",
+    "ani": "2010, 2015–2016",
+    "m": null
+   },
+   {
+    "nume": "Andrei Ionescu",
+    "post": "Mijlocaș ofensiv",
+    "ani": "2005–2008",
+    "m": null
+   },
+   {
+    "nume": "Ilie Iordache",
+    "post": "Mijlocaș",
+    "ani": "2004–2005",
+    "m": null
+   },
+   {
+    "nume": "David Lopes",
+    "post": "Fundaș central, stânga",
+    "ani": "2010–2011",
+    "m": 15
+   },
+   {
+    "nume": "Walter López",
+    "post": "Fundaș stânga",
+    "ani": "2010–2011",
+    "m": null
+   },
+   {
+    "nume": "Silviu Lung Jr.",
+    "post": "Portar",
+    "ani": "2006–2011, 2024–prezent",
+    "m": null
+   },
+   {
+    "nume": "Ionuț Luțu",
+    "post": "Mijlocaș",
+    "ani": "1996–1999, 2002–2005, 2007–2008",
+    "m": null
+   },
+   {
+    "nume": "Josh Maguire",
+    "post": "Mijlocaș",
+    "ani": "2006–2007",
+    "m": null
+   },
+   {
+    "nume": "Daniel McBreen",
+    "post": "Atacant",
+    "ani": "2002–2004",
+    "m": null
+   },
+   {
+    "nume": "Pieter Merlier",
+    "post": "Portar",
+    "ani": "2009–2011",
+    "m": null
+   },
+   {
+    "nume": "Romulus Miclea",
+    "post": "Extremă",
+    "ani": "2002–2004",
+    "m": 34
+   },
+   {
+    "nume": "Josip Mišić",
+    "post": "Fundaș stânga",
+    "ani": "2009",
+    "m": null
+   },
+   {
+    "nume": "Josh Mitchell",
+    "post": "Fundaș central",
+    "ani": "2005–2009",
+    "m": null
+   },
+   {
+    "nume": "Marius Mitu",
+    "post": "Mijlocaș",
+    "ani": "2000–2001",
+    "m": null
+   },
+   {
+    "nume": "Cosmin Moți",
+    "post": "Fundaș central",
+    "ani": "2003–2005",
+    "m": null
+   },
+   {
+    "nume": "Mădălin Murgan",
+    "post": "Mijlocaș defensiv",
+    "ani": "2003–2005",
+    "m": null
+   },
+   {
+    "nume": "Jérémie N'Jock",
+    "post": "Atacant",
+    "ani": "2005, 2007–2010",
+    "m": null
+   },
+   {
+    "nume": "Eugen Neagoe",
+    "post": "",
+    "ani": "1986–1994, 1999–2000",
+    "m": null
+   },
+   {
+    "nume": "Alexandre Negri",
+    "post": "",
+    "ani": "2004–2005",
+    "m": null
+   },
+   {
+    "nume": "Nelu Nicolae",
+    "post": "Mijlocaș",
+    "ani": "2009–2011",
+    "m": null
+   },
+   {
+    "nume": "Claudiu Niculescu",
+    "post": "Atacant",
+    "ani": "1998–2001",
+    "m": null
+   },
+   {
+    "nume": "Alexandru Ologu",
+    "post": "Mijlocaș",
+    "ani": "2008–2011",
+    "m": null
+   },
+   {
+    "nume": "Daniel Orac",
+    "post": "Mijlocaș central",
+    "ani": "2005–2006",
+    "m": null
+   },
+   {
+    "nume": "Corneliu Papură",
+    "post": "Fundaș central / Mijlocaș",
+    "ani": "1991–1996, 1999–2005",
+    "m": 226
+   },
+   {
+    "nume": "Lucian Pârvu",
+    "post": "Atacant",
+    "ani": "2006–2008",
+    "m": null
+   },
+   {
+    "nume": "Ivan Paunović",
+    "post": "Mijlocaș",
+    "ani": "2010",
+    "m": null
+   },
+   {
+    "nume": "Frédéric Pierre",
+    "post": "Mijlocaș",
+    "ani": "2004",
+    "m": null
+   },
+   {
+    "nume": "Adrian Pitu",
+    "post": "Mijlocaș ofensiv",
+    "ani": "2000",
+    "m": 11
+   },
+   {
+    "nume": "Alexandru Pițurcă",
+    "post": "Atacant",
+    "ani": "2005–2006, 2010–2011",
+    "m": 34
+   },
+   {
+    "nume": "Mihăiță Pleșan",
+    "post": "Mijlocaș",
+    "ani": "2000–2005, 2013–2014",
+    "m": 95
+   },
+   {
+    "nume": "Gabriel Popescu",
+    "post": "",
+    "ani": "1994–1997, 2000–2001",
+    "m": 101
+   },
+   {
+    "nume": "Ionuț Popescu",
+    "post": "",
+    "ani": "2009–2010",
+    "m": null
+   },
+   {
+    "nume": "Ștefan Preda",
+    "post": "Portar",
+    "ani": "2001–2002",
+    "m": 26
+   },
+   {
+    "nume": "Andrei Prepeliță",
+    "post": "Mijlocaș",
+    "ani": "2007–2011",
+    "m": null
+   },
+   {
+    "nume": "Florin Prunea",
+    "post": "Portar",
+    "ani": "1990–1991, 1999–2000",
+    "m": null
+   },
+   {
+    "nume": "Valeriu Răchită",
+    "post": "Fundaș central",
+    "ani": "2004",
+    "m": null
+   },
+   {
+    "nume": "Ionuț Rada",
+    "post": "Fundaș",
+    "ani": "2000–2004",
+    "m": null
+   },
+   {
+    "nume": "Predrag Ranđelović",
+    "post": "Atacant",
+    "ani": "2004",
+    "m": null
+   },
+   {
+    "nume": "Mihai Roman",
+    "post": "Atacant",
+    "ani": "2009–2011, 2017–2022",
+    "m": null
+   },
+   {
+    "nume": "Josh Rose",
+    "post": "",
+    "ani": "2006–2009",
+    "m": null
+   },
+   {
+    "nume": "Rubenilson",
+    "post": "Mijlocaș",
+    "ani": "2004",
+    "m": null
+   },
+   {
+    "nume": "Robert Săceanu",
+    "post": "Mijlocaș dreapta",
+    "ani": "2005–2009",
+    "m": 77
+   },
+   {
+    "nume": "Marius Sava",
+    "post": "Mijlocaș",
+    "ani": "1995–2003",
+    "m": null
+   },
+   {
+    "nume": "Cristian Silvășan",
+    "post": "Atacant",
+    "ani": "2001–2002",
+    "m": 5
+   },
+   {
+    "nume": "Răzvan Stanca",
+    "post": "Portar",
+    "ani": "2010",
+    "m": 11
+   },
+   {
+    "nume": "Ionuț Cristian Stancu",
+    "post": "Fundaș",
+    "ani": "2001–2003, 2013–2014",
+    "m": null
+   },
+   {
+    "nume": "Ovidiu Stângă",
+    "post": "Mijlocaș",
+    "ani": "1990–1995, 2002–2007",
+    "m": null
+   },
+   {
+    "nume": "Borislav Stevanović",
+    "post": "Atacant",
+    "ani": "2005",
+    "m": null
+   },
+   {
+    "nume": "Ovidiu Stoianof",
+    "post": "Atacant",
+    "ani": "2003–2011",
+    "m": null
+   },
+   {
+    "nume": "Dorel Stoica",
+    "post": "Mijlocaș",
+    "ani": "2005–2011",
+    "m": null
+   },
+   {
+    "nume": "Flavius Stoican",
+    "post": "Fundaș dreapta",
+    "ani": "1995–2002",
+    "m": null
+   },
+   {
+    "nume": "Danijel Subotić",
+    "post": "Atacant",
+    "ani": "2011",
+    "m": null
+   },
+   {
+    "nume": "Claudiu Tudor",
+    "post": "Mijlocaș ofensiv",
+    "ani": "2005–2006",
+    "m": null
+   },
+   {
+    "nume": "Daniel Tudor",
+    "post": "Portar",
+    "ani": "2000–2002",
+    "m": 19
+   },
+   {
+    "nume": "Robert Vancea",
+    "post": "Mijlocaș",
+    "ani": "1994–1995, 1997–2001",
+    "m": null
+   },
+   {
+    "nume": "Gabriel Velcovici",
+    "post": "Fundaș stânga",
+    "ani": "2003–2008, 2013–2014",
+    "m": 112
+   },
+   {
+    "nume": "Ion Vlădoiu",
+    "post": "Atacant",
+    "ani": "2002",
+    "m": 13
+   },
+   {
+    "nume": "Gabriel Vochin",
+    "post": "Fundaș",
+    "ani": "1999–2000, 2002",
+    "m": null
+   },
+   {
+    "nume": "Bogdan Vrăjitoarea",
+    "post": "Atacant",
+    "ani": "2001–2002",
+    "m": 11
+   },
+   {
+    "nume": "Wendel",
+    "post": "Mijlocaș",
+    "ani": "2011",
+    "m": null
+   },
+   {
+    "nume": "Julius Wobay",
+    "post": "Mijlocaș ofensiv",
+    "ani": "2007–2010",
+    "m": null
+   },
+   {
+    "nume": "Marco Zoro",
+    "post": "Fundaș central",
+    "ani": "2011",
+    "m": 14
+   }
+  ]
+ },
+ {
+  "nr": 8,
+  "titlu": "Generația modernă",
+  "ani": "2014–2026",
+  "subtitlu": "Revenirea în elită, Europa și al cincilea titlu",
+  "intro": [
+   "În 2014, Știința a revenit în Liga I după promovarea din liga secundă. A terminat pe locul 5 în primul sezon, iar în 2016–2017 locul 4 a adus întoarcerea în cupele europene, cu o dublă cu AC Milan în preliminariile Europa League.",
+   "Pe 27 mai 2018, pe Arena Națională, a venit primul trofeu al noii generații: Cupa României, după 2-0 în finala cu Hermannstadt. În 2020, echipa a fost la un pas de titlu, pierdut doar în ultima etapă, cu CFR Cluj. Un an mai târziu au urmat o nouă Cupă a României, 3-2 cu Astra Giurgiu, și Supercupa.",
+   "În august 2025, după 3-1 cu İstanbul Başakşehir, Știința s-a calificat pentru prima dată în faza principală a unei competiții europene. Sezonul 2025–2026 a adus apoi eventul: Cupa României la loviturile de departajare cu U Cluj și titlul de campioană, primul după 35 de ani, pecetluit cu 5-0 tot cu U Cluj. În vara lui 2026 a venit și Supercupa, pentru tripla internă.",
+   "Generația modernă a dat și jucători pentru marile turnee: Nicușor Bancu la EURO 2024, Anzor Mekvabishvili cu Georgia tot la EURO 2024, Carlos Mora la Gold Cup 2025."
+  ],
+  "momente": [
+   "2014 – revenirea în Liga I",
+   "2017 – Europa League, dublă cu AC Milan",
+   "27 mai 2018 – Cupa României, 2-0 cu Hermannstadt",
+   "2021 – Cupa României, 3-2 cu Astra Giurgiu, și Supercupa",
+   "2025 – prima calificare în faza principală a unei cupe europene",
+   "2025–2026 – eventul: Cupa și titlul, primul după 35 de ani",
+   "Iulie 2026 – Supercupa României, pentru tripla internă"
+  ],
+  "loturi": [],
+  "surse": [
+   "Palmaresul clubului (ucv1948.ro)",
+   "Wikipedia în limba engleză",
+   "Labtof",
+   "Cronicile Poveștilor Științei"
+  ],
+  "legende": [
+   {
+    "epoca": 8,
+    "nume": "Nicușor Bancu",
+    "post": "Fundaș stânga / extremă, căpitan",
+    "ani": "2014–prezent",
+    "text": "Fața generației moderne. A venit în anul revenirii în Liga I și a rămas, devenind căpitanul echipei și internațional. A câștigat toate trofeele noii ere, de la Cupa din 2018 la eventul din 2026, și a jucat pentru România la EURO 2024.",
+    "cifre": "peste 50 de selecții",
+    "porecla": "",
+    "rol": "jucător"
+   },
+   {
+    "epoca": 8,
+    "nume": "Alexandru Mitriță",
+    "post": "Mijlocaș ofensiv / extremă",
+    "ani": "2017–2019, 2023–2025",
+    "text": "Craiovean, s-a întors acasă din Italia în 2017 și a devenit titular indiscutabil. A câștigat Cupa României în 2018, iar evoluțiile lui l-au dus în MLS, la New York City FC. A revenit la Craiova pentru a doua perioadă.",
+    "cifre": "",
+    "porecla": "",
+    "rol": "jucător"
+   },
+   {
+    "epoca": 8,
+    "nume": "Andrei Ivan",
+    "post": "Atacant",
+    "ani": "2014–2017, 2019–2025",
+    "text": "A debutat la seniori la Craiova în 2014 și, după trei ani și jumătate, a fost transferat la Krasnodar. S-a întors în 2019 și a rămas un om important al echipei, internațional încă de la 18 ani.",
+    "cifre": "",
+    "porecla": "",
+    "rol": "jucător"
+   },
+   {
+    "epoca": 8,
+    "nume": "Alexandru Cicâldău",
+    "post": "Mijlocaș",
+    "ani": "2018–2021, 2024–prezent",
+    "text": "Venit de la Viitorul în 2018, a trecut de o sută de meciuri pentru Craiova și a câștigat două trofee înainte de transferul la Galatasaray, în 2021. Clubul l-a readus acasă în 2024.",
+    "cifre": "",
+    "porecla": "",
+    "rol": "jucător"
+   },
+   {
+    "epoca": 8,
+    "nume": "Alexandru Mateiu",
+    "post": "Mijlocaș",
+    "ani": "2014–2024",
+    "text": "Brașoveanul semnat în 2014 a devenit un simbol al constanței: un deceniu în alb-albastru și peste 270 de meciuri în prima ligă pentru Craiova.",
+    "cifre": "",
+    "porecla": "",
+    "rol": "jucător"
+   },
+   {
+    "epoca": 8,
+    "nume": "Alexandru Băluță",
+    "post": "Mijlocaș ofensiv",
+    "ani": "2014–2018",
+    "text": "Unul dintre tinerii talentați ai anilor revenirii în Liga I, mijlocaș ofensiv care putea juca și ca vârf.",
+    "cifre": "",
+    "porecla": "",
+    "rol": "jucător"
+   },
+   {
+    "epoca": 8,
+    "nume": "Vladimir Screciu",
+    "post": "Mijlocaș defensiv / fundaș central",
+    "ani": "2016–2018, 2020–prezent",
+    "text": "A ajuns la Craiova la 16 ani, iar după revenirea din 2020 a devenit un om de bază al echipei și jucător al naționalei.",
+    "cifre": "",
+    "porecla": "",
+    "rol": "jucător"
+   },
+   {
+    "epoca": 8,
+    "nume": "Elvir Koljić",
+    "post": "Atacant",
+    "ani": "2018–2025",
+    "text": "Bosniacul venit în 2018 a petrecut șapte ani la Craiova, unul dintre atacanții de bază ai perioadei.",
+    "cifre": "",
+    "porecla": "",
+    "rol": "jucător"
+   },
+   {
+    "epoca": 8,
+    "nume": "Mirko Pigliacelli",
+    "post": "Portar",
+    "ani": "2018, 2019–2022",
+    "text": "Portarul italian al perioadei 2019–2022, ani în care Craiova a câștigat Cupa României și Supercupa, în 2021.",
+    "cifre": "",
+    "porecla": "",
+    "rol": "jucător"
+   },
+   {
+    "epoca": 8,
+    "nume": "Ștefan Baiaram",
+    "post": "Extremă",
+    "ani": "2019–prezent",
+    "text": "Extremă adusă la Craiova la 16 ani, a devenit internațional și unul dintre jucătorii eventului din 2026.",
+    "cifre": "",
+    "porecla": "",
+    "rol": "jucător"
+   },
+   {
+    "epoca": 8,
+    "nume": "Carlos Mora",
+    "post": "Extremă / fundaș lateral",
+    "ani": "2024–prezent",
+    "text": "Costaricanul a adus viteză pe benzi și a jucat pentru naționala lui la Gold Cup 2025, ca jucător al Craiovei.",
+    "cifre": "",
+    "porecla": "",
+    "rol": "jucător"
+   },
+   {
+    "epoca": 8,
+    "nume": "Anzor Mekvabishvili",
+    "post": "Mijlocaș",
+    "ani": "2024–2026",
+    "text": "Georgianul a jucat pentru Georgia la EURO 2024 ca jucător al Craiovei și a fost unul dintre mijlocașii sezonului eventului.",
+    "cifre": "",
+    "porecla": "",
+    "rol": "jucător"
+   },
+   {
+    "epoca": 8,
+    "nume": "Tudor Băluță",
+    "post": "Mijlocaș defensiv",
+    "ani": "2025–prezent",
+    "text": "Internațional român, venit în 2025, a întărit mijlocul echipei care a câștigat titlul după 35 de ani.",
+    "cifre": "",
+    "porecla": "",
+    "rol": "jucător"
+   }
+  ],
+  "jucatori": [
+   {
+    "nume": "Stephane Acka",
+    "post": "Fundaș",
+    "ani": "2014–2017, 2019–2021",
+    "m": null
+   },
+   {
+    "nume": "Giedrius Arlauskis",
+    "post": "",
+    "ani": "2022–2023",
+    "m": null
+   },
+   {
+    "nume": "Adrian Avrămia",
+    "post": "",
+    "ani": "2014–2015",
+    "m": null
+   },
+   {
+    "nume": "Ștefan Baiaram",
+    "post": "Extremă",
+    "ani": "2019–prezent",
+    "m": null
+   },
+   {
+    "nume": "Raoul Baicu",
+    "post": "Extremă",
+    "ani": "2018–2020",
+    "m": null
+   },
+   {
+    "nume": "Mihai Bălașa",
+    "post": "Fundaș",
+    "ani": "2019–2022",
+    "m": null
+   },
+   {
+    "nume": "Cristian Bălgrădean",
+    "post": "Portar",
+    "ani": "2014–2016",
+    "m": null
+   },
+   {
+    "nume": "Alexandru Băluță",
+    "post": "Mijlocaș",
+    "ani": "2014–2018",
+    "m": null
+   },
+   {
+    "nume": "Tudor Băluță",
+    "post": "Mijlocaș",
+    "ani": "2025–prezent",
+    "m": null
+   },
+   {
+    "nume": "Nicușor Bancu",
+    "post": "Extremă",
+    "ani": "2014–prezent",
+    "m": null
+   },
+   {
+    "nume": "Cristian Bărbuț",
+    "post": "Extremă",
+    "ani": "2017–2021",
+    "m": null
+   },
+   {
+    "nume": "Alexandre Barthe",
+    "post": "Fundaș",
+    "ani": "2017",
+    "m": null
+   },
+   {
+    "nume": "Ovidiu Bic",
+    "post": "Mijlocaș",
+    "ani": "2018–2022",
+    "m": null
+   },
+   {
+    "nume": "Radu Bîrzan",
+    "post": "Mijlocaș",
+    "ani": "2017–2020",
+    "m": null
+   },
+   {
+    "nume": "Jalen Blesa",
+    "post": "Atacant",
+    "ani": "2024–2025",
+    "m": null
+   },
+   {
+    "nume": "Bojan Brać",
+    "post": "Portar",
+    "ani": "2013–2015",
+    "m": null
+   },
+   {
+    "nume": "Pablo Brandán",
+    "post": "",
+    "ani": "2014–2015",
+    "m": null
+   },
+   {
+    "nume": "Marius Briceag",
+    "post": "Fundaș stânga",
+    "ani": "2015–2020",
+    "m": null
+   },
+   {
+    "nume": "Lucian Buzan",
+    "post": "Mijlocaș",
+    "ani": "2017–2019",
+    "m": null
+   },
+   {
+    "nume": "Alberto Călin",
+    "post": "Mijlocaș",
+    "ani": "2022–2024",
+    "m": null
+   },
+   {
+    "nume": "Marian Cârjă",
+    "post": "",
+    "ani": "2013–2014",
+    "m": null
+   },
+   {
+    "nume": "Alexandru Cicâldău",
+    "post": "Mijlocaș",
+    "ani": "2018–2021, 2024–prezent",
+    "m": null
+   },
+   {
+    "nume": "Alexandru Cîmpanu",
+    "post": "Atacant",
+    "ani": "2020–2024",
+    "m": null
+   },
+   {
+    "nume": "Antoine Conte",
+    "post": "Fundaș dreapta",
+    "ani": "2021–2022",
+    "m": null
+   },
+   {
+    "nume": "Uroš Ćosić",
+    "post": "",
+    "ani": "2019–2020",
+    "m": null
+   },
+   {
+    "nume": "Alexandru Crețu",
+    "post": "Mijlocaș",
+    "ani": "2021–prezent",
+    "m": null
+   },
+   {
+    "nume": "Andrei Cristea",
+    "post": "Atacant",
+    "ani": "2019",
+    "m": null
+   },
+   {
+    "nume": "Niko Datković",
+    "post": "Fundaș central",
+    "ani": "2017",
+    "m": null
+   },
+   {
+    "nume": "Claude Dielna",
+    "post": "Fundaș central",
+    "ani": "2020",
+    "m": null
+   },
+   {
+    "nume": "Isaac Donkor",
+    "post": "Fundaș central",
+    "ani": "2018–2019",
+    "m": null
+   },
+   {
+    "nume": "Stephan Drăghici",
+    "post": "Mijlocaș",
+    "ani": "2016–2021",
+    "m": null
+   },
+   {
+    "nume": "Andrei Dumitraș",
+    "post": "Fundaș",
+    "ani": "2015–2017",
+    "m": null
+   },
+   {
+    "nume": "Simon Elisor",
+    "post": "Atacant",
+    "ani": "2026",
+    "m": null
+   },
+   {
+    "nume": "Monday Etim",
+    "post": "Atacant",
+    "ani": "2025–prezent",
+    "m": null
+   },
+   {
+    "nume": "Nusmir Fajić",
+    "post": "Atacant",
+    "ani": "2017",
+    "m": null
+   },
+   {
+    "nume": "Matteo Fedele",
+    "post": "Mijlocaș",
+    "ani": "2018–2019, 2021–2022",
+    "m": null
+   },
+   {
+    "nume": "Viorel Ferfelea",
+    "post": "Mijlocaș",
+    "ani": "2013–2016",
+    "m": null
+   },
+   {
+    "nume": "Eduard Florescu",
+    "post": "Mijlocaș",
+    "ani": "2022–2023",
+    "m": null
+   },
+   {
+    "nume": "Valerică Găman",
+    "post": "Fundaș central",
+    "ani": "2006–2011, 2021–2023",
+    "m": null
+   },
+   {
+    "nume": "Cristian Ganea",
+    "post": "Mijlocaș",
+    "ani": "2013–2014",
+    "m": null
+   },
+   {
+    "nume": "Florin Gardoș",
+    "post": "Fundaș central / Mijlocaș defensiv",
+    "ani": "2018–2020",
+    "m": null
+   },
+   {
+    "nume": "João Gonçalves",
+    "post": "Portar",
+    "ani": "2026",
+    "m": null
+   },
+   {
+    "nume": "Grego",
+    "post": "Mijlocaș",
+    "ani": "2024–2025",
+    "m": null
+   },
+   {
+    "nume": "Assad Al Hamlawi",
+    "post": "Atacant",
+    "ani": "2025–prezent",
+    "m": null
+   },
+   {
+    "nume": "Sergiu Hanca",
+    "post": "Extremă",
+    "ani": "2022–2023",
+    "m": null
+   },
+   {
+    "nume": "Andrei Hergheligiu",
+    "post": "Atacant",
+    "ani": "2014–2016",
+    "m": null
+   },
+   {
+    "nume": "Lyes Houri",
+    "post": "Mijlocaș",
+    "ani": "2021–prezent",
+    "m": null
+   },
+   {
+    "nume": "Valentin Iliev",
+    "post": "",
+    "ani": "2010, 2015–2016",
+    "m": null
+   },
+   {
+    "nume": "Adrian Ionescu",
+    "post": "Mijlocaș",
+    "ani": "2013–2014",
+    "m": null
+   },
+   {
+    "nume": "Alexandru Ioniță",
+    "post": "Mijlocaș",
+    "ani": "2019",
+    "m": null
+   },
+   {
+    "nume": "Andrei Ivan",
+    "post": "Atacant",
+    "ani": "2014–2017, 2019–2025",
+    "m": null
+   },
+   {
+    "nume": "Antoni Ivanov",
+    "post": "Mijlocaș",
+    "ani": "2019–2022",
+    "m": null
+   },
+   {
+    "nume": "Silviu Izvoranu",
+    "post": "",
+    "ani": "2013–2016",
+    "m": null
+   },
+   {
+    "nume": "Filip Jazvić",
+    "post": "Mijlocaș",
+    "ani": "2017",
+    "m": null
+   },
+   {
+    "nume": "Renato Kelić",
+    "post": "",
+    "ani": "2016–2020",
+    "m": null
+   },
+   {
+    "nume": "Tome Kitanovski",
+    "post": "Fundaș",
+    "ani": "2014",
+    "m": null
+   },
+   {
+    "nume": "Elvir Koljić",
+    "post": "Atacant",
+    "ani": "2018–2025",
+    "m": null
+   },
+   {
+    "nume": "Zvonimir Kožulj",
+    "post": "Mijlocaș",
+    "ani": "2024",
+    "m": null
+   },
+   {
+    "nume": "Jasmin Kurtić",
+    "post": "Mijlocaș",
+    "ani": "2023–2024",
+    "m": null
+   },
+   {
+    "nume": "João Lameira",
+    "post": "Mijlocaș",
+    "ani": "2026",
+    "m": null
+   },
+   {
+    "nume": "Zoran Ljubinković",
+    "post": "Fundaș",
+    "ani": "2013–2014",
+    "m": null
+   },
+   {
+    "nume": "Jovo Lukić",
+    "post": "Atacant",
+    "ani": "2024–2025",
+    "m": null
+   },
+   {
+    "nume": "Silviu Lung Jr.",
+    "post": "Portar",
+    "ani": "2006–2011, 2024–prezent",
+    "m": null
+   },
+   {
+    "nume": "Madson",
+    "post": "Mijlocaș",
+    "ani": "2014–2017",
+    "m": null
+   },
+   {
+    "nume": "Denil Maldonado",
+    "post": "Fundaș",
+    "ani": "2024–2025",
+    "m": null
+   },
+   {
+    "nume": "Ivan Mamut",
+    "post": "Atacant",
+    "ani": "2020–2021",
+    "m": null
+   },
+   {
+    "nume": "Andrei Daniel Marinescu",
+    "post": "Portar",
+    "ani": "2019–2021",
+    "m": null
+   },
+   {
+    "nume": "Jovan Marković",
+    "post": "Atacant",
+    "ani": "2017–2025",
+    "m": null
+   },
+   {
+    "nume": "Ivan Martić",
+    "post": "Fundaș dreapta",
+    "ani": "2017–2020, 2022–2023",
+    "m": null
+   },
+   {
+    "nume": "Alexandru Mateiu",
+    "post": "Mijlocaș",
+    "ani": "2014–2024",
+    "m": null
+   },
+   {
+    "nume": "Alexandru Mățel",
+    "post": "Fundaș dreapta",
+    "ani": "2019–2020",
+    "m": null
+   },
+   {
+    "nume": "Anzor Mekvabishvili",
+    "post": "Mijlocaș",
+    "ani": "2024–prezent",
+    "m": null
+   },
+   {
+    "nume": "Valentin Mihăilă",
+    "post": "Extremă",
+    "ani": "2017–2020",
+    "m": null
+   },
+   {
+    "nume": "Ionuț Mitran",
+    "post": "Fundaș",
+    "ani": "2020–2023",
+    "m": null
+   },
+   {
+    "nume": "Bogdan Mitrea",
+    "post": "Fundaș central",
+    "ani": "2022–2023",
+    "m": null
+   },
+   {
+    "nume": "Alexandru Mitriță",
+    "post": "Mijlocaș",
+    "ani": "2017–2019, 2023–2025",
+    "m": null
+   },
+   {
+    "nume": "Vasile Mogoș",
+    "post": "Fundaș",
+    "ani": "2025–prezent",
+    "m": null
+   },
+   {
+    "nume": "Carlos Mora",
+    "post": "Extremă",
+    "ani": "2024–prezent",
+    "m": null
+   },
+   {
+    "nume": "Basilio Ndong",
+    "post": "Extremă",
+    "ani": "2023–2025",
+    "m": null
+   },
+   {
+    "nume": "Alexandru Neacșa",
+    "post": "Mijlocaș",
+    "ani": "2014",
+    "m": null
+   },
+   {
+    "nume": "Dan Nistor",
+    "post": "Mijlocaș",
+    "ani": "2020–2023",
+    "m": null
+   },
+   {
+    "nume": "Luis Nițu",
+    "post": "Extremă",
+    "ani": "2019–2020",
+    "m": null
+   },
+   {
+    "nume": "Steven Nsimba",
+    "post": "Atacant",
+    "ani": "2025–prezent",
+    "m": null
+   },
+   {
+    "nume": "Reagy Ofosu",
+    "post": "Extremă",
+    "ani": "2020–2021",
+    "m": null
+   },
+   {
+    "nume": "Daniel Oprița",
+    "post": "Atacant",
+    "ani": "2013–2014",
+    "m": null
+   },
+   {
+    "nume": "Paul Papp",
+    "post": "Fundaș",
+    "ani": "2020–2023",
+    "m": null
+   },
+   {
+    "nume": "Luis Paradela",
+    "post": "Mijlocaș",
+    "ani": "2024–2025",
+    "m": null
+   },
+   {
+    "nume": "Răzvan Patriche",
+    "post": "",
+    "ani": "2014",
+    "m": null
+   },
+   {
+    "nume": "Mirko Pigliacelli",
+    "post": "Portar",
+    "ani": "2018–2022",
+    "m": null
+   },
+   {
+    "nume": "Mihăiță Pleșan",
+    "post": "Mijlocaș",
+    "ani": "2000–2005, 2013–2014",
+    "m": 95
+   },
+   {
+    "nume": "Apostol Popov",
+    "post": "Fundaș central",
+    "ani": "2015–2018",
+    "m": null
+   },
+   {
+    "nume": "Kamer Qaka",
+    "post": "Mijlocaș",
+    "ani": "2019–2020",
+    "m": null
+   },
+   {
+    "nume": "Julian Ripoli",
+    "post": "Mijlocaș",
+    "ani": "2013–2014",
+    "m": null
+   },
+   {
+    "nume": "Rivaldinho",
+    "post": "Atacant",
+    "ani": "2022–2023",
+    "m": null
+   },
+   {
+    "nume": "Ante Roguljić",
+    "post": "Mijlocaș",
+    "ani": "2021–2024",
+    "m": null
+   },
+   {
+    "nume": "Mihai Roman",
+    "post": "Atacant",
+    "ani": "2009–2011, 2017–2022",
+    "m": null
+   },
+   {
+    "nume": "Fausto Rossi",
+    "post": "Mijlocaș",
+    "ani": "2017–2018",
+    "m": null
+   },
+   {
+    "nume": "Baptiste Roux",
+    "post": "Mijlocaș",
+    "ani": "2026",
+    "m": null
+   },
+   {
+    "nume": "Adrian Rus",
+    "post": "Fundaș central",
+    "ani": "2025–prezent",
+    "m": null
+   },
+   {
+    "nume": "Alisson Safira",
+    "post": "Atacant",
+    "ani": "2025",
+    "m": null
+   },
+   {
+    "nume": "David Sala",
+    "post": "Mijlocaș",
+    "ani": "2022–2024",
+    "m": null
+   },
+   {
+    "nume": "André Santos",
+    "post": "Mijlocaș",
+    "ani": "2018",
+    "m": null
+   },
+   {
+    "nume": "Vladimir Screciu",
+    "post": "Mijlocaș",
+    "ani": "2016–2018, 2020–prezent",
+    "m": null
+   },
+   {
+    "nume": "Marian Șerban",
+    "post": "Mijlocaș",
+    "ani": "2018–2023",
+    "m": null
+   },
+   {
+    "nume": "Raúl Silva",
+    "post": "Fundaș",
+    "ani": "2022–2024",
+    "m": null
+   },
+   {
+    "nume": "Pyry Soiri",
+    "post": "Fundaș",
+    "ani": "2024",
+    "m": null
+   },
+   {
+    "nume": "Eduard Stăncioiu",
+    "post": "Portar",
+    "ani": "2018–2019",
+    "m": null
+   },
+   {
+    "nume": "Ionuț Cristian Stancu",
+    "post": "Fundaș",
+    "ani": "2001–2003, 2013–2014",
+    "m": null
+   },
+   {
+    "nume": "Nikola Stevanović",
+    "post": "Fundaș central",
+    "ani": "2025–prezent",
+    "m": null
+   },
+   {
+    "nume": "Relu Stoian",
+    "post": "Portar",
+    "ani": "2024–2025",
+    "m": null
+   },
+   {
+    "nume": "Cătălin Straton",
+    "post": "Portar",
+    "ani": "2014–2016",
+    "m": null
+   },
+   {
+    "nume": "Alexandru Tudorie",
+    "post": "Atacant",
+    "ani": "2020–2021",
+    "m": null
+   },
+   {
+    "nume": "Nerijus Valskis",
+    "post": "Atacant",
+    "ani": "2014",
+    "m": null
+   },
+   {
+    "nume": "Jason Vandelannoite",
+    "post": "Fundaș",
+    "ani": "2013–2014",
+    "m": null
+   },
+   {
+    "nume": "Dacian Varga",
+    "post": "Mijlocaș / atacant",
+    "ani": "2014–2015",
+    "m": 15
+   },
+   {
+    "nume": "Gabriel Velcovici",
+    "post": "Fundaș stânga",
+    "ani": "2003–2008, 2013–2014",
+    "m": 112
+   },
+   {
+    "nume": "Ionuț Vînă",
+    "post": "Mijlocaș",
+    "ani": "2021–2023",
+    "m": null
+   },
+   {
+    "nume": "Andrei Vlad",
+    "post": "Portar",
+    "ani": "2016–2017",
+    "m": null
+   },
+   {
+    "nume": "Ștefan Vlădoiu",
+    "post": "Fundaș dreapta",
+    "ani": "2016–2025",
+    "m": null
+   },
+   {
+    "nume": "Albert Voinea",
+    "post": "Atacant",
+    "ani": "2013–2014",
+    "m": null
+   },
+   {
+    "nume": "Ronaldo Webster",
+    "post": "Extremă",
+    "ani": "2026",
+    "m": null
+   },
+   {
+    "nume": "Gjoko Zajkov",
+    "post": "",
+    "ani": "2023–2025",
+    "m": null
+   },
+   {
+    "nume": "Goran Zakarić",
+    "post": "Extremă",
+    "ani": "2019–2020",
+    "m": null
+   }
+  ]
+ }
+]
