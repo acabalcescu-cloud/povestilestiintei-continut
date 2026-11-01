@@ -44,7 +44,7 @@ h1 { font-family: Sofia; font-weight: 800; font-size: ${titleSize}px; line-heigh
 	<div class="rubrica"><img src="${uri('logo.png', 'image/png')}"><span>Penalty cu George</span></div>
 	<h1>${esc(d.titlu)}</h1>
 	<div class="motto">Fără ezitare, de partea Științei</div>
-	<div class="autor">de <b>George</b> · ${zi} ${LUNI[luna - 1]} ${an}</div>
+	<div class="autor">de <b>George Fedorovici</b> · ${zi} ${LUNI[luna - 1]} ${an}</div>
 	<div class="site">POVESTILESTIINTEI.RO</div>
 </div>
 </body></html>`;
