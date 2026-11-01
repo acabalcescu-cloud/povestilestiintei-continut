@@ -14,25 +14,22 @@ Meciurile care încep după 20:00 nu au limita de 23:55: verificările încep la
 
 `python3 mac/meci.py --program` arată orele verificărilor de azi.
 
-## Meciul în direct: echipele de start, golurile, finalul
+## Meciul în direct: scorul, echipele de start, golurile, finalul
 
-`mac/live.py` rulează la fiecare 2 minute, fără AI, doar în ziua meciului (de la o oră înainte de start până la final). Datele vin din **API-Football** (api-sports.io), cel mult o cerere la 3 minute, ca să încapă în cele 100 de cereri pe zi ale variantei gratuite.
+Datele vin din fluxul public **LiveScore** (fără cont și fără cheie).
 
-- **Echipele de start:** când apar în API-Football, publică știrea cu formațiile (dacă nu există deja una pentru ziua respectivă). Numele jucătorilor noștri apar complet, ca în lot.
-- **Fiecare gol al Științei:** o știre scurtă cu marcatorul, minutul, pasa decisivă și scorul, plus video-ul jucătorului din fișa lui (`[ps_jucator_video nume="..."]`). Golul se publică doar dacă apare la două verificări la rând (3–6 minute după gol), ca să nu publicăm goluri anulate la VAR. Penalty-urile ratate nu contează; autogolurile adversarilor da, fără video.
+**Pe site, singur:** pagina meciului și caseta „Următorul meci” de pe prima pagină își iau scorul, minutul și marcatorii din LiveScore (`/ps/v1/live-sync`, cel mult o interogare pe minut). Prima pagină se reîmprospătează singură la fiecare minut, cât timp e deschisă.
+
+**Pe Mac:** `mac/live.py` rulează la fiecare 2 minute, fără AI, doar în ziua meciului (de la o oră înainte de start până la final):
+
+- **Scorul:** la fiecare rulare cere site-ului să se actualizeze.
+- **Echipele de start:** când apar, publică știrea cu formațiile (dacă nu există deja una pentru ziua respectivă). Numele jucătorilor noștri apar ca în lot.
+- **Fiecare gol al Științei:** o știre scurtă cu marcatorul, minutul, pasa decisivă și scorul, plus video-ul jucătorului din fișa lui (`[ps_jucator_video nume="..."]`). Golul se publică doar dacă apare la două verificări la rând, ca să nu publicăm goluri anulate la VAR.
 - **Finalul:** pornește imediat cronica (`python3 mac/meci.py --acum`).
 
 Lucrează într-o copie separată a depozitului (`.stare-mac/live-depozit`), ca să nu încurce celelalte rutine.
 
-**Cheia API (o singură dată):** cont pe https://dashboard.api-football.com, apoi, în folderul depozitului:
-
-```
-echo "API_FOOTBALL_KEY=CHEIA_TA" > .stare-mac/api-football.env
-```
-
-Cheia stă doar pe Mac (folderul `.stare-mac/` nu ajunge pe GitHub).
-
-**Test:** `python3 mac/live.py --test` (în ziua meciului, de la o oră înainte de start) arată meciul, echipele și golurile găsite, fără să publice nimic.
+**Test:** `python3 mac/live.py --test` (în ziua meciului) arată meciul, echipele și golurile găsite, fără să publice nimic.
 
 ## Ce trebuie pe Mac (o singură dată)
 
